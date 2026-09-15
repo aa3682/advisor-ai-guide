@@ -1,57 +1,55 @@
-# [TOPIC] guide — repo instructions
-
-## Starting a new guide from this template
-Replace every token below, then edit every file in the list. Tokens are bracketed and all caps, so `grep -rn '\[[A-Z ]\+\]' --exclude-dir=node_modules --exclude-dir=.next .` shows what is left.
-
-Tokens:
-- `[TOPIC]` — the subject of the guide as it reads in a sentence ("personal budgeting", "residential wiring").
-- `[PROCESS NAME]` — the name of the step-by-step process the guide is organized around; it is also the title of the process section.
-- `[AREA LABEL]` — the name of one knowledge area; the domains landing page and the figures page repeat it once per area.
-- `[AUTHOR LINE]` — how the author is described on /about, without a personal name, employer, credential, or license.
-- `[DISCLAIMER]` — the standard disclaimer, three or four sentences, that sits in a Callout on each section landing page and as plain prose on /about.
-
-Files to edit:
-- `CLAUDE.md` — the tokens above, the step and area names under Structure, the Go deeper sources, and the Glossary running list as pages are written.
-- `README.md` — the title, the opening description, and the repository URL.
-- `package.json` — `name`.
-- `app/layout.jsx` — the site title, description, and `REPO_URL`.
-- `app/globals.css` — the accent hue, if a different one is wanted.
-- `content/_meta.js`, `content/process/_meta.js`, `content/domains/_meta.js`, `content/tools/_meta.js` — sidebar labels and order.
-- `content/introduction/index.mdx`, `content/process/index.mdx`, `content/domains/index.mdx`, `content/tools/index.mdx` — the landing pages; list every step, area, and tool.
-- `content/about/index.mdx` — `[AUTHOR LINE]`, `[DISCLAIMER]`, the corrections URL, and the license links.
-- `content/glossary/index.mdx` — delete the example term when the first real term is added.
-- `content/process/example-step/index.mdx` — copy it into one folder per real step, then delete the example folder and its `_meta.js` entry.
-- `content/domains/example-area/index.mdx` — copy it into one folder per real area, then delete the example folder and its `_meta.js` entry.
-- `content/tools/this-years-figures/index.mdx` — one H2 per knowledge area; rows are added as figures come up.
-- `LICENSE` — the copyright line.
+# The Adoption Path — repo instructions
 
 ## What this is
-An open, public reference site on [TOPIC], built as a Nextra 4 docs site. Visual reference only: https://www.promptingguide.ai/ — match its look using the stock nextra-theme-docs; never copy its content or components.
+An open, public reference site on using AI inside a small independent investment advisory practice, built as a Nextra 4 docs site. Visual reference only: https://www.promptingguide.ai/ — match its look using the stock nextra-theme-docs; never copy its content or components.
 
-Audience: the general public first, practitioners second. Write for a smart adult with no background in [TOPIC]; add practitioner depth in clearly marked subsections rather than separate pages.
+Audience: the adviser who already runs a solo or two-person registered investment adviser and wants to use AI in the firm without creating a compliance problem, first; the adviser at a larger firm who wants to understand what independent practitioners are doing with these tools and what the rules require, second. Write for that reader: someone who knows how an advisory firm runs but has not thought through AI in it.
+
+Default scenario: Most pages assume a state-registered adviser with no staff beyond an assistant, using general-purpose AI tools (chat assistants, document tools, automation platforms not built for the advisory industry) rather than advisor-specific vendor products. Where an advisor-specific platform changes the answer, the page says so and flags the divergence. Where an SEC-registered adviser's obligations differ, the page flags that too. The guide assumes the firm already exists and has a compliance program; it is not a guide to forming a firm.
 
 ## Hard rules
 1. Never reference any professional certification body, certification mark, licensing exam, official curriculum, or official topic list — anywhere: page copy, titles, slugs, frontmatter, alt text, README, comments, commit messages. No certification acronyms, no "certified" phrasing. Describe concepts in plain language instead.
-2. All content is original. No verbatim or lightly paraphrased text from textbooks, study guides, courses, or official publications. When a fact needs support, cite a public primary source (statute, regulation, agency publication, standards document, court decision, peer-reviewed paper) with a link.
-3. Content is educational, not individualized advice. The standard disclaimer lives on each section landing page only (introduction, process, domains, tools). Do not repeat it on individual pages.
-4. Do not invent statistics, thresholds, limits, or rates. If a number is year-specific, state the year and cite the source. If unsure, write "[VERIFY]" inline and list it in the report. On knowledge-area pages the figures rule in the area template takes precedence: the number goes on /tools/this-years-figures, not on the page.
-5. No personal data, no real client examples. Worked examples use obviously fictional people.
+2. No AI model, platform, processor, or brand names in step names, area names, slugs, titles, descriptions, headings, or metadata. Platforms and models may be named only on /tools/this-years-figures. Nothing commercial is linked from the guide; no affiliate links.
+3. All content is original. No verbatim or lightly paraphrased text from textbooks, study guides, courses, or official publications. When a fact needs support, cite a public primary source (statute, regulation, agency publication, standards document, court decision, peer-reviewed paper) with a link.
+4. Content is educational, not individualized advice. The standard disclaimer lives on each section landing page only (introduction, process, domains, tools). Do not repeat it on individual pages.
+5. Do not invent statistics, thresholds, limits, or rates. If a number is year-specific, state the year and cite the source. If unsure, write "[VERIFY]" inline and list it in the report. On knowledge-area pages the figures rule in the area template takes precedence: the number goes on /tools/this-years-figures, not on the page. This covers figures set by law, regulation, or an agency, and figures set by a platform: pricing, data-retention windows, context and usage limits.
+6. No personal data, no real client examples. Worked examples use obviously fictional people.
 
 ## Attribution and license
-- The guide is published under a project name, not a personal name. The site names no personal name, employer, credentials, or licenses anywhere, on pages or in metadata. Its author is described only by [AUTHOR LINE].
+- The guide is published under a project name, not a personal name. The site names no personal name, employer, credentials, or licenses anywhere, on pages or in metadata. Its author is described only by: written by someone with more than fifteen years of hands-on experience inside wealth management and investment advisory, working from public primary sources.
 - Prose is CC BY 4.0 and code is MIT. This is stated on /about and in README.
 - The About page carries one sentence of the landing-page disclaimer as plain prose, not the full Callout. This is intentional.
 
 ## Structure
 Top-level sections, in this sidebar order:
 1. introduction
-2. process — the steps of [PROCESS NAME], one folder per step
-3. domains — the knowledge areas, one folder per area
+2. process — the steps of The Adoption Path, one folder per step
+3. domains — the knowledge areas (Firm Functions), one folder per area
 4. tools — calculators, checklists, worksheets
 5. glossary
 6. about
 
-Step and area names are provided by the owner in prompts; do not rename or reorder them. Slugs are lowercase-kebab-case and match the folder name.
+The Adoption Path steps (title | slug):
+1. Decide What AI Is For | decide-what-ai-is-for
+2. Map the Rules That Apply | map-the-rules-that-apply
+3. Sort Your Data | sort-your-data
+4. Vet and Choose Tools | vet-and-choose-tools
+5. Write the AI Policy | write-the-ai-policy
+6. Build the Workflows | build-the-workflows
+7. Handle Client-Facing Use | handle-client-facing-use
+8. Review and Keep Records | review-and-keep-records
+
+Firm Functions (title | slug):
+- Advice and Planning Work | advice-and-planning-work
+- Client Communication and Marketing | client-communication-and-marketing
+- Operations and Back Office | operations-and-back-office
+- Compliance and Supervision | compliance-and-supervision
+- Data Privacy and Security | data-privacy-and-security
+- Records and Documentation | records-and-documentation
+- Vendor Oversight | vendor-oversight
+- Prompting and Review Skills | prompting-and-review-skills
+
+Step and area names are final; do not rename. Slugs are lowercase-kebab-case and match the folder name.
 
 ## Stack
 - Nextra 4, nextra-theme-docs, Next.js App Router, MDX in content/
@@ -78,7 +76,7 @@ Step page skeleton:
 6. "Questions to ask yourself"
 7. "Common mistakes"
 8. "Which knowledge areas apply" — links to 2–4 area pages, one line each on why it applies at this step.
-9. "For practitioners" — a Callout, 3–6 sentences: what you are doing with the client at this step and what to document.
+9. "At a larger firm" — a Callout, 3–6 sentences: what changes for the adviser at a larger firm — supervision, approvals, existing vendor stack.
 10. "Next step" — one link to the following step page. The last step links back to the first.
 
 Area page skeleton:
@@ -88,18 +86,17 @@ Area page skeleton:
 4. "Key ideas" — 4–7 H3 subsections, one concept each.
 5. "Where it shows up in the process" — links to the relevant step pages.
 6. "Common misconceptions"
-7. "For practitioners" — a Callout, same treatment as above.
-8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources: statutes and regulations, agency publications, standards bodies, and academic papers cited by DOI. Fill in the topic's own sources here, naming the specific agencies and bodies the guide relies on.
+7. "At a larger firm" — a Callout, same treatment as above.
+8. "Go deeper" — 2–6 links, prefer fewer, to public primary sources: statutes and regulations, agency publications, standards bodies, and academic papers cited by DOI. Primary sources for this topic: the Investment Advisers Act and rules under it; SEC releases, risk alerts, and staff guidance; state securities regulator publications and NASAA model rules; FINRA notices where they bear on dual registrants; the NIST AI Risk Management Framework; vendor terms-of-service, data-handling, and pricing pages read for what they say.
 
 Conventions for both:
-- 700–1,000 words. Word count means body prose only — headings, tables, the Callout title, and Go deeper link titles are excluded.
-- Measure with pnpm wordcount <path>.
+- Measure with pnpm wordcount <path>. See Length below for the soft range.
 - Second person, plain English. No jargon without a one-line explanation.
 - Headings are plain nouns or short questions. H2 for the numbered sections above, H3 within them.
 - No disclaimer on individual pages; it lives on the landing pages only.
-- Area pages never print yearly-changing figures — limits, thresholds, rates, deadlines. Where a figure is relevant, name the concept in plain language and link to /tools/this-years-figures (for example: 'up to the yearly limit — see this year's figures'). That page holds every number with its year and primary source and is updated once a year. Every 'Go deeper' link must be fetched and confirmed live before the PR is opened; any link that cannot be confirmed is marked [VERIFY] in the report. The rule covers figures set by law, regulation, or an agency. Round hypothetical numbers in a worked example ('200 units a month for ten years') are fine and encouraged.
+- Area pages never print yearly-changing figures — limits, thresholds, rates, deadlines — or platform-set figures such as pricing, data-retention windows, and context or usage limits. Where a figure is relevant, name the concept in plain language and link to /tools/this-years-figures (for example: 'up to the yearly limit — see this year's figures'). That page holds every number with its year and primary source and is updated once a year. Every 'Go deeper' link must be fetched and confirmed live before the PR is opened; any link that cannot be confirmed is marked [VERIFY] in the report. Round hypothetical numbers in a worked example ('200 units a month for ten years') are fine and encouraged.
 - Links to the U.S. Code use the granuleid form: https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-titleNN-sectionNNNN&num=0&edition=prelim (substitute the title and section). The "title:NN section:NNN" form is not used.
-- Row schema on /tools/this-years-figures: one figure per row, columns Concept | What it governs | Value | Year | Source, grouped under one H2 per knowledge area with a stable id (`## [AREA LABEL] [#slug]`) in the site's order. A figure appears once, under the area it fits best. Every Value comes from a fetched primary source or reads VERIFY; never fill a Value from memory.
+- Row schema on /tools/this-years-figures: one figure per row, columns Concept | What it governs | Value | Year | Source, grouped under one H2 per Firm Function with a stable id (`## Firm Function [#slug]`) in the site's order. A figure appears once, under the area it fits best. Every Value comes from a fetched primary source or reads VERIFY; never fill a Value from memory.
 - Figures that vary by state: Value reads "Varies by state", Year is blank, and Source links a federal locator page if one exists or otherwise names the state office in plain text ("Your state's licensing board"). Never build a per-state table.
 - Figures fixed by statute that do not change yearly still get a row: Year reads "Set by statute" and Source links the statute or the agency page.
 - Internal links use the site's existing slugs. Check the actual paths under content/ before writing a link.
@@ -110,14 +107,17 @@ Worksheet page (tools):
 - Path: `content/tools/<slug>/index.mdx`, one folder per page.
 - 700–1,000 words of body prose, tables excluded. Measure with pnpm wordcount <path>.
 - Second person, plain English.
-- H2 sections in this order, headings only: "What this measures", "Before you start", first input section, second input section, "The result", "What the number does and does not tell you", "What to do with it", "For practitioners" (Callout), then Related.
+- H2 sections in this order, headings only: "What this measures", "Before you start", first input section, second input section, "The result", "What the number does and does not tell you", "What to do with it", "At a larger firm" (Callout), then Related.
 - Input section names are worksheet-specific: name each for the two things the worksheet gathers.
 - Checklists use the same skeleton with the input sections named "Goals to consider" / "Your goals" and "The result" renamed "Your short list".
 - Tables have three columns at most so they render on a phone without horizontal scrolling.
 - No regulated figures. Name the concept and link the matching section of /tools/this-years-figures.
-- "For practitioners" is a Callout and comes last, followed only by the Related list.
+- "At a larger firm" is a Callout and comes last, followed only by the Related list.
 - No disclaimer.
 - Example values in tables and worked examples are round hypothetical numbers.
+
+## Length
+Soft ranges, body prose only, measured with pnpm wordcount: step pages 800–1,100; area pages 900–1,200; worksheet pages 700–1,000; landing pages 300–500. A page outside its range is first checked for a cross-reference that belongs in a linked list instead of prose; an accepted exception is recorded in FOLLOWUPS.md with the measured length, what was tried, and why it stands.
 
 ## How to work
 - Do exactly what the prompt asks. Do not add sections, pages, or features that were not requested.
@@ -126,10 +126,12 @@ Worksheet page (tools):
 - End every task with a "Report" section: what was created or changed (file paths), anything marked [VERIFY], anything you were unsure about, and the exact command to view the result.
 - Do only what the current prompt asks. Do not act on your own follow-up suggestions, and do not edit files outside the scope of the prompt, even to fix something you notice. List anything you would have done under a "Suggested follow-ups" heading at the end of your report and in the PR description, and leave it there.
 
+## FOLLOWUPS
+FOLLOWUPS.md at the repo root records anything deferred mid-build, one numbered item per entry. Append new items as they come up. When an item closes, append a status block above the original entry rather than deleting or rewriting it, and say so explicitly if the original entry's framing turns out to have been wrong.
+
 ## Glossary
 One page at /glossary, alphabetical. Every term is an H3 with an explicit id: `### Term [#term-id]`. The id is the term in lowercase, spaces and slashes replaced with hyphens, all other punctuation dropped, no leading or trailing hyphens. Definitions are 1 to 3 sentences with no regulated figures; where a term turns on one, link the matching section of /tools/this-years-figures by anchor. Same-page cross-references (`[other term](#other-term-id)`) are allowed sparingly.
 Links to glossary terms from any page use the anchor form /glossary#term-id; a plural link text maps to the singular term's id.
 
 ## Glossary running list
 Every term that any page links to /glossary. Add a term here when a new page links it. Future prompts reference this list instead of restating it.
-
