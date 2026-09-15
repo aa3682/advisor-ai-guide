@@ -1,0 +1,77 @@
+---
+title: Sort Your Data
+description: How to classify what the firm holds and match each tier to what a tool is allowed to do with it, before you vet anything.
+---
+
+import { Callout } from 'nextra/components'
+
+# Sort Your Data
+
+This is the third step in The Adoption Path. Before vetting a single tool, you decide what information may go into which kind of tool. Most AI compliance problems in a small firm are not a bad answer from a model — they are data problems in disguise: client information typed into a tool that keeps it, trains on it, or shares it with people never meant to see it. Sort the data first, and "can we use this tool?" becomes a question with a short answer.
+
+## Why it matters
+
+Without a sorted view of the firm's own information, every tool decision becomes a one-off judgment call, made under time pressure. That is the same pattern [Decide What AI Is For](/process/decide-what-ai-is-for) and [Map the Rules That Apply](/process/map-the-rules-that-apply) exist to prevent for use cases and duties, and it applies just as much to data. Sort the data once, and every later question — is this use allowed, does this tool qualify, does a client's information need to be de-identified first — has an answer you can point to instead of a decision made fresh each time.
+
+## What actually happens
+
+### Sort the firm's information into tiers
+
+Use four tiers — the guide's own plain-language framing, not a regulator's classification scheme. **Public** is information already published, with no client in it. **Internal** is the firm's own material — templates, procedures, internal drafts — with no client information in it either. **Client-identifying** is anything tied to a specific person: names, account numbers, holdings, dates of birth, contact details, and anything the [SEC's safeguarding rule for customer information](https://www.ecfr.gov/current/title-17/chapter-II/part-248/subpart-A/subject-group-ECFR83262a0bce5ffaa/section-248.30) [VERIFY] — or, for a state-registered firm, the state's own version, usually modeled on this federal framework — treats as nonpublic personal information. **Restricted** is client-identifying information the firm has promised, in writing or by rule, to handle a specific way: information received under another party's confidentiality terms, for example. Four tiers, no more; a fifth or sixth usually means two are being kept separate that do not need to be.
+
+### Sort tools by what they do with what you type
+
+Tools split into a few categories by what happens to what you type into them. A free, consumer version of a general-purpose tool often keeps inputs by default and may use them to improve the service unless that is turned off. A paid business tier of the same tool typically contracts not to train on inputs and gives the firm some control over retention. A tool used under a signed agreement, where the vendor acts as the firm's service provider, carries whatever terms that agreement sets. An advisor-specific platform has usually already made these commitments part of the product itself. None of this can be judged from a tool's reputation or marketing page — read its own terms-of-service and data-handling pages for what they actually say, the only reliable source. Any specific retention window or plan-level limit found there is a figure, not something to repeat here — see [this year's figures](/tools/this-years-figures#data-privacy-and-security) instead.
+
+### Build the matrix
+
+The output of this step is a one-page grid: the four data tiers down one side, the tool categories across the top, and a plain answer in each cell — yes, only after de-identifying, or no. The shape looks something like this, filled in with round hypothetical entries rather than your own firm's actual matrix:
+
+| Data tier | Tool category | Typical answer |
+|---|---|---|
+| Public | Any tool | Yes |
+| Internal, no client information | Consumer tool | Yes |
+| Client-identifying | Consumer tool | No — de-identify first |
+| Client-identifying | Signed-agreement or business-tier tool | Yes, if the agreement covers this use |
+| Restricted | Any general-purpose tool | No |
+
+The [Sorting Your Data worksheet](/tools/sorting-your-data) walks through building this grid step by step. Update it whenever a tool's terms change or a new one is added — a stale matrix is worse than none, since it still looks current.
+
+### De-identify before you prompt
+
+Set the rule plainly: client-identifying information reaches a general-purpose tool only in de-identified form. Be honest about what de-identifying means — removing a name is not the same as removing the person. A combination of a client's age, town, employer, and approximate account size can identify someone almost as surely as a name would, especially in a small practice with a few clients who fit an unusual profile. De-identifying is a real safeguard, not a complete one; where identity genuinely cannot be separated from the question being asked, the answer is not de-identification, it is a tool already cleared for client-identifying information.
+
+### Look past the prompt box
+
+Data leaves the firm through more than a chat window. Uploaded files, a drive or mailbox connected to a tool, a browser extension reading what is on screen, a meeting note-taker recording a client call, and an automation platform passing data between tools all move information the same way typing does. The matrix covers every one of these paths, not just the ones that look like a conversation — a connected mailbox left off it is a gap, even if nobody ever typed a client's name into a prompt.
+
+## Questions to ask yourself
+
+- Which tier does each type of information the firm handles fall into — and would a colleague sort it the same way?
+- For each tool in current or proposed use, have you actually read its terms-of-service and data-handling pages, or are you going on reputation?
+- Does the matrix cover every path data can take out of the firm, not just the chat window you use most?
+- If de-identifying is the answer for a use, what did you actually remove — just a name, or everything that could re-identify the client?
+- When did you last check whether a tool's terms changed?
+
+## Common mistakes
+
+- Assuming "not used for training" means "not retained" — a tool can promise one and still do the other.
+- Treating the assistant's own tool accounts as outside the matrix, because "policy" quietly gets read as being about advisers.
+- De-identifying the name and stopping there, when other details in the same text can still identify the client.
+- Sorting the data once and never re-sorting when a tool's terms change.
+- Forgetting that the firm's own drafts and notes about a client are client-identifying, not internal, just because the firm wrote them.
+
+## Which Firm Functions apply
+
+- [Data Privacy and Security](/domains/data-privacy-and-security): The tiers and the matrix are this Firm Function's main tool for deciding what data may go where.
+- [Vendor Oversight](/domains/vendor-oversight): Sorting tools by category here is the first pass vendor oversight checks in more depth later.
+- [Records and Documentation](/domains/records-and-documentation): The matrix and the tiers it is built on are records the firm should be able to produce.
+- [Operations and Back Office](/domains/operations-and-back-office): Many of the safest entries in the matrix — public and internal data — come from back-office work.
+
+<Callout type="info">
+At a larger firm, a classification scheme for firm information usually already exists in the information-security policy — it just was not written with AI tools in mind. The job is not to invent a parallel scheme; it is to find the existing one, map your AI uses onto its tiers, and raise any gap with whoever owns that policy rather than deciding it yourself.
+</Callout>
+
+## Next step
+
+[Vet and Choose Tools](/process/vet-and-choose-tools): With the tiers and the matrix in hand, evaluate specific tools against what they are actually allowed to touch.
