@@ -1,7 +1,7 @@
 export default {
   introduction: 'Introduction',
-  process: '[PROCESS NAME]',
-  domains: 'Knowledge areas',
+  process: 'The Adoption Path',
+  domains: 'Firm Functions',
   tools: 'Tools',
   glossary: 'Glossary',
   about: 'About'
