@@ -1,3 +1,3 @@
 export default {
-  'example-area': 'Example area'
+  'advice-and-planning-work': 'Advice and Planning'
 }

@@ -135,3 +135,6 @@ Links to glossary terms from any page use the anchor form /glossary#term-id; a p
 
 ## Glossary running list
 Every term that any page links to /glossary. Add a term here when a new page links it. Future prompts reference this list instead of restating it.
+
+- Fiduciary duty [#fiduciary-duty] — linked from content/domains/advice-and-planning-work/index.mdx, content/process/decide-what-ai-is-for/index.mdx
+- Hallucination [#hallucination] — linked from content/domains/advice-and-planning-work/index.mdx

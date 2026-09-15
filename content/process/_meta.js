@@ -1,3 +1,3 @@
 export default {
-  'example-step': 'Example step'
+  'decide-what-ai-is-for': 'What AI Is For'
 }
