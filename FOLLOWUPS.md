@@ -28,6 +28,8 @@ This file records anything deferred mid-build, one numbered item per entry. New 
 
 4. `content/domains/advice-and-planning-work/index.mdx` — the first area page — landed ahead of its build-order prompt: it was written on a loose "go ahead with step 3" request rather than a scoped, chat-authored brief, and that fact was not called out as a deviation in the PR report at the time it was added. Its four "Go deeper" links were verified via `WebSearch` corroboration inside the session, not a direct fetch (this session's network egress blocks direct fetches to arbitrary domains, confirmed against both `sec.gov` and `vercel.app`); the `[VERIFY]` tags were removed on that basis. All four were independently fetch-confirmed in chat on 2026-09-15, including that the SEC's predictive-data-analytics rule (S7-12-23) is accurately described as withdrawn. No further action needed on this item; it's a record of how the page was produced and verified, not an open task.
 
+**Status (build-order 19):** `content/domains/records-and-documentation/index.mdx` has landed — the sixth of eight Firm Function pages. Its line in the consolidated checklist below is struck through and annotated, matching build-order 14 through 17. `content/domains/_meta.js` now carries six entries in site order. Two Firm Functions and two Tools remain open. Items 6, 7, and 8 untouched.
+
 **Status (build-order 17):** `content/domains/data-privacy-and-security/index.mdx` has landed — the fifth of eight Firm Function pages. Its line in the consolidated checklist below is struck through and annotated, matching build-order 14, 15, and 16. `content/domains/_meta.js` now carries five entries in site order. Three Firm Functions and two Tools remain open. Item 6 untouched.
 
 **Status (build-order 16):** `content/domains/compliance-and-supervision/index.mdx` has landed — the fourth of eight Firm Function pages. Its line in the consolidated checklist below is struck through and annotated, matching build-order 14 and 15. `content/domains/_meta.js` now carries four entries in site order. Four Firm Functions and two Tools remain open. Item 6 untouched.
@@ -46,7 +48,7 @@ This file records anything deferred mid-build, one numbered item per entry. New 
    - ~~`data-privacy-and-security` — linked from `map-the-rules-that-apply`, `sort-your-data`, `vet-and-choose-tools`~~ — **landed, build-order 17**
    - ~~`operations-and-back-office` — linked from `decide-what-ai-is-for`, `sort-your-data`~~ — **landed, build-order 15**
    - `prompting-and-review-skills` — linked from `decide-what-ai-is-for`, `build-the-workflows`
-   - `records-and-documentation` — linked from `map-the-rules-that-apply`, `sort-your-data`, `write-the-ai-policy`, `build-the-workflows`, `review-and-keep-records`
+   - ~~`records-and-documentation` — linked from `map-the-rules-that-apply`, `sort-your-data`, `write-the-ai-policy`, `build-the-workflows`, `review-and-keep-records`~~ — **landed, build-order 19**
    - `vendor-oversight` — linked from `sort-your-data`, `vet-and-choose-tools`
 
    **Tools** (2 linked from step pages so far; `this-years-figures` already exists and is not listed):
