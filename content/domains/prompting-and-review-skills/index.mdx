@@ -1,0 +1,62 @@
+---
+title: Prompting and Review Skills
+description: Why checking AI output is the harder skill, what a useful check actually looks at, and why review has to be a firm capability rather than a personal knack.
+---
+
+import { Callout } from 'nextra/components'
+
+# Prompting and Review Skills
+
+This Firm Function is not a prompting tutorial — there are good ones elsewhere. What belongs here is narrower: what does a person need to be good at so that AI output can pass through their hands and come out safe to file, send, or rely on. [Build the Workflows](/process/build-the-workflows) owns where the review sits and who performs it. This page is about what the reviewer is actually doing when they do it well, and why that is the harder half.
+
+## Key ideas
+
+### Review is the binding skill, not prompting
+
+Prompting is learnable quickly because the feedback is immediate: a poor prompt produces an obviously unhelpful answer and you try again. Review has no such loop. A poor review produces a document that looks fine and goes out, and you find out much later or never. The firm's exposure runs through the second one: nothing in the firm's obligations turns on how the adviser asked, and everything turns on what the firm sent, filed, or acted on. Getting better at prompting improves the drafts. Getting better at review decides whether a bad one is caught.
+
+### AI output defeats the review habit you already have
+
+Ordinary review is calibrated by appearance, and usually that works: a rushed draft signals where to look — the hedged sentence, the number typed in a hurry, the paragraph that trails off. AI output carries no such signals. A sentence containing a fabricated citation reads with exactly the fluency of the correct sentence beside it, because fluency is what these tools produce reliably and accuracy is what they produce incidentally. A [hallucination](/glossary#hallucination) is not a badly written sentence. It is a well-written wrong one in a document where everything is equally well written, so a reviewer distributing attention the way they always have is following a signal that is gone.
+
+### Check what you did not supply
+
+Verification has a usable shape, and it is mechanical rather than a matter of care. Split the output into what you gave the tool and what the tool added. What you supplied — the client's figures, the dates, the terms of the existing plan — the tool can misuse, but cannot invent. What it added is the exposure: a number, a rule, a citation, a threshold, from a store you cannot inspect. Anything the output asserts that did not come in with the prompt needs a source you can check. It is quick, and it can be handed to someone else. Where the output is going to a client, [Handle Client-Facing Use](/process/handle-client-facing-use) names what the check has to cover on top of this.
+
+### You can only review what you already know
+
+This constraint decides where AI belongs in an advisory practice, and it runs opposite to the temptation. Noticing a wrong answer requires knowing enough to notice it; you cannot verify what you could not have produced yourself. The output you are best equipped to check is the output in your strongest area, where a wrong figure or a mis-stated rule jumps off the page. The output you are least equipped to check is the one you asked for precisely because it sits outside what you know — and that is where the pull always is. The rule that follows is not "stay inside your competence." It is that out at the edges of it, AI can be the drafter but not the source, and the source has to be something you can read.
+
+### Supplying context beats asking for knowledge
+
+This is the one prompting principle worth stating here, and it follows from the idea above rather than from any style guide. Asking a tool what a rule requires invites it to produce knowledge out of a store you cannot audit. Giving it the rule, the client's facts, or the firm's template, and asking it to work with what you supplied, keeps the material inside the boundary of things you can check. The first kind of prompt makes the tool a source. The second makes it a drafter working on your material — the difference between a five-minute check and researching the answer yourself.
+
+### Review decays when the output is usually right
+
+A check performed a hundred times without finding anything stops being a check. That is not a character flaw and not specific to these tools — it is how attention behaves toward a process that is reliable most of the time, and among the better-documented findings in the research on people monitoring automation. It bites here because a tool that is wrong only occasionally produces the pattern that erodes review fastest: right often enough to teach you the check is unnecessary, wrong rarely enough that the one you wave through is the one that matters. [Compliance and Supervision](/domains/compliance-and-supervision) argues that for supervision generally — a decision made in advance beats judgment in the moment. The same holds for attention. The review that survives the eightieth pass is the one built into the workflow with a defined thing to look at.
+
+### It is a firm capability, not a personal talent
+
+Review treated as something a conscientious adviser simply does exists only while that person is doing it, and vanishes on a busy week. What makes it a capability the firm has is that the standard is written down: which uses require a check, what the check is against, and what happens when it fails. That is [Write the AI Policy](/process/write-the-ai-policy)'s job, and it is why "everyone here is careful" is not an answer. In a two-person firm it covers the assistant as much as the adviser, since output produced under anyone's hands leaves the building as the firm's work.
+
+## Where it shows up in the process
+
+- [Decide What AI Is For](/process/decide-what-ai-is-for): The uses worth adopting are the ones whose output the firm can actually check — a question about what the firm knows rather than what the tool can do.
+- [Build the Workflows](/process/build-the-workflows): The prompt template and the named review point are where these skills stop being personal habits and become a step another person can follow.
+- [Write the AI Policy](/process/write-the-ai-policy): The policy is where the standard gets stated once, so it holds when the week is busy or the reviewer changes.
+
+## Common misconceptions
+
+- "Better prompting removes the need to review." Prompting changes what you get, not whether what you got is true — and a better prompt makes a wrong answer more convincing rather than less.
+- "If something's wrong, I'll notice." You will notice what reads as wrong. The failure here is output that reads exactly right and is not.
+- "I'll spot-check a sample." Sampling tells you how often the tool is wrong. It does not tell you about this one — and where each output goes to a different client, this one is all that matters.
+- "AI helps most where I know least." That is where it feels most useful and where you are least able to tell whether it worked, which is the same sentence read twice.
+
+<Callout type="info">
+At a larger firm, the review standard arrives as a requirement rather than a habit: a named check, a second reviewer for certain categories, sometimes a system that holds work until someone signs. The adviser's own skill is still the binding constraint, but it operates inside something that catches a share of what one person misses,. The risk shifts with it: where a formal step exists, it becomes easy to treat the check as performed because the step was completed, and signing is cheaper than verifying. A small firm has the opposite problem and the opposite advantage — nothing at all catches a missed review, and nobody can mistake someone else's approval for their own.
+</Callout>
+
+## Go deeper
+
+- [AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework), National Institute of Standards and Technology (2023) — its Measure and Manage functions treat evaluating an AI system's output as a defined, repeated activity with named responsibility, which is this page's argument about review being a capability rather than a disposition.
+- [VERIFY] Raja Parasuraman and Dietrich H. Manzey, "Complacency and Bias in Human Use of Automation: An Attentional Integration," *Human Factors* 52(3), 381–410 (2010), [doi:10.1177/0018720810376055](https://journals.sagepub.com/doi/10.1177/0018720810376055) — the experimental literature behind the sixth idea above: how monitoring of an automated system that is usually correct degrades with exposure, and why that degradation is a property of attention rather than of the individual.
