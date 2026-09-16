@@ -3,5 +3,6 @@ export default {
   'client-communication-and-marketing': 'Communication and Marketing',
   'operations-and-back-office': 'Operations',
   'compliance-and-supervision': 'Compliance',
-  'data-privacy-and-security': 'Data and Privacy'
+  'data-privacy-and-security': 'Data and Privacy',
+  'records-and-documentation': 'Records'
 }
