@@ -28,6 +28,8 @@ This file records anything deferred mid-build, one numbered item per entry. New 
 
 4. `content/domains/advice-and-planning-work/index.mdx` — the first area page — landed ahead of its build-order prompt: it was written on a loose "go ahead with step 3" request rather than a scoped, chat-authored brief, and that fact was not called out as a deviation in the PR report at the time it was added. Its four "Go deeper" links were verified via `WebSearch` corroboration inside the session, not a direct fetch (this session's network egress blocks direct fetches to arbitrary domains, confirmed against both `sec.gov` and `vercel.app`); the `[VERIFY]` tags were removed on that basis. All four were independently fetch-confirmed in chat on 2026-09-15, including that the SEC's predictive-data-analytics rule (S7-12-23) is accurately described as withdrawn. No further action needed on this item; it's a record of how the page was produced and verified, not an open task.
 
+**Status (build-order 15):** `content/domains/operations-and-back-office/index.mdx` has landed — the third of eight Firm Function pages. Its line in the consolidated checklist below is struck through and annotated, matching the treatment used at build-order 14. `content/domains/_meta.js` now carries three entries in site order (`advice-and-planning-work`, `client-communication-and-marketing`, `operations-and-back-office`). Five Firm Functions and two Tools remain open.
+
 **Status (build-order 14):** `content/domains/client-communication-and-marketing/index.mdx` has landed — the second of eight Firm Function pages, and the first built from a scoped content brief. Its line in the consolidated checklist below is struck through and annotated rather than removed, so the original target list stays readable. `content/domains/_meta.js` now carries two entries (`advice-and-planning-work`, `client-communication-and-marketing`). Six Firm Functions and two Tools remain open.
 
 5. **Step pages complete; consolidated checklist below stays open.** All eight step pages of The Adoption Path are now built (`decide-what-ai-is-for` through `review-and-keep-records`), completing the step-page build-order phase that began at build-order 2. `content/process/_meta.js` lists all eight in the exact order given in CLAUDE.md's Structure section, and no `example-step` files or `_meta.js` entries remain anywhere under `content/process/`. Every step-to-step link across all eight pages now resolves; none point at another step page that doesn't exist.
@@ -38,7 +40,7 @@ This file records anything deferred mid-build, one numbered item per entry. New 
    - ~~`client-communication-and-marketing` — linked from `map-the-rules-that-apply`, `handle-client-facing-use`~~ — **landed, build-order 14**
    - `compliance-and-supervision` — linked from `decide-what-ai-is-for`, `map-the-rules-that-apply`, `vet-and-choose-tools`, `write-the-ai-policy`, `handle-client-facing-use`, `review-and-keep-records`
    - `data-privacy-and-security` — linked from `map-the-rules-that-apply`, `sort-your-data`, `vet-and-choose-tools`
-   - `operations-and-back-office` — linked from `decide-what-ai-is-for`, `sort-your-data`
+   - ~~`operations-and-back-office` — linked from `decide-what-ai-is-for`, `sort-your-data`~~ — **landed, build-order 15**
    - `prompting-and-review-skills` — linked from `decide-what-ai-is-for`, `build-the-workflows`
    - `records-and-documentation` — linked from `map-the-rules-that-apply`, `sort-your-data`, `write-the-ai-policy`, `build-the-workflows`, `review-and-keep-records`
    - `vendor-oversight` — linked from `sort-your-data`, `vet-and-choose-tools`
@@ -48,3 +50,9 @@ This file records anything deferred mid-build, one numbered item per entry. New 
    - `vetting-a-vendor` — linked from `vet-and-choose-tools`
 
    This item stays open until the Firm Function and Tool pages above land.
+
+6. `content/process/sort-your-data/index.mdx` lists Operations and Back Office under "Which Firm Functions apply" with the line: "Many of the safest entries in the matrix — public and internal data — come from back-office work." That is accurate, but it invites the assumption that back-office work is *where the public and internal tiers live* — which is exactly the assumption [Operations and Back Office](/domains/operations-and-back-office) exists to complicate, since meeting transcripts, billing files, calendars, and system exports all carry client identity while feeling clerical.
+
+   **This is a breadth mismatch, not a contradiction, and neither page is currently wrong.** Back-office work genuinely does supply many of the safest matrix entries *and* some of the most sensitive; both statements hold at once. The step page asserts only the first and does not deny the second. Flagged because a reader moving from the step page to the area page may experience the area page's sharpest point as a correction rather than an extension.
+
+   Revisit in the build-order 5 consistency pass, when cross-page framing gets reviewed as a whole. Possible resolution is a few words on the step page acknowledging that back office also supplies client-identifying inputs — but that is an edit to a merged page and should be decided in that pass, not piecemeal here.
