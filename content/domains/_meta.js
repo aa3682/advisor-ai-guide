@@ -5,5 +5,6 @@ export default {
   'compliance-and-supervision': 'Compliance',
   'data-privacy-and-security': 'Data and Privacy',
   'records-and-documentation': 'Records',
-  'vendor-oversight': 'Vendors'
+  'vendor-oversight': 'Vendors',
+  'prompting-and-review-skills': 'Prompting and Review'
 }
