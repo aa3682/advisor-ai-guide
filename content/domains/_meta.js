@@ -4,5 +4,6 @@ export default {
   'operations-and-back-office': 'Operations',
   'compliance-and-supervision': 'Compliance',
   'data-privacy-and-security': 'Data and Privacy',
-  'records-and-documentation': 'Records'
+  'records-and-documentation': 'Records',
+  'vendor-oversight': 'Vendors'
 }
