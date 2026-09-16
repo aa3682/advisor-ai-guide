@@ -140,7 +140,7 @@ Soft ranges, body prose only, measured with pnpm wordcount: step pages 800–1,1
 FOLLOWUPS.md at the repo root records anything deferred mid-build, one numbered item per entry. Append new items as they come up. When an item closes, append a status block above the original entry rather than deleting or rewriting it, and say so explicitly if the original entry's framing turns out to have been wrong.
 
 ## Glossary
-One page at /glossary, alphabetical. Every term is an H3 with an explicit id: `### Term [#term-id]`. The id is the term in lowercase, spaces and slashes replaced with hyphens, all other punctuation dropped, no leading or trailing hyphens. Definitions are 1 to 3 sentences with no regulated figures; where a term turns on one, link the matching section of /tools/this-years-figures by anchor. Same-page cross-references (`[other term](#other-term-id)`) are allowed sparingly.
+One page at /glossary, alphabetical. Every term is an H3 with an explicit id: `### Term [#term-id]`. The id is the term in lowercase, with spaces and slashes replaced by hyphens and hyphens already in the term kept as they are; all other punctuation is dropped, and there are no leading or trailing hyphens. Definitions are 1 to 3 sentences with no regulated figures; where a term turns on one, link the matching section of /tools/this-years-figures by anchor. Same-page cross-references (`[other term](#other-term-id)`) are allowed sparingly, and only where the linked term is part of the entry's own definition rather than background it merely touches on.
 Links to glossary terms from any page use the anchor form /glossary#term-id; a plural link text maps to the singular term's id.
 Link a term at its first use on every page, including when that first use is in a table cell.
 
