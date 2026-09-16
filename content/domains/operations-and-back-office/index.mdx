@@ -1,0 +1,59 @@
+---
+title: Operations and Back Office
+description: Why back-office work is usually the safest place for a small firm to start with AI, and the three specific ways that safety quietly stops holding.
+---
+
+import { Callout } from 'nextra/components'
+
+# Operations and Back Office
+
+This Firm Function covers the work that keeps the firm running rather than the work clients think they are buying: scheduling, inbox triage, meeting notes and transcription, billing and fee calculation, onboarding paperwork, data entry into the client system, custodian form prep, report assembly, internal research summaries, and expense and vendor admin. It is where most small firms start with AI, and starting here is usually the right call. The reason it is the right call is narrower than it feels, though, and knowing exactly what makes back-office work safe is what tells you when it has stopped being safe.
+
+## Key ideas
+
+### What actually makes this the right first move
+
+The useful safety property is not that back-office work is unimportant. It is that the output has an internal reader who already knows what the right answer looks like. When a tool mangles a calendar entry or garbles a form, the person holding it notices immediately, because they know what they asked for. Errors surface within minutes, and the cost of one is rework rather than a wrong recommendation reaching a client. A short feedback loop and a cheap failure mode — that is the whole of it. This is the operational reason a firm's first use-case inventory fills up with back-office tasks, and it is a good reason. It is also a conditional one: each of the three ideas below is a case where one of those two conditions quietly stops holding.
+
+### "Internal" does not mean "no client data"
+
+This is the sharpest point on the page. Meeting transcription is the clearest case — an operational task whose input is the single most sensitive conversation the firm has all week. Calendar entries carry client names and often the reason for the meeting. Billing files carry account values. Onboarding forms carry identity documents. An export from the client system carries all of it at once. The task feels clerical, so the data gets treated as clerical, and a firm that classified its information carefully in [Sort Your Data](/process/sort-your-data) and then quietly exempted "just the back office" has undone the classification it just did. The tier a piece of information sits in follows the information, not the errand it is attached to. See [Data Privacy and Security](/domains/data-privacy-and-security) for what follows from the tier.
+
+### Assistance and automation are different things
+
+An assistant drafts and a person sends. An automation platform acts on its own. The distinction matters more here than anywhere else in the firm, because "it just runs" is exactly what makes operations automation appealing — the appeal is precisely the removal of the person who was catching the errors. Fee calculation is the worked case: arithmetic that feeds client billing, where an unreviewed automated output is a money error and a records problem at the same time. Records of what the firm billed and how it was calculated have to be kept, and for how long is a figure rather than something to state here — see [this year's figures](/tools/this-years-figures#records-and-documentation). Automating a task does not move responsibility for its output anywhere; it removes the step that used to catch the output being wrong.
+
+### Notes are not records because a tool stores them
+
+If a meeting summary documents advice given, it may be a record the firm owes — and "the vendor keeps a copy" is not the firm keeping it. The firm has to be able to produce it on its own, on request, without depending on a subscription that may lapse or an account that may be closed. A second problem rides along with the first: a summary is a rewrite, not a transcript, and a [hallucination](/glossary#hallucination) in a meeting summary looks like a sentence attributed to a client who never said it. That is a bad thing to have in a file for years, and a worse thing to discover is the only version the firm kept. See [Records and Documentation](/domains/records-and-documentation) for what the obligation covers.
+
+### In a firm of two, the supervisor is not the operator
+
+In a solo-plus-assistant practice, the assistant is usually the one who finds the tool, adopts it, and uses it daily — because the work it helps with is theirs. The supervision obligation does not follow the person doing the work. The adviser is still responsible for what the firm's tools do with the firm's data, including tools they have personally never opened. This gap is easy to leave open because nothing about it feels like a decision — nobody chose to leave the assistant's tooling unsupervised, it simply never came up. See [Compliance and Supervision](/domains/compliance-and-supervision) for the obligation itself.
+
+### Concentration risk is a small-firm specialty
+
+A firm that routes scheduling, meeting notes, billing, and inbox triage through one general-purpose tool has turned a single vendor's outage, price change, or terms change into a firm-wide operations failure — all at once, on a day nobody picked. The small-firm pattern makes this likely, because one capable tool tends to absorb every task it plausibly fits rather than being chosen task by task. The exposure is not only downtime: a terms change that alters how a vendor handles inputs hits every one of those workflows at once. See [Vendor Oversight](/domains/vendor-oversight).
+
+## Where it shows up in the process
+
+- [Decide What AI Is For](/process/decide-what-ai-is-for): Back-office tasks dominate a first inventory for the reason given above, so this is where to write the task down specifically rather than listing "admin" and losing the detail that determines how it gets handled.
+- [Sort Your Data](/process/sort-your-data): Sorting is where the back office's comfortable assumption gets tested, because that is the point at which a transcription or billing task has to declare what it actually touches.
+- [Build the Workflows](/process/build-the-workflows): Operational tasks are the most repeated work in the firm, so they gain the most from a written template and a named review point — and they are where the choice between assisting and automating actually gets made.
+
+## Common misconceptions
+
+- "Back office is internal, so client data isn't really involved." Transcripts, calendars, billing files, and system exports all carry client identity; the errand being clerical does not make its contents clerical.
+- "It's just formatting and admin, so no one needs to review the output." Review is what made back-office work safe to begin with. Removing it does not leave a safe task; it leaves an unreviewed one.
+- "The tool keeps a transcript, so we have the record." The firm has the record when the firm can produce it. A copy that lives only in a vendor's account is that vendor's copy.
+- "Once a task is automated, it runs itself." Automation moves the work, not the responsibility for its output. The firm still answers for what the automation produced.
+
+<Callout type="info">
+At a larger firm, the back office usually already runs on an approved vendor stack where data handling and retention were settled during procurement, long before anyone asked about AI. That changes the question from "can we use AI for this" to whether a general-purpose tool may sit alongside the approved stack at all — which is a shadow-IT question rather than an adoption question. An adviser who starts using a personal transcription tool because the approved one is worse is not making a tooling choice, they are making an unreviewed vendor decision on the firm's behalf. The honest move is to raise the gap with whoever owns the stack, even knowing the answer may be no for a while.
+</Callout>
+
+## Go deeper
+
+- [Books and records to be maintained by investment advisers, 17 CFR 275.204-2](https://www.ecfr.gov/current/title-17/chapter-II/part-275/section-275.204-2), eCFR — what has to be kept, which is what makes some back-office output a record rather than a convenience.
+- [Compliance procedures and practices, 17 CFR 275.206(4)-7](https://www.ecfr.gov/current/title-17/chapter-II/part-275/section-275.206(4)-7), eCFR — the requirement for written policies and procedures that operational tooling has to fit inside.
+- [AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework), National Institute of Standards and Technology (2023) — a general framework for the reliability and vendor-dependence risks described above.
