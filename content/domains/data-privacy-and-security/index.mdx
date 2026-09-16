@@ -1,0 +1,58 @@
+---
+title: Data Privacy and Security
+description: What the firm's duty to safeguard client information requires once a third-party model sits in the workflow.
+---
+
+import { Callout } from 'nextra/components'
+
+# Data Privacy and Security
+
+This Firm Function is about the obligation to protect client information and about the specific ways that information leaves a small firm when a third-party model is involved. It is not about how to classify the firm's data or how to evaluate a vendor — [Sort Your Data](/process/sort-your-data) and [Vet and Choose Tools](/process/vet-and-choose-tools) own those, and this page assumes both. What is left is the part neither covers: what the duty requires, and what actually happens to client information at the moment it goes into a tool.
+
+## Key ideas
+
+### The obligation
+
+The safeguards rule requires written policies and procedures addressing administrative, technical, and physical safeguards for client records and information. As the rule now stands it also requires an incident response program, including notification to individuals affected when their sensitive information has been accessed or used without authorization. Any deadline, window, or period attached to that is a figure rather than something to print here — see [this year's figures](/tools/this-years-figures#data-privacy-and-security). State breach-notification requirements also exist, and they vary from state to state.
+
+### Typing into a tool is a disclosure to a third party
+
+This is the center of the page and everything else follows from it. A chat box presents as a private workspace: a blank field, no recipient, no send button, nothing that looks like correspondence. It is none of those things. It is a transmission into a system the firm does not control, governed by that vendor's terms rather than by the firm's own policies. The interface is the problem — it borrows the visual grammar of a notes app while doing the thing an email does. A firm that would never paste a client's holdings into an email to an unknown recipient will do it in a chat box without the thought registering as a disclosure at all, because nothing in the moment signals that one happened.
+
+### Training and storage are different risks, and the asymmetry runs backwards
+
+These get collapsed together, and they should not be. Storage is a retention and access problem: the information sits somewhere specific, which means it can in principle be located, deleted, or produced on request. Training is different in kind. Information used to train folds into a model's weights, where it cannot be retrieved, deleted, audited, or shown to anyone — including the firm that sent it. A deletion request does not unwind training that already happened, because there is nothing discrete left to delete. That asymmetry runs opposite to the attention the two get: retention windows draw the scrutiny because they are concrete and countable, while the training term is the one with a genuinely irreversible failure mode. Settle it before adoption rather than after.
+
+### The output side, which firms underweight
+
+Two mechanics, both easy to miss because they involve no obvious moment of exposure. A shared workspace or team account can make anything one person puts in visible to everyone else on the account — which is a feature, and which means the assistant's inputs and the adviser's are in one pool by default. The second is prompt history. Whatever has been typed into a tool is retained as a conversation log, and that log is a store of client information sitting in a vendor's system under the firm's account. It is the data store nobody inventories: not on the firm's systems, not in the matrix, not in any list of where client information lives, and often not thought of as a store at all.
+
+### De-identification is weaker than it feels
+
+Stripping a name from a financial picture does not reliably make it unidentifiable. A specific portfolio, an employer, an age, and a city together can be enough to identify a person, and the more distinctive the situation, the less the name was doing. This is a caution about a common practice rather than a legal conclusion about what does or does not count as identifiable information — that line is not one this guide can draw for a particular case. The practical version: if a client would recognize themselves in the prompt, treat it as client information regardless of what was removed.
+
+### What an AI incident actually looks like
+
+The realistic exposure here is not an intrusion. It is a paste — an authorized person putting client information into an unauthorized tool, or using an approved tool for something it was not approved for. An incident response program written entirely around attackers will not recognize that as an incident, because nobody broke in and nothing appeared to go wrong. It also means the firm's controls in this area are policy and deliberate choice rather than technology, which is a real limitation and worth stating rather than papering over: a small firm mostly cannot prevent this, it can only decide in advance and then hold to the decision. [Compliance and Supervision](/domains/compliance-and-supervision) covers who carries that; [Vendor Oversight](/domains/vendor-oversight) covers the vendor side of it over time.
+
+## Where it shows up in the process
+
+- [Map the Rules That Apply](/process/map-the-rules-that-apply): Safeguarding is the duty most likely to be filed away as a technology concern rather than mapped as an obligation, which is why it belongs on the map with the others.
+- [Sort Your Data](/process/sort-your-data): That step decides what may go where; this page is about what "going" actually consists of once it happens.
+- [Vet and Choose Tools](/process/vet-and-choose-tools): The training question is the one to settle before adoption rather than after, because it is the one that cannot be walked back later.
+
+## Common misconceptions
+
+- "It isn't a breach if we put the information in ourselves." Authorization describes who did it, not where the information went. Sending it deliberately to a system that should not have it is still the information being somewhere it should not be.
+- "We turned training off, so what we already sent is fine." Changing the setting changes what happens next. It does nothing about what was already used.
+- "We removed the client's name, so it's anonymous." Removing the name removes one identifier, not the combination of details that surrounds it.
+- "The vendor holds a security certification, so client data is safe there." A certification describes the vendor's practices against some standard. It does not tell the firm what its own terms permit the vendor to do with what the firm sends.
+
+<Callout type="info">
+At a larger firm, this is enforced with technology: an approved-tools list applied at the device or network level, data-loss-prevention tooling that inspects what leaves, and a security function whose job includes knowing what did. The control does not depend on anyone remembering the policy in the moment. A small firm has none of that and substitutes a decision made in advance plus the discipline to keep it — which is genuinely thinner, and worth naming as thinner rather than treating as equivalent. The honest version of the small-firm position is that the policy is the control, so the policy being followed is not a detail.
+</Callout>
+
+## Go deeper
+
+- [Safeguarding customer information, 17 CFR 248.30](https://www.ecfr.gov/current/title-17/chapter-II/part-248/subpart-A/subject-group-ECFR83262a0bce5ffaa/section-248.30), eCFR — the current text of the safeguards rule, including the incident response and notification requirements.
+- [AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework), National Institute of Standards and Technology (2023) — a general framework for identifying and managing the kinds of data-handling risk described above.
