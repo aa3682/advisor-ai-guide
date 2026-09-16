@@ -55,6 +55,8 @@ This file records anything deferred mid-build, one numbered item per entry. New 
 
    This item stays open until the Firm Function and Tool pages above land.
 
+**Status (build-order 18): scope note, still open.** A second question about this same page now lives in item 8 — whether the client-identifying tier's definition rests on the right source. That is a sourcing question and is handled there, not here. This item remains exactly what it was: a cross-page framing question about how the step page's Operations back-reference sits against the area page, for the consistency pass to resolve. The two can be settled independently.
+
 6. `content/process/sort-your-data/index.mdx` lists Operations and Back Office under "Which Firm Functions apply" with the line: "Many of the safest entries in the matrix — public and internal data — come from back-office work." That is accurate, but it invites the assumption that back-office work is *where the public and internal tiers live* — which is exactly the assumption [Operations and Back Office](/domains/operations-and-back-office) exists to complicate, since meeting transcripts, billing files, calendars, and system exports all carry client identity while feeling clerical.
 
    **This is a breadth mismatch, not a contradiction, and neither page is currently wrong.** Back-office work genuinely does supply many of the safest matrix entries *and* some of the most sensitive; both statements hold at once. The step page asserts only the first and does not deny the second. Flagged because a reader moving from the step page to the area page may experience the area page's sharpest point as a correction rather than an extension.
@@ -77,3 +79,17 @@ Worth restating so the record is not misread later: all three links had been fet
    - `content/domains/client-communication-and-marketing/index.mdx` — on the April 2024 Marketing Rule risk alert link. Fetch-confirmed in review before PR #10 merged.
 
    **Root cause, which is a process gap rather than a drafting error.** The working rule has been that links ship marked `[VERIFY]` and review fetch-confirms them before merge. The rule never assigned ownership of *clearing* the marker once confirmation happened, so "confirmed" and "marker removed" became separate states and pages merged in the first without reaching the second. The fix is to make clearing the marker part of the merge step, so confirmation and removal are one action. That change belongs in `CLAUDE.md` and should land with the cleanup that clears these four.
+
+8. **Sourcing question: what the client-identifying tier definition rests on.** This is a sourcing question about one load-bearing definition, not a cross-page framing question. It is deliberately filed separately from item 6 because a consistency pass checking whether pages agree with each other would likely skim past it — the question here is whether a definition rests on the right source, which is a different job.
+
+   **The situation.** `content/process/sort-your-data/index.mdx` defines the client-identifying tier as, in part, "anything the SEC's safeguarding rule for customer information treats as nonpublic personal information," citing 17 CFR 248.30. Build-order 18 added a scope sentence immediately after: "That rule applies to Commission-registered advisers; a state-registered firm is under its state's requirements, which vary." Both statements are accurate and the citation is confirmed live.
+
+   The scope sentence did not create this problem; it exposed one that the removed overreach clause had been concealing. For the guide's default reader — a state-registered adviser — the page now says, in effect: here is the category, sourced from a rule that is not yours, and your own requirements vary. That is honest, and it is thin. It is thin at the point where the guide most needs to be solid, because this tier governs what may go into which tool, which is the operational heart of the whole Adoption Path.
+
+   **One fact that bears on the resolution.** The same paragraph opens: "Use four tiers — the guide's own plain-language framing, not a regulator's classification scheme." The paragraph therefore describes itself as the guide's own construct while sourcing its most consequential tier to a regulator's rule. That tension is internal to the paragraph and predates the scope sentence.
+
+   **Two candidate resolutions, neither chosen. This needs an owner ruling.**
+   - **(1) Keep the federal rule as the definitional anchor.** Say plainly that the guide uses it as the clearest available articulation of the concept, while noting that state requirements vary. Preserves a citable source for the definition; leaves the mismatch between the cited rule's scope and the default reader visible but explained.
+   - **(2) Reframe the tier as the guide's own plain-language category** — which the paragraph already claims it is — and cite the federal rule as illustration rather than as the source of the definition. Removes the scope mismatch by not resting the definition on a rule that does not reach the reader; costs the definition its external anchor.
+
+   Recorded as an observation and not a recommendation: (2) sits more comfortably with what the paragraph already says about itself. That is not the same as being right, and the call is the owner's.
