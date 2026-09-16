@@ -5,5 +5,6 @@ export default {
   'vet-and-choose-tools': 'Vet Tools',
   'write-the-ai-policy': 'AI Policy',
   'build-the-workflows': 'Workflows',
-  'handle-client-facing-use': 'Client-Facing Use'
+  'handle-client-facing-use': 'Client-Facing Use',
+  'review-and-keep-records': 'Review and Records'
 }
