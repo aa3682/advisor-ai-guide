@@ -198,7 +198,7 @@ Worth restating so the record is not misread later: all three links had been fet
 
    **Batch 2 term list**, from the PR #29 description (head `83e80072`): Advisor-specific platform, Automation platform, Breach notification, Concentration risk, De-identification, General-purpose tool, Incident response program, Model, Prompt, Prompt template, Service provider, Shadow IT, Subprocessor, Training. The "Chatbot / chat widget" row is excluded as a whole under Z′; the batch count of 14 depends on it.
 
-   **Batch 3 term list.** PR #29's "guide's own defined constructs" table holds 6 rows, confirmed verbatim below; removing Assist/analyze/decide (excluded under Z′) leaves 5, matching Z′'s named set exactly: Client-identifying (`process/sort-your-data:20`), Data matrix (`process/sort-your-data:28`), Restricted (`process/sort-your-data:20`), Use-case list (`process/decide-what-ai-is-for:22`), Duty map (`process/map-the-rules-that-apply:49`). No mismatch found.
+   **Batch 3 term list.** PR #29's "guide's own defined constructs" table holds 6 rows (checked against the PR #29 description, head 83e80072); removing Assist/analyze/decide (excluded under Z′) leaves 5, matching Z′'s named set exactly: Client-identifying (`process/sort-your-data:20`), Data matrix (`process/sort-your-data:28`), Restricted (`process/sort-your-data:20`), Use-case list (`process/decide-what-ai-is-for:22`), Duty map (`process/map-the-rules-that-apply:49`). No mismatch found.
 
    **Carried to the consistency pass (findings, not rulings):**
    - `client-communication-and-marketing:10`: "aimed at the same substance" is a claim about what state rules resemble (PR #10 defect class).
