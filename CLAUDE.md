@@ -100,9 +100,11 @@ Conventions for both:
 - A row whose Value cannot be fetch-confirmed before merge is removed from the page, not merged with a marker. Its concept is appended to FOLLOWUPS item 9 under "Awaiting confirmation," with what was tried.
 - Figures that vary by state: Value reads "Varies by state", Year is blank, and Source links a federal locator page if one exists or otherwise names the state office in plain text ("Your state's licensing board"). Never build a per-state table.
 - Figures fixed by statute that do not change yearly still get a row: Year reads "Set by statute" and Source links the statute or the agency page.
+- The Year column reads a year, "Set by statute," "Set by rule" (a figure fixed by a rule that has not changed), or is blank for "Varies by state." Confirmation dates are recorded in FOLLOWUPS.md, not on the page.
 - A Firm Function section with no confirmed rows keeps its H2 and stable id, carries no table, and reads exactly: "No figure in this area is referenced in the guide yet."
 - A category the guide defines rests on the guide. Where a federal rule that does not reach a state-registered adviser articulates the same concept, cite it as illustration, never as the definition's source, and say who the rule applies to.
 - On /tools/this-years-figures, a row sourced to a rule that does not reach a state-registered adviser says who it applies to in the "What it governs" column.
+- A row sourced to a federal rule that does not reach state-registered advisers carries its scope line inside the "What it governs" cell, for example "Applies to SEC-registered advisers; a state-registered firm follows its state's rule." No companion "Varies by state" row is added for scope alone.
 - Internal links use the site's existing slugs. Check the actual paths under content/ before writing a link.
 - The Callout is the stock component from nextra/components, the same one the landing pages use. Import it with exactly this line: `import { Callout } from 'nextra/components'`
 - The hard rules and writing style above apply in full to page bodies, headings, and frontmatter, including titles, descriptions, and slugs.
