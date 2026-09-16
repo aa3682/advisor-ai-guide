@@ -125,6 +125,7 @@ Worksheet page (tools):
 ## Length
 Soft ranges, body prose only, measured with pnpm wordcount: step pages 800–1,100; area pages 900–1,200; worksheet pages 700–1,000; landing pages 300–500. A page outside its range is first checked for a cross-reference that belongs in a linked list instead of prose; an accepted exception is recorded in FOLLOWUPS.md with the measured length, what was tried, and why it stands.
 /tools/this-years-figures is exempt from the worksheet range. Its table rows are not measured. Its non-table prose is capped at 500 words.
+/glossary is exempt from all length ranges. Its length follows the term list; do not lengthen definitions to reach a word count.
 
 ## How to work
 - Do exactly what the prompt asks. Do not add sections, pages, or features that were not requested.
@@ -141,6 +142,7 @@ FOLLOWUPS.md at the repo root records anything deferred mid-build, one numbered 
 ## Glossary
 One page at /glossary, alphabetical. Every term is an H3 with an explicit id: `### Term [#term-id]`. The id is the term in lowercase, spaces and slashes replaced with hyphens, all other punctuation dropped, no leading or trailing hyphens. Definitions are 1 to 3 sentences with no regulated figures; where a term turns on one, link the matching section of /tools/this-years-figures by anchor. Same-page cross-references (`[other term](#other-term-id)`) are allowed sparingly.
 Links to glossary terms from any page use the anchor form /glossary#term-id; a plural link text maps to the singular term's id.
+Link a term at its first use on every page, including when that first use is in a table cell.
 
 ## Glossary running list
 Every term that any page links to /glossary. Add a term here when a new page links it. Future prompts reference this list instead of restating it.
