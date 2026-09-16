@@ -97,8 +97,12 @@ Conventions for both:
 - Area pages never print yearly-changing figures — limits, thresholds, rates, deadlines — or platform-set figures such as pricing, data-retention windows, and context or usage limits. Where a figure is relevant, name the concept in plain language and link to /tools/this-years-figures (for example: 'up to the yearly limit — see this year's figures'). That page holds every number with its year and primary source and is updated once a year. Every 'Go deeper' link must be fetched and confirmed live before the PR is opened; any link that cannot be confirmed is marked [VERIFY] in the report. Round hypothetical numbers in a worked example ('200 units a month for ten years') are fine and encouraged.
 - Links to the U.S. Code use the granuleid form: https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-titleNN-sectionNNNN&num=0&edition=prelim (substitute the title and section). The "title:NN section:NNN" form is not used.
 - Row schema on /tools/this-years-figures: one figure per row, columns Concept | What it governs | Value | Year | Source, grouped under one H2 per Firm Function with a stable id (`## Firm Function [#slug]`) in the site's order. A figure appears once, under the area it fits best. Every Value comes from a fetched primary source or reads VERIFY; never fill a Value from memory.
+- A row whose Value cannot be fetch-confirmed before merge is removed from the page, not merged with a marker. Its concept is appended to FOLLOWUPS item 9 under "Awaiting confirmation," with what was tried.
 - Figures that vary by state: Value reads "Varies by state", Year is blank, and Source links a federal locator page if one exists or otherwise names the state office in plain text ("Your state's licensing board"). Never build a per-state table.
 - Figures fixed by statute that do not change yearly still get a row: Year reads "Set by statute" and Source links the statute or the agency page.
+- A Firm Function section with no confirmed rows keeps its H2 and stable id, carries no table, and reads exactly: "No figure in this area is referenced in the guide yet."
+- A category the guide defines rests on the guide. Where a federal rule that does not reach a state-registered adviser articulates the same concept, cite it as illustration, never as the definition's source, and say who the rule applies to.
+- On /tools/this-years-figures, a row sourced to a rule that does not reach a state-registered adviser says who it applies to in the "What it governs" column.
 - Internal links use the site's existing slugs. Check the actual paths under content/ before writing a link.
 - The Callout is the stock component from nextra/components, the same one the landing pages use. Import it with exactly this line: `import { Callout } from 'nextra/components'`
 - The hard rules and writing style above apply in full to page bodies, headings, and frontmatter, including titles, descriptions, and slugs.
@@ -118,6 +122,7 @@ Worksheet page (tools):
 
 ## Length
 Soft ranges, body prose only, measured with pnpm wordcount: step pages 800–1,100; area pages 900–1,200; worksheet pages 700–1,000; landing pages 300–500. A page outside its range is first checked for a cross-reference that belongs in a linked list instead of prose; an accepted exception is recorded in FOLLOWUPS.md with the measured length, what was tried, and why it stands.
+/tools/this-years-figures is exempt from the worksheet range. Its table rows are not measured. Its non-table prose is capped at 500 words.
 
 ## How to work
 - Do exactly what the prompt asks. Do not add sections, pages, or features that were not requested.
