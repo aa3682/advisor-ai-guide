@@ -50,3 +50,9 @@ This file records anything deferred mid-build, one numbered item per entry. New 
    - `vetting-a-vendor` — linked from `vet-and-choose-tools`
 
    This item stays open until the Firm Function and Tool pages above land.
+
+6. `content/process/sort-your-data/index.mdx` lists Operations and Back Office under "Which Firm Functions apply" with the line: "Many of the safest entries in the matrix — public and internal data — come from back-office work." That is accurate, but it invites the assumption that back-office work is *where the public and internal tiers live* — which is exactly the assumption [Operations and Back Office](/domains/operations-and-back-office) exists to complicate, since meeting transcripts, billing files, calendars, and system exports all carry client identity while feeling clerical.
+
+   **This is a breadth mismatch, not a contradiction, and neither page is currently wrong.** Back-office work genuinely does supply many of the safest matrix entries *and* some of the most sensitive; both statements hold at once. The step page asserts only the first and does not deny the second. Flagged because a reader moving from the step page to the area page may experience the area page's sharpest point as a correction rather than an extension.
+
+   Revisit in the build-order 5 consistency pass, when cross-page framing gets reviewed as a whole. Possible resolution is a few words on the step page acknowledging that back office also supplies client-identifying inputs — but that is an edit to a merged page and should be decided in that pass, not piecemeal here.
