@@ -171,3 +171,46 @@ Worth restating so the record is not misread later: all three links had been fet
    **Consistency-pass items surfaced during this fix-up:**
    - `content/domains/client-communication-and-marketing/index.mdx:20` treats a tool-assembled composite client quote as a disclosure/disqualification-conditions question, the same framing the glossary's original Testimonial wording used before AG. Neither page raises the separate question of whether synthesizing several clients' comments into one quote risks misattributing words to a client who did not say them — a possible accuracy problem distinct from the conditions the Marketing Rule attaches. Not acted on here since AG's scope was the glossary wording fix, not this page.
    - **"Reason to believe" vs. the statutory "reasonable cause to believe."** Both `content/glossary/index.mdx` (Failure to supervise) and `content/domains/compliance-and-supervision/index.mdx:32` say a firm discharged its responsibilities "without reason to believe they were not being followed," and the area page's phrasing also omits the statute's "insofar as practicable" qualifier on the firm's system for applying its procedures. Confirmed identical wording on both pages, so any correction should change them together rather than leaving one page more precisely sourced than the other. Ruling AN settles only whether the safe-harbor link belongs in the entry, not this wording question, which stays open.
+
+19. **Recovered and new rulings; glossary batch plan (2026-09-16).**
+
+   **Z′ (owner-ruled, recovered from the review thread; completes the "Z, which terms get entries" pointer in the build order 5 status block):**
+   > Ruling Z′ — Accept. Both constructs in, `custodian` out, and the arithmetic holds: the six borderline inclusions become substantiation, reasonably designed, failure to supervise, restricted, duty map, use-case list — still six, still 42 with the 36 firm terms.
+
+   Resulting exclusions: NASAA, custodian, data-loss prevention, automation bias, chat assistant, chatbot, model weights, assist/analyze/decide.
+
+   **AC (owner-ruled, recovered):**
+   > Ruling AC — Accept. The glossary is a definitional index, not a source page: every term's supporting citation already lives on the Firm Function page that covers it, with a fetched Go-deeper link. Putting URLs in the glossary too would create a second place to maintain the same link — the exact duplication the figures-page rule exists to prevent for numbers. Cross-link the page, let the page carry the source.
+
+   Accepted rule: no external URLs in the glossary; where a Firm Function page covers the term, the entry cross-links it; any factual claim not already established on a site page gets a `[VERIFY]` marker, fetched in review.
+
+   **Batch plan (owner-ruled, recovered).** Three glossary PRs split by domain: 23 securities and registration terms (batch 1, PR #31), 14 data security and AI terms (batch 2), 5 construct terms (batch 3), each construct checked against the page that defines it. A separate linking pass follows. The build PRs do not touch `CLAUDE.md`'s "Glossary running list"; the linking pass updates it.
+
+   **AE:** proposed only; no owner ruling on it is recoverable. Superseded by AO.
+
+   **AO (owner-ruled):** the `[VERIFY]` threshold is accepted: mark any statement of what a rule requires, prohibits, or whom it reaches where no site page states it. Added check: where a site page already states the point, the entry keeps that page's wording rather than paraphrasing it (the failure-to-supervise lesson: "reasonably discharged" was dropped in paraphrase).
+
+   **AP (owner-ruled):** data-loss prevention stays excluded per Z′. Batch 2 is 14 terms, not 15.
+
+   **AQ (owner-ruled):** no PR is merged until the owner has reported the live-site check for the previous merge.
+
+   **AR (owner-ruled):** the failure-to-supervise statutory wording ("reasonable cause to believe", "insofar as practicable") is one consistency-pass item changing the glossary entry and `compliance-and-supervision:32` together. This formalizes the open item in item 18.
+
+   **Batch 2 term list**, from the PR #29 description (head `83e80072`): Advisor-specific platform, Automation platform, Breach notification, Concentration risk, De-identification, General-purpose tool, Incident response program, Model, Prompt, Prompt template, Service provider, Shadow IT, Subprocessor, Training. The "Chatbot / chat widget" row is excluded as a whole under Z′; the batch count of 14 depends on it.
+
+   **Batch 3 term list.** PR #29's "guide's own defined constructs" table holds 6 rows, confirmed verbatim below; removing Assist/analyze/decide (excluded under Z′) leaves 5, matching Z′'s named set exactly: Client-identifying (`process/sort-your-data:20`), Data matrix (`process/sort-your-data:28`), Restricted (`process/sort-your-data:20`), Use-case list (`process/decide-what-ai-is-for:22`), Duty map (`process/map-the-rules-that-apply:49`). No mismatch found.
+
+   **Carried to the consistency pass (findings, not rulings):**
+   - `client-communication-and-marketing:10`: "aimed at the same substance" is a claim about what state rules resemble (PR #10 defect class).
+   - `client-communication-and-marketing:46`: rebutting that "a chatbot reply" is exempt from the Marketing Rule overreaches in the same way the original glossary entry did.
+   - `prompting-and-review-skills:56`: the ",." fix.
+   - `data-privacy-and-security:57`: do this rename first if the consistency pass is slow to start.
+   - Watch item: SEC-registered adviser wording would be wrong if the guide ever cites Section 206 antifraud, which reaches all advisers.
+
+   **Carried to the linking pass:**
+   - `handle-client-facing-use:49`: check it before changing it (AA); it may be correct as written.
+   - Figures page (AB): the linked "What it governs" cell already carries a ruling K scope line; check rendering at phone width.
+
+   **Carried to close-out:** update item 5 to cover all 4 tool pages and 8 links.
+
+   **Still open:** item 8; which federal privacy-notice rule, if any, reaches a state-registered adviser.
