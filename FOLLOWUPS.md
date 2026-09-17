@@ -207,6 +207,8 @@ Worth restating so the record is not misread later: all three links had been fet
    - `data-privacy-and-security:57`: do this rename first if the consistency pass is slow to start.
    - Watch item: SEC-registered adviser wording would be wrong if the guide ever cites Section 206 antifraud, which reaches all advisers.
 
+   **Ruling AS pre-check result (glossary batch 2, 2026-09-17).** Both variant lines still carry the pre-AA spelling on `origin/main` at `d0a523a`, so under AS neither page was touched by the batch 2 PR and both go to the consistency pass: `content/process/vet-and-choose-tools/index.mdx:24` reads "whether sub-processors are disclosed" where ruling AA's canonical form is "subprocessor"; `content/process/decide-what-ai-is-for/index.mdx:53` reads "Assuming an advisor-specific product settles this question" where AA's canonical form is "advisor-specific platform". Noted for the pass rather than assumed: the second line is making a point about vendors rather than naming the product category, so whether AA's canonical form governs that sentence at all is a judgment for the pass, not a mechanical rename.
+
    **Carried to the linking pass:**
    - `handle-client-facing-use:49`: check it before changing it (AA); it may be correct as written.
    - Figures page (AB): the linked "What it governs" cell already carries a ruling K scope line; check rendering at phone width.
