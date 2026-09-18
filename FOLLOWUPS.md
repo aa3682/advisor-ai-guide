@@ -254,7 +254,7 @@ Status (V/W PR): closed. V applied: data-privacy-and-security no longer prints t
 
    **AZ (headings).** Never link inside a heading. Link the next body form recorded on the inventory row. Where the row records no next body form, read the section and link a body form if one exists under AX; otherwise the page goes on the consistency-pass list.
 
-   **BA (where the rule does not reach).** No link in frontmatter, the H1, "Related", "Which knowledge areas apply" link text, "Next step", Go deeper titles or descriptions, external-link text, page-name link text, or an other-sense hit ("model rules", lowercase generic "marketing rules" at `handle-client-facing-use:49`). A page whose only occurrences are excluded gets no link. Table cells link (item 15's AB), including the figures page's scope cells (item 14's K governs where the scope line lives, not whether its words link). `about` has no exemption; it has nothing to link today.
+   **BA (where the rule does not reach).** No link in frontmatter, the H1, "Related", "Which knowledge areas apply" link text, "Next step" link text, Go deeper titles or descriptions, external-link text, page-name link text, or an other-sense hit ("model rules", lowercase generic "marketing rules" at `handle-client-facing-use:49`). A page whose only occurrences are excluded gets no link. Table cells link (item 15's AB), including the figures page's scope cells (item 14's K governs where the scope line lives, not whether its words link). `about` has no exemption; it has nothing to link today. Clarified 2026-09-18 (owner): "Next step" excludes the link text of the next-step link, not the sentence around it; body prose in that section links under AX, which is why `decide-what-ai-is-for:69` links.
 
    **BB (the one differently-named link).** `handle-client-facing-use:32` links "duty of care" to `#fiduciary-duty`; it stays, recorded as the single exception. `map-the-rules-that-apply:24` "Duty of care" stays unlinked. From here on, link text is the term or a form of it under AX.
 
@@ -266,6 +266,7 @@ Status (V/W PR): closed. V applied: data-privacy-and-security no longer prints t
    - `review-and-keep-records:14` — Data matrix and Duty map — "a list, a map, a matrix"
    - `sort-your-data:20` — Safeguards rule — "safeguarding rule" (also item 17's unrenamed list; the AL short form is "Regulation S-P's safeguards rule")
    - `sort-your-data:26/28` — Data matrix — H3 "Build the matrix", body "one-page grid"
+   - `map-the-rules-that-apply:28` — Regulation S-P — the page's only use is the text of the external Source-cell link, which cannot carry a second link; candidate for naming the regulation in the "What it governs" cell
 
    From the inventory's Firm Function tables, pending batch 2:
    - `client-communication-and-marketing:10` — SEC-registered adviser — "advisers registered with the Commission" (pending batch 2)
