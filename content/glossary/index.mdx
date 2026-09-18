@@ -38,6 +38,10 @@ The firm's own client-facing disclosure document, describing how the practice wo
 
 A firm in the business of buying and selling securities, regulated under a separate rulebook from an investment adviser's. An adviser associated with one is a dual registrant.
 
+### Client-identifying [#client-identifying]
+
+One of the four data tiers in [Sort Your Data](/process/sort-your-data) — the guide's own plain-language framing, not a regulator's classification scheme. It covers anything that identifies a client or ties back to one: names, account numbers, holdings, dates of birth, contact details.
+
 ### Compliance program [#compliance-program]
 
 The written policies and procedures a firm maintains, together with the review of them and the named person responsible for administering them. AI use belongs inside the program rather than in a document beside it, or the program ends up describing a practice the firm no longer runs. How often the review must happen is a figure — see [this year's figures](/tools/this-years-figures#compliance-and-supervision).
@@ -46,6 +50,10 @@ The written policies and procedures a firm maintains, together with the review o
 
 The exposure created by routing many of the firm's workflows through one tool, so that a single vendor's outage, price change, or terms change becomes a firm-wide failure rather than a single-workflow one. The small-firm pattern makes it likely, because one capable tool tends to absorb every task it plausibly fits rather than being chosen task by task. See [Operations and Back Office](/domains/operations-and-back-office) and [Vendor Oversight](/domains/vendor-oversight).
 
+### Data matrix [#data-matrix]
+
+The output of [Sort Your Data](/process/sort-your-data): a one-page grid with the four data tiers down one side, the tool categories across the top, and a plain answer in each cell — yes, only after de-identifying, or no. It is updated whenever a tool's terms change or a new one is added, since a stale matrix is worse than none: it still looks current.
+
 ### De-identification [#de-identification]
 
 Removing the details that tie information to a particular client before it goes into a tool. Removing a name is not the same as removing the person: a combination of age, town, employer, and approximate account size can identify someone almost as surely as a name would, especially in a small practice. It is a real safeguard, not a complete one — see [Data Privacy and Security](/domains/data-privacy-and-security).
@@ -53,6 +61,10 @@ Removing the details that tie information to a particular client before it goes 
 ### Dual registrant [#dual-registrant]
 
 An adviser who is also a registered representative of a [broker-dealer](#broker-dealer), and so works under two rulebooks with two supervisors. A use that clears the adviser's own duties can still need the broker-dealer's sign-off, and the two sets of procedures do not automatically match.
+
+### Duty map [#duty-map]
+
+The output of [Map the Rules That Apply](/process/map-the-rules-that-apply): a short, dated document recording each use from the first step of The Adoption Path, the duties it touches, and where the firm checked for AI-specific guidance. It becomes an appendix to the AI policy and is re-checked when the policy is reviewed, since rules and guidance change and a map that is never revisited goes stale the same way an unused policy does.
 
 ### Endorsement [#endorsement]
 
@@ -114,6 +126,10 @@ A person registered to conduct securities business through a broker-dealer. An a
 
 The SEC regulation covering the privacy and safeguarding of client information, and where the [safeguards rule](#safeguards-rule) sits. It applies to advisers registered with the Commission; for safeguarding client information, a state-registered adviser falls instead under the FTC Safeguards Rule, along with its state's requirements.
 
+### Restricted [#restricted]
+
+The fourth of the four data tiers in [Sort Your Data](/process/sort-your-data): [client-identifying](#client-identifying) information the firm has promised, in writing or by rule, to handle a specific way — information received under another party's confidentiality terms, for example.
+
 ### Risk alert [#risk-alert]
 
 A publication from the SEC's examination staff describing what examiners have been finding in a particular area. It does not create new rules, and it is a direct signal of where examination attention is currently directed.
@@ -161,6 +177,10 @@ A statement by a current client about their experience with the adviser, or one 
 ### Training [#training]
 
 Using what is typed into a tool to improve the model underneath it. It differs in kind from storage: stored information sits somewhere specific and can in principle be located, deleted, or produced on request, while information used to train folds into a model's weights, where it cannot be retrieved, deleted, or audited — including by the firm that sent it. A deletion request does not unwind training that already happened, which is why this is the question to settle before adoption rather than after; see [Data Privacy and Security](/domains/data-privacy-and-security).
+
+### Use-case list [#use-case-list]
+
+The output of [Decide What AI Is For](/process/decide-what-ai-is-for): the written list of the firm's actual recurring work that AI is for — the tasks that come up on a weekly or quarterly basis, not the aspirational uses — and, as clearly, what the firm is not using AI for yet. Everything after that step depends on it: the data gets sorted, the tools vetted, and the policy written against the uses it names.
 
 ## Related
 
