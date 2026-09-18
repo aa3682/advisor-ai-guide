@@ -229,7 +229,7 @@ Status (V/W PR): closed. V applied: data-privacy-and-security no longer prints t
 
 21. **Glossary batch 3 (the five construct terms): ruling AU, ruling AV, and the safeguards-rule naming inconsistency.** Recorded 2026-09-18, with the PR that adds Client-identifying, Data matrix, Duty map, Restricted, and Use-case list.
 
-   **(a) Ruling AU (owner-ruled).** Ruling letters run as one continuous series, A through AS; items 13 through 19 record F onward, and A through E are cited from earlier items (item 12 cites ruling A) without a numbered entry of their own. Item 20 is the single anomaly: it reused U through Y instead of continuing at AT, so each of those five letters names two different rulings. Nothing is renumbered — the record is append-only. The remedy is a citation-form change, recorded in `CLAUDE.md` under FOLLOWUPS: a ruling is cited item-qualified ("item 20's V"), never by bare letter. Notes recording the collision sit above item 16's status block and above item 20.
+   **(a) Ruling AU (owner-ruled).** Ruling letters run as one continuous series, A through AS; items 13 through 19 record F onward. A through E have no entry in this file: A is cited once, in item 12, and B through E are cited nowhere in it. Item 20 is the single anomaly: it reused U through Y instead of continuing at AT, so each of those five letters names two different rulings. Nothing is renumbered — the record is append-only. The remedy is a citation-form change, recorded in `CLAUDE.md` under FOLLOWUPS: a ruling is cited item-qualified ("item 20's V"), never by bare letter. Notes recording the collision sit above item 16's status block and above item 20.
 
    **(b) Ruling AV (owner-ruled).** AT is recorded as proposed only; no owner ruling on it is recoverable, the same way item 19 records AE. Its text, verbatim:
 
@@ -241,3 +241,5 @@ Status (V/W PR): closed. V applied: data-privacy-and-security no longer prints t
    - Fuller unlinked mention, "Regulation S-P's safeguards rule" as plain text: the State-registered adviser entry.
 
    Ruling AM's exception (item 18) stands inside the Safeguards rule entry itself, where the full form would define the term using itself. None of these occurrences is changed in the batch 3 PR.
+
+   **(d) Ruling AW (owner-ruled, 2026-09-18).** The Duty map entry adds a same-page cross-reference to Use-case list — "each use on the use-case list" replacing "each use from the first step of The Adoption Path" — because the map is defined as recording the uses on that list, so the linked term is part of the entry's own definition and passes the AH test on the same reasoning that admitted Restricted → Client-identifying. This is a declared widening: the batch 3 brief set the Duty map entry at no same-page link. Data matrix → De-identification was considered and left out; the cell values name the action, not the term.
