@@ -290,3 +290,11 @@ Status (V/W PR): closed. V applied: data-privacy-and-security no longer prints t
    (c) *New rows.* `vendor-oversight:26` — Safeguards rule — the page's only use is the text of an external link (`[safeguards rule](https://www.ecfr.gov/…/section-248.30)`), which cannot carry a second link; same footing as `map-the-rules-that-apply:28`. Item 17 already lists this occurrence for the AL rename.
 
    `compliance-and-supervision:32` — Adopting release — the page's only use is the text of an external link (the rule's adopting release itself), which cannot carry a second link; same footing as `map-the-rules-that-apply:28` and `vendor-oversight:26`. Found by batch 2's page read; the inventory's script masked internal link text only, so this row, `map-the-rules-that-apply:28`, and `vendor-oversight:26` all passed into the batch counts.
+
+   **Batch 3 (landing pages, the figures page, and about), 2026-09-18.** The last linking batch; the pass totals are in (c).
+
+   (a) *Note on BA.* The figures page's scope cells link. Item 14's K governs where the scope line sits — inside the "What it governs" cell — not whether its words link, so the three scope-cell first uses, `tools/this-years-figures:30` (SEC-registered advisers; state-registered firm) and `:38` (incident response plan), link like any table cell under item 15's AB.
+
+   (b) *Three pages received no link.* `domains/index.mdx` — its only term string is "Prompting" at 25, the Firm Function's name in internal link text, excluded under BA. `tools/index.mdx` — its only term string is "Use-Case Inventory" at 19, the worksheet's title in internal link text, excluded under BA; the "Use-Case Inventory" / "use-case list" divergence stays with item 19 and the consistency list's `operations-and-back-office:16` row, and nothing new is filed. `about/index.mdx` — carries no glossary term in a countable position.
+
+   (c) *Pass totals.* Seven `/glossary#` links existed before the pass (item 16's U). Batch 1 (#38) added 53, batch 2 (#39) added 34, and batch 3 added 14, for 108 links across `content/` outside the glossary. Command that produced the 108, run at the batch 3 head: `grep -rho '](/glossary#' content --include=index.mdx --exclude-dir=glossary | wc -l`.
