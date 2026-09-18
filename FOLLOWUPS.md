@@ -280,3 +280,11 @@ Status (V/W PR): closed. V applied: data-privacy-and-security no longer prints t
    - `operations-and-back-office:34` — Concentration risk — H3 with no body form recorded; listed only if batch 2 finds none under AZ (pending batch 2)
 
    **Running list.** The "Glossary running list" in `CLAUDE.md` is not updated by the batch PRs; it is rebuilt once, in the housekeeping PR that closes the linking pass.
+
+   **Batch 2 (the eight Firm Function pages), 2026-09-18.** Two applications of the rulings specific to area pages, the consistency-list confirmations, and one new row.
+
+   (a) *Note on BA.* Area pages have no "Which knowledge areas apply" section; their "Where it shows up in the process" link text is excluded under BA on the same footing. Prose in that list that is not link text links under AX (so `prompting-and-review-skills:45` links "prompt template" after the internal link, and `vendor-oversight:46` "the matrix" stays a shorthand on the list below). *Note on AZ.* The two heading rows with no recorded next body form got AZ's section read: link the first body form under AX if one exists inside that H3 section, otherwise leave unlinked and confirm the consistency-list row.
+
+   (b) *Consistency-list confirmations.* Confirmed as listed: `client-communication-and-marketing:10` and `data-privacy-and-security:16` ("advisers registered with the Commission"); `data-privacy-and-security:28` ("the matrix") and `:40` ("the map"); `vendor-oversight:40/42` ("Concentration" / "concentration") and `:46` ("the matrix"); `operations-and-back-office:16` ("use-case inventory"). The two AZ section reads: `data-privacy-and-security:30` — the section under "De-identification is weaker than it feels" says "unidentifiable" and "identifiable information," neither a form of the term; no body form, row confirmed. `operations-and-back-office:34` — the section under "Concentration risk is a small-firm specialty" never repeats "concentration" in any form; no body form, row confirmed.
+
+   (c) *New row.* `vendor-oversight:26` — Safeguards rule — the page's only use is the text of an external link (`[safeguards rule](https://www.ecfr.gov/…/section-248.30)`), which cannot carry a second link; same footing as `map-the-rules-that-apply:28`. Item 17 already lists this occurrence for the AL rename.
