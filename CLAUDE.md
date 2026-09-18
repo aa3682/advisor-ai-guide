@@ -135,6 +135,7 @@ Soft ranges, body prose only, measured with pnpm wordcount: step pages 800–1,1
 - A link that cannot be confirmed live ships marked `[VERIFY]` in the open PR, where review fetches and confirms it. Once confirmed, remove the marker in the same PR. No page merges carrying a `[VERIFY]` marker; confirming and clearing are one step, not two.
 - Claude Code merges a pull request only on the owner's explicit instruction to merge that pull request, given after chat has read the diff. It never merges on its own judgment, including after a fix-up commit. An instruction that carries a condition authorizes nothing until the owner confirms the condition is met. A prompt's closing line does not grant merge authority. No pull request is merged until the owner has reported the live-site check for the previous merge.
 - Do only what the current prompt asks. Do not act on your own follow-up suggestions, and do not edit files outside the scope of the prompt, even to fix something you notice. List anything you would have done under a "Suggested follow-ups" heading at the end of your report and in the PR description, and leave it there.
+- The post-merge live-site check is the owner's step, made from the phone. A merge instruction to Claude Code ends at the merge and main's head; Claude Code does not attempt the live check, because vercel.app is unreachable from sessions (FOLLOWUPS item 4).
 
 ## FOLLOWUPS
 FOLLOWUPS.md at the repo root records anything deferred mid-build, one numbered item per entry. Append new items as they come up. When an item closes, append a status block above the original entry rather than deleting or rewriting it, and say so explicitly if the original entry's framing turns out to have been wrong.
@@ -146,7 +147,52 @@ Links to glossary terms from any page use the anchor form /glossary#term-id; a p
 Link a term at its first use on every page, including when that first use is in a table cell.
 
 ## Glossary running list
-Every term that any page links to /glossary. Add a term here when a new page links it. Future prompts reference this list instead of restating it.
+Every term that any page links to /glossary. Rebuilt from the files by the linking pass on 2026-09-18, at main `c83c2c3`; the maintenance rule still applies: add a page to a term's line when a new page links it. Future prompts reference this list instead of restating it.
 
+- Advertisement [#advertisement] — linked from content/domains/client-communication-and-marketing/index.mdx, content/process/handle-client-facing-use/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/tools/this-years-figures/index.mdx
+- Advisor-specific platform [#advisor-specific-platform] — linked from content/introduction/index.mdx, content/process/decide-what-ai-is-for/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx
+- Automation platform [#automation-platform] — linked from content/domains/operations-and-back-office/index.mdx, content/domains/vendor-oversight/index.mdx, content/introduction/index.mdx, content/process/sort-your-data/index.mdx
+- Books and records [#books-and-records] — linked from content/domains/records-and-documentation/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/tools/this-years-figures/index.mdx
+- Breach notification [#breach-notification] — linked from content/domains/data-privacy-and-security/index.mdx, content/tools/this-years-figures/index.mdx
+- Brochure [#brochure] — linked from content/process/handle-client-facing-use/index.mdx, content/process/map-the-rules-that-apply/index.mdx
+- Broker-dealer [#broker-dealer] — linked from content/process/map-the-rules-that-apply/index.mdx
+- Client-identifying [#client-identifying] — linked from content/process/build-the-workflows/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx
+- Compliance program [#compliance-program] — linked from content/domains/compliance-and-supervision/index.mdx, content/introduction/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/tools/this-years-figures/index.mdx
+- Data matrix [#data-matrix] — linked from content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
+- De-identification [#de-identification] — linked from content/process/sort-your-data/index.mdx
+- Dual registrant [#dual-registrant] — linked from content/process/decide-what-ai-is-for/index.mdx, content/process/index.mdx, content/process/map-the-rules-that-apply/index.mdx
+- Duty map [#duty-map] — linked from content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
+- Endorsement [#endorsement] — linked from content/domains/client-communication-and-marketing/index.mdx
+- Examination [#examination] — linked from content/process/map-the-rules-that-apply/index.mdx, content/process/review-and-keep-records/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
+- Failure to supervise [#failure-to-supervise] — linked from content/domains/compliance-and-supervision/index.mdx
 - Fiduciary duty [#fiduciary-duty] — linked from content/domains/advice-and-planning-work/index.mdx, content/process/decide-what-ai-is-for/index.mdx, content/process/handle-client-facing-use/index.mdx
+- General-purpose tool [#general-purpose-tool] — linked from content/domains/operations-and-back-office/index.mdx, content/introduction/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
 - Hallucination [#hallucination] — linked from content/domains/advice-and-planning-work/index.mdx, content/domains/client-communication-and-marketing/index.mdx, content/domains/operations-and-back-office/index.mdx, content/domains/prompting-and-review-skills/index.mdx
+- Incident response program [#incident-response-program] — linked from content/domains/data-privacy-and-security/index.mdx, content/tools/this-years-figures/index.mdx
+- Marketing Rule [#marketing-rule] — linked from content/domains/client-communication-and-marketing/index.mdx
+- Model [#model] — linked from content/domains/client-communication-and-marketing/index.mdx, content/domains/data-privacy-and-security/index.mdx, content/domains/vendor-oversight/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx
+- Nonpublic personal information [#nonpublic-personal-information] — linked from content/process/sort-your-data/index.mdx
+- Prompt [#prompt] — linked from content/domains/advice-and-planning-work/index.mdx, content/domains/client-communication-and-marketing/index.mdx, content/domains/data-privacy-and-security/index.mdx, content/domains/prompting-and-review-skills/index.mdx, content/domains/records-and-documentation/index.mdx, content/domains/vendor-oversight/index.mdx, content/process/build-the-workflows/index.mdx, content/process/sort-your-data/index.mdx
+- Prompt template [#prompt-template] — linked from content/domains/prompting-and-review-skills/index.mdx, content/process/build-the-workflows/index.mdx
+- Reasonably designed [#reasonably-designed] — linked from content/domains/compliance-and-supervision/index.mdx
+- Registered representative [#registered-representative] — linked from content/process/map-the-rules-that-apply/index.mdx
+- Regulation S-P [#regulation-s-p] — linked from content/domains/data-privacy-and-security/index.mdx
+- Restricted [#restricted] — linked from content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx
+- Risk alert [#risk-alert] — linked from content/process/map-the-rules-that-apply/index.mdx
+- Safeguards rule [#safeguards-rule] — linked from content/domains/data-privacy-and-security/index.mdx
+- Safe harbor [#safe-harbor] — linked from content/domains/compliance-and-supervision/index.mdx
+- SEC-registered adviser [#sec-registered-adviser] — linked from content/process/map-the-rules-that-apply/index.mdx, content/process/sort-your-data/index.mdx, content/tools/this-years-figures/index.mdx
+- Service provider [#service-provider] — linked from content/domains/vendor-oversight/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/tools/this-years-figures/index.mdx
+- Shadow IT [#shadow-it] — linked from content/domains/operations-and-back-office/index.mdx
+- State-registered adviser [#state-registered-adviser] — linked from content/domains/client-communication-and-marketing/index.mdx, content/domains/compliance-and-supervision/index.mdx, content/domains/data-privacy-and-security/index.mdx, content/domains/records-and-documentation/index.mdx, content/introduction/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/process/sort-your-data/index.mdx, content/tools/this-years-figures/index.mdx
+- Subprocessor [#subprocessor] — linked from content/domains/vendor-oversight/index.mdx, content/process/vet-and-choose-tools/index.mdx
+- Substantiation [#substantiation] — linked from content/process/map-the-rules-that-apply/index.mdx
+- Suitability [#suitability] — linked from content/process/handle-client-facing-use/index.mdx
+- Testimonial [#testimonial] — linked from content/domains/client-communication-and-marketing/index.mdx
+- Training [#training] — linked from content/domains/data-privacy-and-security/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx
+- Use-case list [#use-case-list] — linked from content/process/review-and-keep-records/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
+
+**Not yet linked from any page** — each is on FOLLOWUPS item 22's consistency list, and links once that pass writes the term at a first use:
+
+- Adopting release [#adopting-release] — no page links it; item 22's consistency list (compliance-and-supervision:32)
+- Concentration risk [#concentration-risk] — no page links it; item 22's consistency list (operations-and-back-office:34, vendor-oversight:40/42)
