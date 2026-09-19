@@ -382,3 +382,24 @@ Status (V/W PR): closed. V applied: data-privacy-and-security no longer prints t
    **CP-31's filed description errors**, stated explicitly per this file's rule about a wrong original framing. The row named its destination as the "What it governs" cell. That column does not exist on that page: the duties table's columns are Duty | What it means here | Where it applies. "What it governs" is the figures page's column, used in four tables there and nowhere else in `content/` — the row borrowed it. The row also called the third column the "Source cell."
 
    **The pattern, for close-out.** CP-31 is the second filed row in this pass whose description failed inspection, after CP-29, and the two failed differently: CP-29's premise was wrong about what the page *contained*, CP-31's about what the page's structure is *called*. Both survived only because the page was read before the edit was written. Two failures in roughly forty rows is a rate rather than an accident, and the inventory's row descriptions are this pass's own working input.
+
+   **Group 2, batch 2 (Firm Function pages, mechanical), 2026-09-18.** Six rows, four files, six lines, four distinct glossary ids. CP-32 links the first countable use of SEC-registered adviser on `content/domains/client-communication-and-marketing/index.mdx:10` and CP-33 does the same on `content/domains/data-privacy-and-security/index.mdx:16`, both replacing the paraphrase "advisers registered with the Commission"; CP-34 links Data matrix on `content/domains/data-privacy-and-security/index.mdx:28` and CP-37 on `content/domains/vendor-oversight/index.mdx:46`, both replacing the bare shorthand "the matrix"; CP-35 links Duty map on `content/domains/data-privacy-and-security/index.mdx:40`, replacing "the map"; CP-38 links Use-case list on `content/domains/operations-and-back-office/index.mdx:16`, replacing the paraphrase "use-case inventory".
+
+   CP-36, CP-39 and CP-40 are **not** in this batch. Each needs a new sentence rather than a string replacement: `vendor-oversight:42` carries the bare word "concentration" where the compound would shift the sentence's subject, and neither `data-privacy-and-security:32` nor `operations-and-back-office:36` contains any form of its term, so a sentence has to introduce it. Drafting is an owner ruling on wording, not a mechanical write, so the three go in a follow-on PR on the reasoning that pulled CP-10 out of Group 1 and CP-26 out of Group 2 batch 1.
+
+   `content/domains/operations-and-back-office/index.mdx:40` was inspected and left alone. Its phrase "a first inventory" is a same-page repeat after the line 16 edit, so it is a non-candidate under the inventory's own classification rather than a missed row. Recorded so a later pass does not sweep it.
+
+   Measured counts: `client-communication-and-marketing` 1,083 before and 1,080 after; `data-privacy-and-security` 1,161 before and 1,160 after; `vendor-oversight` 1,138 before and 1,139 after; `operations-and-back-office` 1,168 before and after. Every page stays inside the 900–1,200 area range, so BC does not bind on this batch and no offsetting trim is owed. The paraphrase-to-term rows save words (CP-32 and CP-33 each −3) and the shorthand-to-compound rows cost +1 each, both matching BC's recorded pattern; CP-38 is token-neutral, the counter reducing a link to its text and "use-case list" carrying the same two tokens as "use-case inventory".
+
+   `vendor-oversight` reads 1,138 at the head of this batch, not the 1,136 recorded in BC. That is expected rather than drift: Group 1's CP-7 and CP-8 each cost +1 on that page.
+
+   No ruling letter is stated for this batch, which needs none. BK remains free for the drafting rows.
+
+   Glossary running list page entries this batch creates, for close-out to pick up:
+
+   - SEC-registered adviser — `content/domains/client-communication-and-marketing/index.mdx` and `content/domains/data-privacy-and-security/index.mdx`
+   - Data matrix — `content/domains/data-privacy-and-security/index.mdx` and `content/domains/vendor-oversight/index.mdx`
+   - Duty map — `content/domains/data-privacy-and-security/index.mdx`
+   - Use-case list — `content/domains/operations-and-back-office/index.mdx`
+
+   No running total is stated, per this item's correction note above: close-out rebuilds the running list from the files and that rebuild is authoritative over any note here.
