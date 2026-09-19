@@ -403,3 +403,26 @@ Status (V/W PR): closed. V applied: data-privacy-and-security no longer prints t
    - Use-case list — `content/domains/operations-and-back-office/index.mdx`
 
    No running total is stated, per this item's correction note above: close-out rebuilds the running list from the files and that rebuild is authoritative over any note here.
+
+   **BK (CP-40 declines; CP-39 applies).** Owner ruling, 2026-09-19, on the three rows the Group 2, batch 2 note above held out for drafting. CP-40 declines under BH. `content/domains/operations-and-back-office/index.mdx:36` carries the concept only through shorthand — "this" and "The exposure" — which AX never links, and the H3 at `:34` two lines above is the exact compound, which AZ never links. The only route in is a sentence written to host a link. CP-39 applies, though not as drafting; see BL. CP-36 was not ruled under BK.
+
+   Said explicitly, per this file's rule about a wrong original framing: the brief that carried these rows into the ruling thread said CP-40's page held "zero instances" of the term. It holds one, the H3 at `:34`. Draft PR #42's filed row recorded that H3 with "no body form" and was right; the batch 2 note above said `:36` contains no form of the term, was scoped to that line, and was right. The failure was the brief's — a paraphrase of the inventory standing in for the inventory, the lesson CP-31 recorded — not the filed row's. No tally is stated here; close-out counts from the record.
+
+   The coupling, recorded so a later pass does not reopen CP-40 to fix it: with CP-40 declined and CP-36 applied, `content/domains/vendor-oversight/index.mdx` is the sole page linking `#concentration-risk`, and its sentence defers to Operations and Back Office, whose only form of the compound is the unlinkable H3 at `:34`. A reader following the link meets the term in that heading. Odd reading, no rule breach, and the CLAUDE.md "not yet linked" entry closes on vendor-oversight alone.
+
+   **BL (CP-36 applies as filed; CP-39 is paraphrase-to-term; the recast settlement reversed).** Owner ruling, 2026-09-19. CP-36 links the compound in place at `content/domains/vendor-oversight/index.mdx:42` — "concentration raises the cost of every item above" becomes "[concentration risk](/glossary#concentration-risk) raises the cost of every item above" — with the predicate untouched, +1. Ground: the glossary entry at `content/glossary/index.mdx:51` defines the term as "The exposure created by routing many of the firm's workflows through one tool, so that a single vendor's outage, price change, or terms change becomes a firm-wide failure rather than a single-workflow one." The sentence says that exposure raises the cost of oversight; the cost is downstream of the exposure, so the causation runs the right way and the `because` clause still explains its own main clause. The H3 at `:40`, "Concentration multiplies all of it", uses the bare word in the condition sense; heading and body name the two ends of one thing, and AZ leaves the heading alone.
+
+   Reversed in reaching that: the ruling thread had earlier settled the row the other way. Its words, quoted rather than characterized: "**Settled: CP-36 recasts, on CP-31's reasoning.** The entry defines the term as the exposure, the elevated cost is part of that exposure, so the filed substitution asserts a cause/effect that the site contradicts." That reading did not survive a second look at the entry: the exposure it defines is firm-wide failure, not oversight cost, so the filed substitution asserts nothing the site contradicts. A recast candidate drafted under that settlement — "runs through every item above" in place of "raises the cost of every item above" — was withdrawn because it turned a cost claim into a presence claim that the `because` clause no longer explained. Recorded so the shape is not re-tried.
+
+   CP-39 applies at `content/domains/data-privacy-and-security/index.mdx:32`: "a caution about a common practice" becomes "a caution about [de-identification](/glossary#de-identification)", −2. This is a paraphrase-to-term write in CP-38's shape, not new prose, so it never needed CP-31's test. It is meaning-adjacent rather than a pure rename — "de-identification" is narrower than "a common practice" — and the glossary entry's "a real safeguard, not a complete one" supports the narrowing.
+
+   Said explicitly, per this file's rule about a wrong original framing: the batch 2 note above said each of CP-36, CP-39 and CP-40 "needs a new sentence rather than a string replacement." That was wrong for CP-36 and CP-39, both of which closed as string replacements; it held for CP-40, which is why CP-40 declined.
+
+   Measured counts: `vendor-oversight` 1,139 before and 1,140 after; `data-privacy-and-security` 1,160 before and 1,158 after. Both inside the 900–1,200 area range, so BC does not bind.
+
+   Glossary running list page entries this PR creates, for close-out to pick up:
+
+   - De-identification — `content/domains/data-privacy-and-security/index.mdx`
+   - Concentration risk — `content/domains/vendor-oversight/index.mdx`
+
+   No running total is stated, per this item's correction note above.
