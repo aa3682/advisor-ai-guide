@@ -147,7 +147,7 @@ Links to glossary terms from any page use the anchor form /glossary#term-id; a p
 Link a term at its first use on every page, including when that first use is in a table cell.
 
 ## Glossary running list
-Every term that any page links to /glossary. Rebuilt from the files by the linking pass on 2026-09-18, at main `c83c2c3`; the maintenance rule still applies: add a page to a term's line when a new page links it. Future prompts reference this list instead of restating it.
+Every term that any page links to /glossary. Rebuilt from the files by the consistency pass close-out on 2026-09-20, at main `0cfa5b5`; the maintenance rule still applies: add a page to a term's line when a new page links it. Future prompts reference this list instead of restating it.
 
 - Advertisement [#advertisement] — linked from content/domains/client-communication-and-marketing/index.mdx, content/process/handle-client-facing-use/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/tools/this-years-figures/index.mdx
 - Advisor-specific platform [#advisor-specific-platform] — linked from content/introduction/index.mdx, content/process/decide-what-ai-is-for/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx
@@ -158,10 +158,11 @@ Every term that any page links to /glossary. Rebuilt from the files by the linki
 - Broker-dealer [#broker-dealer] — linked from content/process/map-the-rules-that-apply/index.mdx
 - Client-identifying [#client-identifying] — linked from content/process/build-the-workflows/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx
 - Compliance program [#compliance-program] — linked from content/domains/compliance-and-supervision/index.mdx, content/introduction/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/tools/this-years-figures/index.mdx
-- Data matrix [#data-matrix] — linked from content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
-- De-identification [#de-identification] — linked from content/process/sort-your-data/index.mdx
+- Concentration risk [#concentration-risk] — linked from content/domains/vendor-oversight/index.mdx
+- Data matrix [#data-matrix] — linked from content/domains/data-privacy-and-security/index.mdx, content/domains/vendor-oversight/index.mdx, content/process/build-the-workflows/index.mdx, content/process/review-and-keep-records/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
+- De-identification [#de-identification] — linked from content/domains/data-privacy-and-security/index.mdx, content/process/sort-your-data/index.mdx
 - Dual registrant [#dual-registrant] — linked from content/process/decide-what-ai-is-for/index.mdx, content/process/index.mdx, content/process/map-the-rules-that-apply/index.mdx
-- Duty map [#duty-map] — linked from content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
+- Duty map [#duty-map] — linked from content/domains/data-privacy-and-security/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/process/review-and-keep-records/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
 - Endorsement [#endorsement] — linked from content/domains/client-communication-and-marketing/index.mdx
 - Examination [#examination] — linked from content/process/map-the-rules-that-apply/index.mdx, content/process/review-and-keep-records/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
 - Failure to supervise [#failure-to-supervise] — linked from content/domains/compliance-and-supervision/index.mdx
@@ -181,7 +182,7 @@ Every term that any page links to /glossary. Rebuilt from the files by the linki
 - Risk alert [#risk-alert] — linked from content/process/map-the-rules-that-apply/index.mdx
 - Safeguards rule [#safeguards-rule] — linked from content/domains/data-privacy-and-security/index.mdx
 - Safe harbor [#safe-harbor] — linked from content/domains/compliance-and-supervision/index.mdx
-- SEC-registered adviser [#sec-registered-adviser] — linked from content/process/map-the-rules-that-apply/index.mdx, content/process/sort-your-data/index.mdx, content/tools/this-years-figures/index.mdx
+- SEC-registered adviser [#sec-registered-adviser] — linked from content/domains/client-communication-and-marketing/index.mdx, content/domains/data-privacy-and-security/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/process/sort-your-data/index.mdx, content/tools/this-years-figures/index.mdx
 - Service provider [#service-provider] — linked from content/domains/vendor-oversight/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/tools/this-years-figures/index.mdx
 - Shadow IT [#shadow-it] — linked from content/domains/operations-and-back-office/index.mdx
 - State-registered adviser [#state-registered-adviser] — linked from content/domains/client-communication-and-marketing/index.mdx, content/domains/compliance-and-supervision/index.mdx, content/domains/data-privacy-and-security/index.mdx, content/domains/records-and-documentation/index.mdx, content/introduction/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/process/sort-your-data/index.mdx, content/tools/this-years-figures/index.mdx
@@ -190,9 +191,8 @@ Every term that any page links to /glossary. Rebuilt from the files by the linki
 - Suitability [#suitability] — linked from content/process/handle-client-facing-use/index.mdx
 - Testimonial [#testimonial] — linked from content/domains/client-communication-and-marketing/index.mdx
 - Training [#training] — linked from content/domains/data-privacy-and-security/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx
-- Use-case list [#use-case-list] — linked from content/process/review-and-keep-records/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
+- Use-case list [#use-case-list] — linked from content/domains/operations-and-back-office/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/process/review-and-keep-records/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx
 
 **Not yet linked from any page** — each is on FOLLOWUPS item 22's consistency list, and links once that pass writes the term at a first use:
 
-- Adopting release [#adopting-release] — no page links it; item 22's consistency list (compliance-and-supervision:32)
-- Concentration risk [#concentration-risk] — no page links it; item 22's consistency list (operations-and-back-office:34, vendor-oversight:40/42)
+- Adopting release [#adopting-release] — no page links it; item 22's consistency list (content/domains/compliance-and-supervision/index.mdx line 32)
