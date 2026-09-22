@@ -111,18 +111,36 @@ guide's judgment, stated without a reason, in two places.
 
 | Note | What it said | Accepted as |
 | ---- | ------------ | ----------- |
+| A | Client-identifying information in a business tier with no signed agreement reads "No — de-identify first", derived from the guide's existing text rather than from any new claim about vendors | accepted as written |
+| B | The two Restricted rows read "Only if the promise behind the restriction allows it", because the restricted tier is defined by the firm's own promise rather than by the tool | accepted as written |
+| C | Both this page and the step page say when de-identification fails and never how a reader knows it succeeded | accepted; filed as FOLLOWUPS item 34 |
+| D | The four-tier cap rests on an unsupported frequency claim, on this page and on the step page | accepted; filed as FOLLOWUPS item 34 |
 
-Reversals from this ledger at sign-off: <finding numbers and the commit that reversed
-each, or none>.
+Reversals from this ledger at sign-off: none.
 
 ## Published
 
-<Merge commit. Publish steps in order, content deployed before anything went live.>
+Not yet published; no merge commit exists. Merging PR #59 is the owner's step, and it is
+gated on the owner reporting the live-site check for the previous merge, PR #58 — item 19's
+AQ, with item 25's BM. Nothing in this run merges anything (item 16's T). Once that gate
+clears and the owner merges, the content deploys on merge, which is the only point at which
+anything goes live.
 
-**Controls:** <each checking procedure used, and the known-good result it reproduced
-before its verdict was trusted>
+**Controls:** `sha256sum` over the seven governing files, trusted after it reproduced the
+seven hashes the run order pinned. `pnpm wordcount`, trusted after it reproduced 985 on the
+one approved worksheet, `content/tools/building-your-use-case-inventory/index.mdx`, inside
+the 700–1,000 range. `pnpm build`, trusted after it reproduced a warning-free build on the
+branch point `d5970a4` before this page existed; it then flagged a real defect, the
+uncommitted-file timestamp warning, and cleared once the file was committed. A glossary-id
+check reading every `/glossary#` target on the page back against the 44 `### Term [#id]`
+lines in `content/glossary/index.mdx`. A link-target check resolving every internal link to
+a path under `content/`. All of these ran in both the run and the fix-up round, and both
+rounds' results are reported in PR #59.
 
-**Verified after publish:** <what was checked, how>
+**Verified after publish:** nothing yet. The owner's live-site check on `/tools/sorting-your-data`,
+reported in chat, is what covers this.
 
-**Not verified, and not inferred:** <what could not be checked and why; the human check
-that covers it, or the gap the owner accepted>
+**Not verified, and not inferred:** whatever that live check does not cover. Known to sit
+outside it: the rendered width of the sixteen-row result table on a phone, unless the owner
+reads that table specifically; and whether `content/process/sort-your-data/index.mdx` agrees
+with the worksheet's redrawn grid, which it does not yet and which FOLLOWUPS item 32 holds.
