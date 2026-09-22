@@ -138,7 +138,7 @@ Soft ranges, body prose only, measured with pnpm wordcount: step pages 800–1,1
 - The post-merge live-site check is the owner's step, made from the phone. A merge instruction to Claude Code ends at the merge and main's head; Claude Code does not attempt the live check, because vercel.app is unreachable from sessions (FOLLOWUPS item 4).
 
 ## FOLLOWUPS
-FOLLOWUPS.md at the repo root records anything deferred mid-build, one numbered item per entry. Append new items as they come up. When an item closes, append a status block below the original entry rather than deleting or rewriting it, and say so explicitly if the original entry's framing turns out to have been wrong.
+FOLLOWUPS.md at the repo root records anything deferred mid-build, one numbered item per entry. Append new items as they come up. When an item closes, append a status block above the original entry rather than deleting or rewriting it, and say so explicitly if the original entry's framing turns out to have been wrong. A status block that closes only part of an item — a lettered sub-item, or a single paragraph or ruling inside it — sits directly below the paragraph it closes instead.
 A ruling recorded in FOLLOWUPS.md is cited item-qualified — "item 20's V", not "ruling V" — because some letters name two different rulings.
 
 ## Glossary
