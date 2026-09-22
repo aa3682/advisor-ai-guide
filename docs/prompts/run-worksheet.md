@@ -19,6 +19,7 @@ These hold at every stage. They are decisions, not preferences.
 - **One page per unit.** The worksheet is one file, `content/tools/<slug>/index.mdx` (`CLAUDE.md` "Page templates": one folder per page). Each outline entry is an H2 section of that file, not a file of its own.
 - **item 29's BR.** This run follows this prompt. Its report replaces the "Report" section in `CLAUDE.md` "How to work", suggested follow-ups go under "Beyond-spec calls", and the run opens a pull request and does not merge. The run does not edit `CLAUDE.md`: it lists the Glossary running list lines the page needs, and the fix-up order applies them.
 - **item 28's BQ.** On a worksheet page, "At a larger firm" is an H2 with the Callout beneath it, and only the Related list follows it.
+- **item 31's BU.** The `FOLLOWUPS.md` item that rules this worksheet's outline binds every stage: its two input-section names, its sidebar label, and any skeleton heading it renames, each exactly.
 - **item 13's F.** The guide holds no platform-set figures and names no vendor, model, or platform. Where a vendor's terms matter, name the concept, tell the reader to check the vendor's current terms, and link `/tools/vetting-a-vendor`.
 - **item 16's T.** Do not merge, including after a fix-up.
 - **item 19's AQ, with item 25's BM.** No pull request merges until the owner has reported the live-site check for the previous merge.
@@ -177,10 +178,10 @@ Post this and nothing more. **Do not print full files.**
 - no files touched outside the allowed paths
 - `pnpm wordcount content/tools/<slug>/index.mdx` reads 700–1,000; raw output quoted. If outside the range, the `CLAUDE.md` "Length" routing check was run first, and what remains is a packet item, because recording an accepted exception in `FOLLOWUPS.md` is outside this run's paths
 - `pnpm build` completes with no warnings; the raw tail of its output quoted
-- H2 sections in the skeleton's order, the two input sections named exactly as ruled
+- H2 sections in the skeleton's order, the two input sections named and any renamed skeleton heading worded exactly as the outline item rules (item 31's BU)
 - every table has three columns or fewer
 - `content/tools/_meta.js` gained exactly one entry, this worksheet's slug with its ruled sidebar label, and nothing else in it changed
-- every glossary link resolves to an id in `content/glossary/index.mdx`, and every internal link to a path under `content/`
+- every glossary link resolves to an id in `content/glossary/index.mdx`, and every internal link to a path under `content/` or to a tool slug `content/tools/index.mdx` lists (item 31's BT)
 - Glossary running list: every term this page links, with the line `CLAUDE.md`'s running list needs; not applied in this run (item 29's BR)
 - every external link carries `[VERIFY]` and appears under NOT verified; a `[VERIFY]` marker alone is not a packet item
 
