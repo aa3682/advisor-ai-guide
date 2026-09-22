@@ -465,10 +465,12 @@ Item 26's own entry still quotes the rule's older wording, and says every block 
 
 The project instructions and the template process file, in both its Deferred-Work Log section and its Fill-In Template, are unchanged. Their "above the original entry" wording still holds for numbered items.
 
-**BQ (the "At a larger firm" heading on worksheet pages).** New; amends nothing. Owner ruling, 2026-09-22, on PR #54. On worksheet pages under `content/tools/`, "At a larger firm" is an H2 with the Callout beneath it, because CLAUDE.md's "Worksheet page (tools)" section lists it among the page's H2 sections. Step and area pages keep the bare Callout their own skeletons describe; the two page types differ on purpose. The question arose because no existing page carried the heading, so the worksheet rule and the sixteen step and area pages pointed different ways. Consequence: `building-your-use-case-inventory` keeps its H2, and the three remaining worksheets follow it.
-
-Next free ruling letter: BR.
-
 26. **The status-block placement rule says "above"; every block in this file sits below.** `CLAUDE.md:141` and this file's own header at `FOLLOWUPS.md:3` both say a closing status block is appended "above the original entry." Every status block in this file — item 17's and the CP-44 note under BF, both merged at that placement in PRs #49 and #50, and the two this PR adds under items 21 and 24 — sits after the entry it closes. The same wording sits in two sources outside this repo, confirmed in chat from the project's own attachments: the project instructions, and the template process file in both its Deferred-Work Log section and its Fill-In Template. A fix confined to CLAUDE.md would leave this file's header, at minimum, disagreeing with it. Filed 2026-09-20, ruling-needed: change the rule to "below" in every source that carries it, or move the blocks. Recommendation: the rule; relocating merged blocks is churn with no reader benefit. No edit here.
 
 27. Two step pages don't link their companion worksheet: `decide-what-ai-is-for` → `/tools/building-your-use-case-inventory` and `write-the-ai-policy` → `/tools/writing-your-ai-policy`. `sort-your-data` and `vet-and-choose-tools` already do. Ruling-needed at build-order-7 housekeeping: add the two back-links, or leave. Filed 2026-09-22. No edit here.
+
+28. **Worksheet pages: the "At a larger firm" heading.** Filed and ruled 2026-09-22, on PR #54, whose session flagged the choice. Closed by this item's BQ; no deferred work.
+
+   **BQ (the "At a larger firm" heading on worksheet pages).** New; amends nothing. Owner ruling, 2026-09-22, on PR #54. On worksheet pages under `content/tools/`, "At a larger firm" is an H2 with the Callout beneath it, because CLAUDE.md's "Worksheet page (tools)" section lists it among the page's H2 sections. Step and area pages keep the bare Callout their own skeletons describe; the two page types differ on purpose. The question arose because no existing page carried the heading, so the worksheet rule and the sixteen step and area pages pointed different ways. Consequence: `building-your-use-case-inventory` keeps its H2, and the three remaining worksheets follow it.
+
+Next free ruling letter: BR.
