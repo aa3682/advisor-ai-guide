@@ -177,7 +177,7 @@ Post this and nothing more. **Do not print full files.**
 - pushed to the branch the run order named; nothing merged
 - no files touched outside the allowed paths
 - `pnpm wordcount content/tools/<slug>/index.mdx` reads 700–1,000; raw output quoted. If outside the range, the `CLAUDE.md` "Length" routing check was run first, and what remains is a packet item, because recording an accepted exception in `FOLLOWUPS.md` is outside this run's paths
-- `pnpm build` completes with no warnings; the raw tail of its output quoted
+- `git fetch --unshallow` run first where the clone is shallow, its output quoted (item 31's BW); then `pnpm build` completes with no warnings; the raw tail of its output quoted
 - H2 sections in the skeleton's order, the two input sections named and any renamed skeleton heading worded exactly as the outline item rules (item 31's BU)
 - every table has three columns or fewer
 - `content/tools/_meta.js` gained exactly one entry, this worksheet's slug with its ruled sidebar label, and nothing else in it changed
