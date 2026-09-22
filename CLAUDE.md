@@ -105,7 +105,7 @@ Conventions for both:
 - A category the guide defines rests on the guide. Where a federal rule that does not reach a state-registered adviser articulates the same concept, cite it as illustration, never as the definition's source, and say who the rule applies to.
 - On /tools/this-years-figures, a row sourced to a rule that does not reach a state-registered adviser says who it applies to in the "What it governs" column.
 - A row sourced to a federal rule that does not reach state-registered advisers carries its scope line inside the "What it governs" cell, for example "Applies to SEC-registered advisers; a state-registered firm follows its state's rule." No companion "Varies by state" row is added for scope alone.
-- Internal links use the site's existing slugs. Check the actual paths under content/ before writing a link.
+- Internal links use the site's existing slugs. Check the actual paths under content/ before writing a link. One exception (FOLLOWUPS item 31's BT): a link to a tool page whose slug content/tools/index.mdx lists is correct before that page lands, and FOLLOWUPS item 5 tracks it until it does.
 - The Callout is the stock component from nextra/components, the same one the landing pages use. Import it with exactly this line: `import { Callout } from 'nextra/components'`
 - The hard rules and writing style above apply in full to page bodies, headings, and frontmatter, including titles, descriptions, and slugs.
 
@@ -118,7 +118,7 @@ Worksheet page (tools):
 - Checklists use the same skeleton with the input sections named "Goals to consider" / "Your goals" and "The result" renamed "Your short list".
 - Tables have three columns at most so they render on a phone without horizontal scrolling.
 - No regulated figures. Name the concept and link the matching section of /tools/this-years-figures.
-- "At a larger firm" is a Callout and comes last, followed only by the Related list.
+- "At a larger firm" is an H2 with the Callout beneath it, and comes last, followed only by the Related list (FOLLOWUPS item 28's BQ).
 - No disclaimer.
 - Example values in tables and worked examples are round hypothetical numbers.
 
