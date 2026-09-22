@@ -35,6 +35,7 @@ saying a new rule is needed. Mark it and do not enforce it.
 11. **Internal links** use slugs that exist under `content/`; a link to a tool page whose slug `content/tools/index.mdx` lists is correct before that page lands (item 31's BT) — "Page templates" conventions.
 12. **Default scenario.** Where an SEC-registered adviser's obligations differ, or an advisor-specific platform changes the answer, the page says so — `CLAUDE.md` "What this is".
 13. **The guide's own categories.** A category the guide defines rests on the guide; a federal rule that does not reach a state-registered adviser is cited as illustration, saying who it applies to — "Page templates" conventions and item 8's closing status block. Safeguards-rule names use item 17's AL short forms exactly. No federal privacy-notice rule is named for a state-registered adviser — item 25's BE. A tier follows the information, not the errand it is attached to — item 25's BG.
+14. **Restatement.** A passage that restates the companion step page must be operative content the reader needs to fill in the section with the step page closed; a restated passage carrying the step's reasoning is a finding, fixed by linking to the step — `CLAUDE.md` "Worksheet page (tools)", item 33's BX.
 
 Read each in `CLAUDE.md` or `FOLLOWUPS.md` rather than from this list. Then
 check, in the same pass, everything else those files state as a rule.
