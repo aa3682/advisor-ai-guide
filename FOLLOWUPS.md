@@ -73,6 +73,8 @@ The `CLAUDE.md` `[VERIFY]` line rides in the same PR, amended for legibility rat
 
    This item stays open until the Firm Function and Tool pages above land.
 
+   **Status (2026-09-22) on the Tools list: `sorting-your-data` resolved.** The worksheet lands with PR #59, so the link to it from `sort-your-data` resolves on merge. `vetting-a-vendor` is still unbuilt; item 31's BT keeps links to it correct until it lands. This item stays open.
+
 **Status (build-order 18): scope note, still open.** A second question about this same page now lives in item 8 — whether the client-identifying tier's definition rests on the right source. That is a sourcing question and is handled there, not here. This item remains exactly what it was: a cross-page framing question about how the step page's Operations back-reference sits against the area page, for the consistency pass to resolve. The two can be settled independently.
 
 6. `content/process/sort-your-data/index.mdx` lists Operations and Back Office under "Which Firm Functions apply" with the line: "Many of the safest entries in the matrix — public and internal data — come from back-office work." That is accurate, but it invites the assumption that back-office work is *where the public and internal tiers live* — which is exactly the assumption [Operations and Back Office](/domains/operations-and-back-office) exists to complicate, since meeting transcripts, billing files, calendars, and system exports all carry client identity while feeling clerical.
