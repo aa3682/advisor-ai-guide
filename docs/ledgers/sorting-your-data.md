@@ -120,11 +120,7 @@ Reversals from this ledger at sign-off: none.
 
 ## Published
 
-Not yet published; no merge commit exists. Merging PR #59 is the owner's step, and it is
-gated on the owner reporting the live-site check for the previous merge, PR #58 — item 19's
-AQ, with item 25's BM. Nothing in this run merges anything (item 16's T). Once that gate
-clears and the owner merges, the content deploys on merge, which is the only point at which
-anything goes live.
+Published on merge of PR #59, merge commit fcfd7c2e88295d39ddc894aa4cf07a76296c575e, merge-commit method.
 
 **Controls:** `sha256sum` over the seven governing files, trusted after it reproduced the
 seven hashes the run order pinned. `pnpm wordcount`, trusted after it reproduced 985 on the
@@ -137,10 +133,8 @@ lines in `content/glossary/index.mdx`. A link-target check resolving every inter
 a path under `content/`. All of these ran in both the run and the fix-up round, and both
 rounds' results are reported in PR #59.
 
-**Verified after publish:** nothing yet. The owner's live-site check on `/tools/sorting-your-data`,
-reported in chat, is what covers this.
+**Verified after publish:** the owner's live-site check on `/tools/sorting-your-data`, reported in chat before Phase 5 opened.
 
 **Not verified, and not inferred:** whatever that live check does not cover. Known to sit
 outside it: the rendered width of the sixteen-row result table on a phone, unless the owner
-reads that table specifically; and whether `content/process/sort-your-data/index.mdx` agrees
-with the worksheet's redrawn grid, which it does not yet and which FOLLOWUPS item 32 holds.
+reads that table specifically. The step page's agreement with the redrawn grid was held by FOLLOWUPS item 32, closed in this PR.
