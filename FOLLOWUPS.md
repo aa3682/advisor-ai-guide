@@ -493,4 +493,6 @@ The project instructions and the template process file, in both its Deferred-Wor
 
    **BV (`CLAUDE.md` carries item 28's BQ).** Amends two lines of `CLAUDE.md` "Worksheet page (tools)": the skeleton line listing the H2 sections in order, whose "At a larger firm" entry now reads (H2, Callout beneath), and the bullet on that heading, which had described it as a bare Callout; it records in the rules doc what BQ already ruled and changes no rule. Owner ruling, 2026-09-22. Both lines now state BQ's rule, and the bullet cites it. The previous state failed because BQ was ruled without either line being amended, so the rules doc a reviewer reads first contradicted a locked ruling. Consequence: `CLAUDE.md` and item 28 agree, and a run meets one rule on that heading, not two.
 
-Next free ruling letter: BW.
+   **BW (a run unshallows its clone before building).** Amends the `docs/prompts/run-worksheet.md` checklist line on `pnpm build`. Owner ruling, 2026-09-22. Before `pnpm build`, a run whose clone is shallow runs `git fetch --unshallow` and quotes its output; the build must then complete with no warnings, as before. The previous state failed because a shallow clone makes the build print a warning about modified times that no edit inside a run's paths can remove, so that checklist line could not read pass; draft PR #57 found it and PR #58 confirmed the unshallow clears it. Consequence: the checklist line names the step, and every run reaches a build that can report honestly.
+
+Next free ruling letter: BX.
