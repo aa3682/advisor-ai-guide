@@ -54,17 +54,28 @@ Do not copy retention windows or plan-level limits into the matrix: they change 
 
 ## The result
 
-Cross the two lists — tiers down one side, tool categories across the top. Four tiers against four categories is sixteen pairings, and each needs an answer; the example below shows the shape rather than the whole grid, with round hypothetical entries.
+Cross the two lists: four tiers against four tool categories — consumer tier, business tier, signed agreement, advisor-specific platform. That is sixteen pairings, each needing an answer.
 
 | Information tier | Tool category | Answer |
 |---|---|---|
-| Public | Any tool | Yes |
+| Public | Consumer tier | Yes |
+| Public | Business tier | Yes |
+| Public | Signed agreement | Yes |
+| Public | Advisor-specific platform | Yes |
 | Internal | Consumer tier | Yes |
+| Internal | Business tier | Yes |
+| Internal | Signed agreement | Yes |
+| Internal | Advisor-specific platform | Yes |
 | Client-identifying | Consumer tier | No — [de-identify](/glossary#de-identification) first |
-| Client-identifying | Signed-agreement or business tier | Yes, where the agreement covers this use |
-| Restricted | Any general-purpose tool | No |
+| Client-identifying | Business tier | No — de-identify first |
+| Client-identifying | Signed agreement | Yes, where the agreement covers this use |
+| Client-identifying | Advisor-specific platform | Yes, where its agreement covers this use |
+| Restricted | Consumer tier | No |
+| Restricted | Business tier | No |
+| Restricted | Signed agreement | Only if the promise behind the restriction allows it |
+| Restricted | Advisor-specific platform | Only if the promise behind the restriction allows it |
 
-Fill every cell: a blank one gets filled in by whoever meets it first.
+Those answers follow from how this guide defines the tiers and the categories; confirm each against the terms you actually read. Fill every cell on your own copy — a blank gets filled in by whoever meets it first.
 
 Where a cell reads *de-identify first*, write down what that means for that pairing. Removing a name is not removing the person: age, town, employer, and approximate account size together can identify a client as surely as a name can, in a practice of eighty households. Where identity cannot be separated from the question, the honest answer is not de-identification but a tool already cleared for that tier.
 
