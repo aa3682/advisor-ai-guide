@@ -113,7 +113,7 @@ Worksheet page (tools):
 - Path: `content/tools/<slug>/index.mdx`, one folder per page.
 - 700–1,000 words of body prose, tables excluded. Measure with pnpm wordcount <path>.
 - Second person, plain English.
-- H2 sections in this order, headings only: "What this measures", "Before you start", first input section, second input section, "The result", "What the number does and does not tell you", "What to do with it", "At a larger firm" (Callout), then Related.
+- H2 sections in this order, headings only: "What this measures", "Before you start", first input section, second input section, "The result", "What the number does and does not tell you", "What to do with it", "At a larger firm" (H2, Callout beneath), then Related.
 - Input section names are worksheet-specific: name each for the two things the worksheet gathers.
 - Checklists use the same skeleton with the input sections named "Goals to consider" / "Your goals" and "The result" renamed "Your short list".
 - Tables have three columns at most so they render on a phone without horizontal scrolling.
