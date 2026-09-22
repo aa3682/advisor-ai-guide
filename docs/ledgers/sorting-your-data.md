@@ -10,7 +10,8 @@ subagent was missing and no substitution was made.
 
 ## Stages b to d — cold read and rules read
 
-Counts: 10 logged, 5 applied, 2 not applied, 3 escalated. Duplicate pairs
+Counts: 10 logged, 5 applied, 2 not applied, 3 escalated. The fix-up round below adds
+5 more, for 15 across both rounds. Duplicate pairs
 (same defect, two sources, logged once per source): none. Findings 3, 4, 5 and 10 all
 land on "The result" table, but they are four different defects, not one reached twice.
 
@@ -48,22 +49,63 @@ its new page will see a warning that no edit fixes.
 
 | Item | Ruling | Option taken | Where it landed |
 | ---- | ------ | ------------ | ---------------- |
-| 1 | awaiting owner | — | — |
-| 2 | awaiting owner | — | — |
+| 1 | accept all | (c) | `8bd1ed5` — the result grid redrawn here; step-page half filed as FOLLOWUPS item 32 |
+| 2 | accept all | (a) | no page change; filed as FOLLOWUPS item 33 |
 
-New standing rules written into the rules doc: none yet; packet item 2 asks for one.
+New standing rules written into the rules doc: none.
 
 ## Fix-up round
 
-One round, as capped. <What was re-read.>
+One round, as capped. After Parts A to C were committed, `cold-reader` and `rules-reviewer`
+were each invoked once more on `content/tools/sorting-your-data/` and passed the slug only.
+`rules-reviewer` returned no findings: it reported the page clean against every check, and
+recorded that the two things it would otherwise have raised — the worksheet's
+*Client-identifying × Business tier* answer diverging from the step page, and the three
+restating passages — are already held as FOLLOWUPS items 32 and 33. `cold-reader` returned
+the five below. Counts: 5 logged, 4 applied, 1 not applied, 0 escalated.
 
 | # | Finding | Source | Fix | Commit |
 | - | ------- | ------ | --- | ------ |
+| 11 | index.mdx, "Business tier of the same tool" — the grid turns on the difference between a business tier and a signed agreement, and the page never says how to tell them apart or why the answers differ | cold-reader | Applied: "The result" now says the two rows differ on who signed what, and that a public terms page alone does not qualify for client-identifying information | 63d2366 |
+| 12 | index.mdx, "That is sixteen pairings, each needing an answer." — with all sixteen cells printed, the reader could not tell whether the grid was their answer sheet or an example to reproduce | cold-reader | Applied: the prose now says the answers are the guide's, to copy and then change where the reader's own reading of the terms contradicts a cell | 63d2366 |
+| 13 | index.mdx, "No — de-identify first" — if de-identifying succeeds the information is no longer client-identifying, so the cell reads as telling the reader to change tier rather than satisfy a condition inside one | cold-reader | Applied: the paragraph now states that what goes in is a different piece of information, sorted on its own — item 25's BG. See sign-off note C | 63d2366 |
+| 14 | index.mdx, "a fifth usually means two things are kept apart that belong together" — a flat assertion with nothing behind it | cold-reader | not applied — repeat of finding 7; the same framing is settled prose on the merged step page (`content/process/sort-your-data/index.mdx:20`). See sign-off note D | — |
+| 15 | index.mdx, "that was settled before this worksheet, on the [use-case list]" — nothing earlier on the page says a prior list exists or where it is made | cold-reader | Applied: reads "on the use-case list the first step builds" | 63d2366 |
 
 ## Sign-off notes
 
-<Lettered A, B, C — each a tension left after the fix-up, what it is and what accepting
-it means. Or: None.>
+**A — Client-identifying information in a business tier, with no signed agreement, reads
+"No — de-identify first".** The owner's substantive call, made under Part A.3 of the fix-up
+order. Derivation, from text already in the guide: the worksheet's own "Read the terms, not
+the reputation" bullet says a business tier runs on pages that "change on the vendor's
+schedule"; `content/process/vet-and-choose-tools/index.mdx:24` says "If a tool is going to
+touch client-identifying or restricted information, a signed agreement is not optional — a
+public terms page alone does not qualify." A business plan without a signed agreement rests
+on a public terms page, so it falls on the same side as the consumer tier. No new claim
+about what vendors do was added to reach this. Accepting it means the guide now says a paid
+business plan is not by itself enough for client-identifying information, which is stricter
+than the bundled row the step page still carries (FOLLOWUPS item 32).
+
+**B — the two Restricted rows read "Only if the promise behind the restriction allows it".**
+A second substantive call from the same redraw, beyond the cell Part A.3 named. The
+restricted tier is defined on this page as client-identifying information the firm has
+promised to handle a set way, so whether any tool may take it depends on that promise rather
+than on the tool. The step page's row reads "Restricted | Any general-purpose tool | No",
+which the redraw keeps for the consumer and business tiers, the two general-purpose ones.
+Accepting it means restricted information is not barred outright from a signed-agreement or
+advisor-specific tool; the firm's own promise decides.
+
+**C — the page still does not say when de-identification succeeds.** Finding 13 is applied,
+so the page no longer reads as if de-identifying were a condition inside the
+client-identifying tier. What remains is that the page says plainly when de-identification
+fails ("Removing a name is not removing the person") and never says how a reader would know
+it worked. That is the step page's position too. Accepting it means the reader is told to
+judge it and given no test.
+
+**D — the "fifth tier" claim is unsupported on both pages.** `cold-reader` raised it in both
+rounds (findings 7 and 14) and it was not applied either time, because the same wording is
+settled prose on the merged step page. Accepting it means the four-tier cap rests on the
+guide's judgment, stated without a reason, in two places.
 
 ## Sign-off
 
