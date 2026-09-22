@@ -501,4 +501,6 @@ The project instructions and the template process file, in both its Deferred-Wor
 
 33. **Open question: how closely a worksheet may restate its companion step page.** Filed 2026-09-22 from packet item 2 of the `sorting-your-data` one-touch run (PR #59). The rules reviewer found three passages on the worksheet that closely restate the step page, and no written rule governing intra-guide restatement; the owner ruled option (a) for that page only, keeping the passages, because a worksheet has to work on a phone without the step page open. No standing rule is written. Settle this before the next worksheet run, as an owner ruling that either leaves restatement free or bounds it.
 
+34. **Sort Your Data pair: two prose gaps shared by the worksheet and the step page.** Filed 2026-09-22 from sign-off notes C and D of the `sorting-your-data` one-touch run (PR #59); filed, not fixed. (C) Both pages say when de-identification fails but never how a reader knows it has succeeded. (D) Both pages give "a fifth usually means two things are kept apart that belong together" as the reason for capping the scheme at four tiers, a frequency claim neither supports. Work alongside item 32, so both pages change in one pass.
+
 Next free ruling letter: BX.
