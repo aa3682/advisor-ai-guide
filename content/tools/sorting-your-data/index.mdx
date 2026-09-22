@@ -1,0 +1,107 @@
+---
+title: Sorting Your Data
+description: A worksheet for sorting what the firm holds into four tiers, sorting your tools by what they do with your input, and filling in the grid where the two meet.
+---
+
+import { Callout } from 'nextra/components'
+
+# Sorting Your Data
+
+Use this worksheet to sort what the firm holds into four tiers, sort the tools it uses by what they do with your input, and fill in the grid where the two meet. It is the companion to [Sort Your Data](/process/sort-your-data), which explains why the sorting comes before the tool; this page is where you write it down.
+
+## What this measures
+
+This worksheet gathers two lists and crosses them: the information the practice holds, and the tools it signs in to. It produces no score — each pairing has a plain answer, not a degree.
+
+The result is a [data matrix](/glossary#data-matrix): one page saying whether a kind of information may go into a kind of tool, and on what condition, written down before anybody is in a hurry.
+
+## Before you start
+
+Work from what the practice actually does, not the policy you intend to write. Open the places client information already lives — client files, the mailbox, the shared drive, your notes — and the tools you and your assistant use.
+
+Two ground rules before you fill anything in:
+
+- **Sort the information, not the job.** A tier belongs to a piece of information, not to the errand it is attached to. "Meeting prep" is not a tier; the transcript it starts from is [client-identifying](/glossary#client-identifying) whether the errand feels clerical or not.
+- **Read the terms, not the reputation.** What a tool does with your input is set out in its own terms-of-service and data-handling pages, and in any agreement the firm has signed — not in its marketing. Those change on the vendor's schedule, so check them as you fill in the second list — the [Vetting a Vendor checklist](/tools/vetting-a-vendor) covers what to look for.
+
+## What the firm holds
+
+List every kind of information the practice holds, then put each into one of the four tiers below. Use those four and no more; a fifth usually means two things are kept apart that belong together.
+
+| Tier | What it covers | Something the practice holds |
+|---|---|---|
+| Public | Already published, with no client in it | A page of the firm's own website |
+| Internal | The firm's own material, with no client information in it | A meeting-agenda template |
+| Client-identifying | Anything that identifies a client or ties back to one | A review-meeting transcript |
+| [Restricted](/glossary#restricted) | Client-identifying information the firm has promised to handle a set way | A file received under another party's confidentiality terms |
+
+Two things go wrong here. The firm's own notes and drafts about a client are client-identifying, not internal, however much they feel like the firm's work. And a summary naming nobody still carries ages, balances, and circumstances: anything identifying a client on its own or in combination belongs in that third tier — this guide's own plain-language category, not a regulator's scheme.
+
+## What each tool does with your input
+
+Now list every tool the practice signs in to, sorted by what happens to what you type, paste, or upload.
+
+| Tool category | What it typically does with your input | Where you confirm it |
+|---|---|---|
+| Consumer tier of a [general-purpose tool](/glossary#general-purpose-tool) | Often keeps inputs, and may use them to improve the service unless that is switched off | Its own terms and data-handling pages |
+| Business tier of the same tool | Usually contracts not to [train](/glossary#training) the [model](/glossary#model) on inputs, with some control over retention | The same pages, plus the plan's terms |
+| Tool under a signed agreement, the vendor acting as the firm's [service provider](/glossary#service-provider) | Whatever the agreement sets, including which [subprocessors](/glossary#subprocessor) it names | The signed agreement |
+| [Advisor-specific platform](/glossary#advisor-specific-platform) | Usually builds these commitments into the product itself | The vendor's terms, confirmed for your plan |
+
+Count the paths, not the products. An uploaded file, a connected mailbox or drive, a browser extension reading the screen, a note-taker joining a client call, and an [automation platform](/glossary#automation-platform) moving data between tools all put information into a tool exactly as typing does. Each is its own row: a mailbox left off is a gap even though nobody typed a client's name into a [prompt](/glossary#prompt). A tool nobody signed up for on the firm's behalf is [shadow IT](/glossary#shadow-it), and belongs here for that reason.
+
+Do not copy retention windows or plan-level limits into the matrix: they change when the vendor decides. Record where you checked and when, not the number.
+
+## The result
+
+Cross the two lists: four tiers against four tool categories — consumer tier, business tier, signed agreement, advisor-specific platform. That is sixteen pairings, each needing an answer.
+
+| Information tier | Tool category | Answer |
+|---|---|---|
+| Public | Consumer tier | Yes |
+| Public | Business tier | Yes |
+| Public | Signed agreement | Yes |
+| Public | Advisor-specific platform | Yes |
+| Internal | Consumer tier | Yes |
+| Internal | Business tier | Yes |
+| Internal | Signed agreement | Yes |
+| Internal | Advisor-specific platform | Yes |
+| Client-identifying | Consumer tier | No — [de-identify](/glossary#de-identification) first |
+| Client-identifying | Business tier | No — de-identify first |
+| Client-identifying | Signed agreement | Yes, where the agreement covers this use |
+| Client-identifying | Advisor-specific platform | Yes, where its agreement covers this use |
+| Restricted | Consumer tier | No |
+| Restricted | Business tier | No |
+| Restricted | Signed agreement | Only if the promise behind the restriction allows it |
+| Restricted | Advisor-specific platform | Only if the promise behind the restriction allows it |
+
+These answers are the guide's: copy the grid, then change any cell your own reading of the terms contradicts. The business-tier and signed-agreement rows differ on who signed what — a business plan runs on public terms the vendor can revise alone, and a public terms page alone does not qualify for client-identifying information.
+
+Where a cell reads *de-identify first*, write down what that means for that pairing. What goes in is then a different piece of information, sorted on its own. Removing a name is not removing the person: age, town, employer, and approximate account size together can identify a client as surely as a name can, in a practice of eighty households. Where identity cannot be separated from the question, the honest answer is not de-identification but a tool already cleared for that tier.
+
+## What the matrix does and does not tell you
+
+The matrix says what may go where, before the question is live. That is its whole job.
+
+It does not clear a tool. A cell reading *yes* means the tier and the category are compatible on the terms you read; whether a specific product is worth using is what [Vet and Choose Tools](/process/vet-and-choose-tools) asks. It does not clear a use either — that was settled before this worksheet, on the [use-case list](/glossary#use-case-list) the first step builds. And it says nothing about what you owe the client: the advice is the firm's whatever drafted it, and no cell moves that.
+
+One further limit, the one that bites: the matrix is true only on the day you fill it in.
+
+## What to do with it
+
+Date it and keep it where the person who needs it will look — beside the tools, not in a folder nobody opens.
+
+Re-check it on a trigger rather than a calendar: a new tool, a changed plan, a vendor's notice that its terms have moved, a new person joining the firm. Keep each dated version rather than overwriting the last, so the firm can show what the rule was at the time. Where the matrix is a record the firm has to keep, how long it keeps it is set by rule rather than preference — see [Records and Documentation in this year's figures](/tools/this-years-figures#records-and-documentation) — and a [state-registered adviser](/glossary#state-registered-adviser) checks what its own state requires.
+
+## At a larger firm
+
+<Callout type="info">
+At a larger firm the first list usually exists already, as a classification scheme in the information-security policy written before anyone considered AI tools. Find it rather than starting a new one, and map these four tiers onto its names instead of running two schemes side by side. Approval of a tool elsewhere is not approval for your use of it, because the tier you would put into it may differ. Where the mapping leaves a gap, raise it with whoever owns that policy rather than settling it here.
+</Callout>
+
+## Related
+
+- [Sort Your Data](/process/sort-your-data)
+- [Data Privacy and Security](/domains/data-privacy-and-security)
+- [Vendor Oversight](/domains/vendor-oversight)
+- [This year's figures](/tools/this-years-figures)
