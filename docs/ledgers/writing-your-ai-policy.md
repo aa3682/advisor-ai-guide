@@ -103,3 +103,15 @@ carries the retention concept. Nothing moved.
 
 Total cut 53 against 46 gained. Worksheet: 992 before this round, 1,038 after the CI edits, 985
 after the cuts. Step page: 933 before, 963 after.
+
+### Related trim
+
+Rule: `CLAUDE.md` "Writing style" and `rules-reviewer` check 7 — Related lists 2–4 other pages.
+The fix-up round's EDIT 4 restored Records and Documentation as a fifth entry. Criterion applied,
+the same one the run used when it dropped Vetting a Vendor: an entry the body prose already links
+leaves the list. Write the AI Policy was dropped — P = 2 before the trim (the summary's companion
+link plus the Related entry), 1 after. The description on the Records and Documentation entry
+("The policy, its appendices, and every acknowledgment are records the firm must be able to
+produce.") was removed so the entry is a bare link like the other three. Worksheet: 985 before,
+965 after. Related now reads Building Your Use-Case Inventory, Sorting Your Data, Compliance and
+Supervision, Records and Documentation.
