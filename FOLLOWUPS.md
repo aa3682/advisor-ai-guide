@@ -529,4 +529,16 @@ The project instructions and the template process file, in both its Deferred-Wor
 
 34. **Sort Your Data pair: two prose gaps shared by the worksheet and the step page.** Filed 2026-09-22 from sign-off notes C and D of the `sorting-your-data` one-touch run (PR #59); filed, not fixed. (C) Both pages say when de-identification fails but never how a reader knows it has succeeded. (D) Both pages give "a fifth usually means two things are kept apart that belong together" as the reason for capping the scheme at four tiers, a frequency claim neither supports. Work alongside item 32, so both pages change in one pass.
 
-Next free ruling letter: CE.
+**Status (2026-09-22, Phase 5): ruled — CE.** Owner ruling, 2026-09-22. The checklist evaluates one tool at a time, matching how `content/tools/index.mdx` describes it and what Vet and Choose Tools hands it; it does not compare several vendors or produce a short list. Under item 31's BU these names bind every stage of the run, exactly:
+- Page title "Vetting a Vendor"; sidebar label "Vendor Checklist"; slug `vetting-a-vendor` (already final in the Name step).
+- First input section: "What to check".
+- Second input section: "What you found".
+- "The result" renamed "Your decision".
+- "What the number does and does not tell you" renamed "What this checklist does and does not tell you".
+- Every other skeleton heading, and their order, unchanged from `CLAUDE.md` "Worksheet page (tools)".
+
+CE also amends `CLAUDE.md` line 118 (Part A of this PR): a checklist's section names come from its own outline item rather than the fixed names that line used to give, which were written for a goal-shortlisting checklist and did not fit a one-tool checklist. Word range unchanged at 700–1,000.
+
+36. **Vetting a Vendor: the checklist's outline.** Filed 2026-09-22, opening the `vetting-a-vendor` one-touch run, per item 29's BR ruling (1).
+
+Next free ruling letter: CF.
