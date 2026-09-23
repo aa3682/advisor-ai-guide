@@ -541,7 +541,7 @@ The project instructions and the template process file, in both its Deferred-Wor
 - "What the number does and does not tell you" renamed "What this checklist does and does not tell you".
 - Every other skeleton heading, and their order, unchanged from `CLAUDE.md` "Worksheet page (tools)".
 
-CE also amends `CLAUDE.md` line 118 (Part A of this PR): a checklist's section names come from its own outline item rather than the fixed names that line used to give, which were written for a goal-shortlisting checklist and did not fit a one-tool checklist. Word range unchanged at 700–1,000.
+CE also amends the checklist line in `CLAUDE.md` "Worksheet page (tools)" (Part A of this PR): a checklist's section names come from its own outline item rather than the fixed names that line used to give, which were written for a goal-shortlisting checklist and did not fit a one-tool checklist. Word range unchanged at 700–1,000.
 
 36. **Vetting a Vendor: the checklist's outline.** Filed 2026-09-22, opening the `vetting-a-vendor` one-touch run, per item 29's BR ruling (1).
 
