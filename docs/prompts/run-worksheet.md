@@ -4,7 +4,7 @@ The one-touch pipeline. One agent session drafts a whole worksheet, has it revie
 applies what the written rules already cover, and comes back once with an escalation
 packet.
 
-**Input:** a worksheet <slug> whose outline is already ruled in `CLAUDE.md` "Worksheet page (tools)" for the section order, `content/tools/index.mdx` for the title and slug, and the `FOLLOWUPS.md` item that rules this worksheet's two input-section names and its sidebar label (an item item 29's BR requires for every worksheet).
+**Input:** a worksheet <slug> whose outline is already ruled in `CLAUDE.md` "Worksheet page (tools)" for the section order, `content/tools/index.mdx` for the title and slug, and the `FOLLOWUPS.md` item that rules this worksheet's two input-section names, its sidebar label, and any skeleton heading it renames (item 29's BR requires one for every worksheet; item 31's BU binds all three exactly).
 
 **Do not start** if the outline is not ruled. An unruled outline is the owner's first
 touch, not this session's work. Say so and stop.
@@ -20,13 +20,13 @@ These hold at every stage. They are decisions, not preferences.
 - **item 29's BR.** This run follows this prompt. Its report replaces the "Report" section in `CLAUDE.md` "How to work", suggested follow-ups go under "Beyond-spec calls", and the run opens a pull request and does not merge. The run does not edit `CLAUDE.md`: it lists the Glossary running list lines the page needs, and the fix-up order applies them.
 - **item 28's BQ.** On a worksheet page, "At a larger firm" is an H2 with the Callout beneath it, and only the Related list follows it.
 - **item 31's BU.** The `FOLLOWUPS.md` item that rules this worksheet's outline binds every stage: its two input-section names, its sidebar label, and any skeleton heading it renames, each exactly.
-- **item 13's F.** The guide holds no platform-set figures and names no vendor, model, or platform. Where a vendor's terms matter, name the concept, tell the reader to check the vendor's current terms, and link `/tools/vetting-a-vendor`.
+- **item 13's F, with CLAUDE.md hard rule 2.** The guide holds no platform-set figures and names no vendor, model, or platform. Where a vendor's terms matter, name the concept, tell the reader to check the vendor's current terms, and link `/tools/vetting-a-vendor`.
 - **item 16's T.** Do not merge, including after a fix-up.
 - **item 19's AQ, with item 25's BM.** No pull request merges until the owner has reported the live-site check for the previous merge.
 - **item 22's AX, AY, AZ, BA and BB.** Glossary links follow these rulings as written in item 22: which string gets the link, defining lines, headings, where the rule does not reach, and link text.
 - **item 17's AL.** 17 CFR 248.30 is "Regulation S-P's safeguards rule" and 16 CFR 314 is "the FTC Safeguards Rule", exactly.
 - **item 25's BE.** Which federal privacy-notice rule, if any, reaches a state-registered adviser is unresolved (item 17). Name none for that reader.
-- **item 25's BG.** A piece of information's tier follows the information, not the errand it is attached to. Never map a tier to a kind of work.
+- **item 49's CV.** A piece of information's tier follows the information, not the errand it is attached to. Never map a tier to a kind of work.
 - **item 8's closing status block.** The client-identifying tier is the guide's own plain-language category; 17 CFR 248.30 is cited only as illustration, scoped to Commission-registered advisers.
 
 Everything in `CLAUDE.md` applies too. Read it at the start of the run rather than
@@ -65,7 +65,7 @@ Draft the worksheet in outline order: one H2 section per outline entry, all in t
 single file `content/tools/<slug>/index.mdx`. Follow `CLAUDE.md` and the locked decisions in `FOLLOWUPS.md`.
 
 Where the worksheet already has approved prose, it is the style exemplar. Where it has
-none, the one approved worksheet, `content/tools/building-your-use-case-inventory/index.mdx`, is.
+none, `content/tools/building-your-use-case-inventory/index.mdx` is.
 
 **Self-fix mechanical defects without asking.** The test is whether the fix can change
 what the text means. If it cannot, fix it and move on. Mechanical here: spelling and punctuation that cannot change meaning; MDX and markdown syntax; a heading's level where the skeleton sets it; the exact Callout import line; a glossary anchor or internal link path corrected to an id or slug that exists under `content/`; and the frontmatter title matched to the H1. Nothing else is mechanical.
@@ -81,6 +81,7 @@ have to exist before stage d closes.
 Invoke `cold-reader` on `content/tools/<slug>/`. Pass it the <slug> and nothing else — not
 the outline, the rules, your drafting notes, or a summary of intent. Its value is that
 it does not have them.
+The session harness loads `CLAUDE.md` into every session's context, including the cold reader's, so the read is cold to everything except that file.
 
 ## Stage c — rules read
 
@@ -183,7 +184,7 @@ Post this and nothing more. **Do not print full files.**
 - `content/tools/_meta.js` gained exactly one entry, this worksheet's slug with its ruled sidebar label, and nothing else in it changed
 - every glossary link resolves to an id in `content/glossary/index.mdx`, and every internal link to a path under `content/` or to a tool slug `content/tools/index.mdx` lists (item 31's BT)
 - Glossary running list: every term this page links, with the line `CLAUDE.md`'s running list needs; not applied in this run (item 29's BR)
-- every external link carries `[VERIFY]` and appears under NOT verified; a `[VERIFY]` marker alone is not a packet item
+- every external link the run cannot confirm live carries `[VERIFY]` and appears under NOT verified; a URL already confirmed in chat on an earlier merge carries no marker and appears under "previously confirmed" with where it was confirmed; chat still fetches every external link before merge; a `[VERIFY]` marker alone is not a packet item
 
 **2. Commit hashes.** One line per commit, hash and subject.
 

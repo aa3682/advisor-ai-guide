@@ -75,9 +75,9 @@ Step page skeleton:
 5. "What actually happens" — 3–5 short H3 subsections describing the concrete work.
 6. "Questions to ask yourself"
 7. "Common mistakes"
-8. "Which knowledge areas apply" — links to 2–4 area pages, one line each on why it applies at this step.
+8. "Which Firm Functions apply" — links to 2–4 area pages, one line each on why it applies at this step.
 9. "At a larger firm" — a Callout, 3–6 sentences: what changes for the adviser at a larger firm — supervision, approvals, existing vendor stack.
-10. "Next step" — one link to the following step page. The last step links back to the first.
+10. "Next step" — one link to the following step page. The last step ends instead with "Back to the start", which links back to the first step.
 
 Area page skeleton:
 1. Frontmatter with `title` and `description`.
@@ -115,7 +115,7 @@ Worksheet page (tools):
 - Second person, plain English.
 - H2 sections in this order, headings only: "What this measures", "Before you start", first input section, second input section, "The result", "What the number does and does not tell you", "What to do with it", "At a larger firm" (H2, Callout beneath), then Related.
 - Input section names are worksheet-specific: name each for the two things the worksheet gathers.
-- Restatement (FOLLOWUPS item 33's BX): a worksheet may restate its companion step page's operative content (the definitions, categories, and conditions the reader needs to fill it in) so it works on a phone with the step page closed. It does not restate the step's reasoning; it links to the step for that. The step page is the source of truth: a PR that edits content one page restates edits the other to match in the same PR. Test: could the reader fill in this section with the step page closed? If yes without the passage, the passage becomes a link.
+- Restatement (FOLLOWUPS item 33's BX): a worksheet may restate its companion step page's operative content (the definitions, categories, and conditions the reader needs to fill it in) so it works on a phone with the step page closed. It does not restate the step's reasoning; it links to the step for that. The step page is the source of truth: a PR that edits content one page restates edits the other to match in the same PR. Test: could the reader fill in this section with the step page closed? If yes without the passage, the passage becomes a link. The same holds for a passage that restates any other page's operative content: the page that defines that content is the source of truth, and a PR that edits either edits the other to match (FOLLOWUPS item 39's CU).
 - Checklists use the same skeleton; a checklist's input-section names and any renamed skeleton heading come from the FOLLOWUPS item that rules its outline, binding every stage of the run exactly as item 31's BU requires (item 36's CE, which generalized this line from the fixed names it used to give).
 - Tables have three columns at most so they render on a phone without horizontal scrolling.
 - No regulated figures. Name the concept and link the matching section of /tools/this-years-figures.
@@ -140,7 +140,7 @@ Soft ranges, body prose only, measured with pnpm wordcount: step pages 800–1,1
 - A one-touch run (FOLLOWUPS item 29's BR) follows its run prompt, `docs/prompts/run-worksheet.md`: the run report replaces the "Report" section above, suggested follow-ups go under its "Beyond-spec calls", and the run opens a pull request and does not merge.
 
 ## FOLLOWUPS
-FOLLOWUPS.md at the repo root records anything deferred mid-build, one numbered item per entry. Append new items as they come up. When an item closes, append a status block above the original entry rather than deleting or rewriting it, and say so explicitly if the original entry's framing turns out to have been wrong. A status block that closes only part of an item — a lettered sub-item, or a single paragraph or ruling inside it — sits directly below the paragraph it closes instead.
+FOLLOWUPS.md at the repo root records anything deferred mid-build, one numbered item per entry. Append new items as they come up. When an item closes, append a status block above the original entry rather than deleting or rewriting it, and say so explicitly if the original entry's framing turns out to have been wrong. A status block that closes only part of an item — a lettered sub-item, or a single paragraph or ruling inside it — sits directly below the paragraph it closes instead. A lettered ruling that settles part of an open item without closing it sits indented directly below the entry, with no Status line.
 A ruling recorded in FOLLOWUPS.md is cited item-qualified — "item 20's V", not "ruling V" — because some letters name two different rulings.
 
 ## Glossary
