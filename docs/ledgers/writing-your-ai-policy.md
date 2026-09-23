@@ -66,3 +66,40 @@ measure 992.
 | 16 | index.mdx, "The date, and which cells say no" against "client-identifying rows" — cells in one place, rows in another | cold-reader | Applied: the example provision is written from the tool's two cells: "client-identifying only after de-identifying; restricted, never" | ffc48fd |
 | 17 | index.mdx, "Update the section when one of its appendices changes, not on a calendar of its own" against decision 3's review date | cold-reader | Applied: "Update the section at the review in decision 3, and whenever one of its appendices changes" | ffc48fd |
 | 18 | index.mdx, "which turns on your state's requirements or, for an SEC-registered adviser, the rules the duty map already records" — routes the default reader away from the duty map, which records their state rules too ("What this is"; "A category the guide defines rests on the guide") | rules-reviewer | Applied: the duty map is the reference for both readers, with the SEC flag inside it | ffc48fd |
+
+## Fix-up round
+
+Owner reply to the packet: `accept all except 1`. Packet item 1 is replaced by item 47's CI,
+applied in this round; the fix-up order for this round was ruled 2026-09-23.
+
+**Glossary running list (item 29's BR ruling (3)).** `content/tools/writing-your-ai-policy/index.mdx`
+added to twelve lines of `CLAUDE.md` "Glossary running list": Client-identifying, Compliance
+program, Data matrix, De-identification, Duty map, Examination, Fiduciary duty, General-purpose
+tool, Restricted, SEC-registered adviser, State-registered adviser, Use-case list. K = 12.
+
+**CI edits.** Step page: one sentence appended to the paragraph under "Write what the policy
+actually has to say" ("The duty map is what every one of those provisions is checked
+against…"); `content/process/write-the-ai-policy/index.mdx` measures 933 before and 963 after,
+inside 800–1,100. Worksheet: one sentence appended to the opening prose of "The decisions the
+policy records" ("Check each decision below against the duty map you attached…"), W1 = 27; Records
+and Documentation restored to Related, directly after Compliance and Supervision, with a one-line
+description, W2 = 19.
+
+**Length routing check.** Run before cutting: no cross-reference sits in prose that belongs in a
+linked list — the Vetting a Vendor link names where the approved-tools row is copied from, the
+Handle Client-Facing Use link is the step page's own instruction, and the figures-page anchor
+carries the retention concept. Nothing moved.
+
+**Cuts, non-operative wording only**, each measured with `scripts/wordcount.mjs` on the whole page:
+
+| Before | After | Delta |
+| ------ | ----- | ----- |
+| "If a provision needs a paragraph, it is restating a document instead of pointing to it. Date the section" | "Date the section" | −16 |
+| "which explains why the policy lives there and not in a document of its own; this page is where you write it down." | "which explains why; this page is where you write it down." | −12 |
+| "It tells you whether every rule the firm is about to enforce can be traced to something the firm actually decided." | "It tells you whether every rule can be traced to something the firm decided." | −7 |
+| "A rule that points nowhere is not one the firm decided, and it comes out." | "A rule that points nowhere comes out." | −8 |
+| "that is a question for whoever approves tools at the firm, not a gap you fill." | "that is a question for whoever approves tools at the firm." | −5 |
+| "The example below is a fictional two-person firm, Harbor Lane Advisory, run by an adviser named Sam Example with one assistant;" | "The example is a fictional two-person firm, Harbor Lane Advisory, adviser Sam Example and one assistant;" | −5 |
+
+Total cut 53 against 46 gained. Worksheet: 992 before this round, 1,038 after the CI edits, 985
+after the cuts. Step page: 933 before, 963 after.
