@@ -116,7 +116,7 @@ Worksheet page (tools):
 - H2 sections in this order, headings only: "What this measures", "Before you start", first input section, second input section, "The result", "What the number does and does not tell you", "What to do with it", "At a larger firm" (H2, Callout beneath), then Related.
 - Input section names are worksheet-specific: name each for the two things the worksheet gathers.
 - Restatement (FOLLOWUPS item 33's BX): a worksheet may restate its companion step page's operative content (the definitions, categories, and conditions the reader needs to fill it in) so it works on a phone with the step page closed. It does not restate the step's reasoning; it links to the step for that. The step page is the source of truth: a PR that edits content one page restates edits the other to match in the same PR. Test: could the reader fill in this section with the step page closed? If yes without the passage, the passage becomes a link.
-- Checklists use the same skeleton with the input sections named "Goals to consider" / "Your goals" and "The result" renamed "Your short list".
+- Checklists use the same skeleton; a checklist's input-section names and any renamed skeleton heading come from the FOLLOWUPS item that rules its outline, binding every stage of the run exactly as item 31's BU requires (item 36's CE, which generalized this line from the fixed names it used to give).
 - Tables have three columns at most so they render on a phone without horizontal scrolling.
 - No regulated figures. Name the concept and link the matching section of /tools/this-years-figures.
 - "At a larger firm" is an H2 with the Callout beneath it, and comes last, followed only by the Related list (FOLLOWUPS item 28's BQ).

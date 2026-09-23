@@ -133,8 +133,9 @@ lines in `content/glossary/index.mdx`. A link-target check resolving every inter
 a path under `content/`. All of these ran in both the run and the fix-up round, and both
 rounds' results are reported in PR #59.
 
-**Verified after publish:** the owner's live-site check on `/tools/sorting-your-data`, reported in chat before Phase 5 opened.
+**Verified after publish:** the owner's live-site check on `/tools/sorting-your-data`, reported in
+chat before Phase 5 opened; and the owner's phone read of the sixteen-row result table, reported
+in chat on 2026-09-22 as readable without horizontal scrolling.
 
-**Not verified, and not inferred:** whatever that live check does not cover. Known to sit
-outside it: the rendered width of the sixteen-row result table on a phone, unless the owner
-reads that table specifically. The step page's agreement with the redrawn grid was held by FOLLOWUPS item 32, closed in this PR.
+**Not verified, and not inferred:** whatever those two checks do not cover. The step page's
+agreement with the redrawn grid was held by FOLLOWUPS item 32, closed in PR #60.

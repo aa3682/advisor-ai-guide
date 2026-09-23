@@ -506,7 +506,7 @@ The project instructions and the template process file, in both its Deferred-Wor
 **Status (2026-09-22, Phase 5): closed — ruling BX (b), restatement bounded by kind.** Owner ruling, 2026-09-22. The rule, as written into `CLAUDE.md` "Worksheet page (tools)": Restatement (FOLLOWUPS item 33's BX): a worksheet may restate its companion step page's operative content (the definitions, categories, and conditions the reader needs to fill it in) so it works on a phone with the step page closed. It does not restate the step's reasoning; it links to the step for that. The step page is the source of truth: a PR that edits content one page restates edits the other to match in the same PR. Test: could the reader fill in this section with the step page closed? If yes without the passage, the passage becomes a link.
 
    **BX-1 (retroactive, carried out per CD).** Done as a sweep of `content/tools/sorting-your-data/index.mdx` against the step page with no expected count, because the ledger names one restated passage (finding 10, "Removing a name is not removing the person") rather than the three this item describes; the item's "three" was never verified. Dispositions under the rule's test, one per restated passage, each by a searchable phrase:
-   - "a fifth usually means two things are kept apart that belong together" — link: reasoning — the only reason the cap was given, and not needed to sort anything; removed by CA in this PR, the step page keeps the cap's reason.
+   - "a fifth usually means two things are kept apart that belong together" — link: reasoning — the only reason the cap was given, and not needed to sort anything; removed by CA in PR #60. The step page states the cap's reason as the guide's own design choice; the frequency claim is gone from both pages.
    - "one page saying whether a kind of information may go into a kind of tool" — keep: operative — defines the thing the reader is producing.
    - "Read the terms, not the reputation" — keep: operative — names where the second list's entries come from; the "Where you confirm it" column cannot be filled without it.
    - The tier table, "Already published, with no client in it" — keep: operative — the four definitions are what the reader sorts the first list against.
@@ -529,4 +529,20 @@ The project instructions and the template process file, in both its Deferred-Wor
 
 34. **Sort Your Data pair: two prose gaps shared by the worksheet and the step page.** Filed 2026-09-22 from sign-off notes C and D of the `sorting-your-data` one-touch run (PR #59); filed, not fixed. (C) Both pages say when de-identification fails but never how a reader knows it has succeeded. (D) Both pages give "a fifth usually means two things are kept apart that belong together" as the reason for capping the scheme at four tiers, a frequency claim neither supports. Work alongside item 32, so both pages change in one pass.
 
-Next free ruling letter: CE.
+**Status (2026-09-22, Phase 5): closed — corrected in the same PR that filed it.** No ruling letter; this is a correction to a closed item's wording, not a decision. The clause now reads as set out below. Item 33's own ruling is unchanged.
+
+35. **Item 33's BX-1 sweep: the first bullet's closing clause is ambiguous.** Filed 2026-09-22 from the owner's read of PR #60 before merge. In item 33's status block, the bullet for "a fifth usually means two things are kept apart that belong together" ends "the step page keeps the cap's reason", which a later reader could take to mean the frequency claim survives on the step page. It does not; CA replaced it with a design-choice statement.
+
+**Status (2026-09-22, Phase 5): ruled — CE.** Owner ruling, 2026-09-22. The checklist evaluates one tool at a time, matching how `content/tools/index.mdx` describes it and what Vet and Choose Tools hands it; it does not compare several vendors or produce a short list. Under item 31's BU these names bind every stage of the run, exactly:
+- Page title "Vetting a Vendor"; sidebar label "Vendor Checklist"; slug `vetting-a-vendor` (already final in the Name step).
+- First input section: "What to check".
+- Second input section: "What you found".
+- "The result" renamed "Your decision".
+- "What the number does and does not tell you" renamed "What this checklist does and does not tell you".
+- Every other skeleton heading, and their order, unchanged from `CLAUDE.md` "Worksheet page (tools)".
+
+CE also amends the checklist line in `CLAUDE.md` "Worksheet page (tools)" (Part A of this PR): a checklist's section names come from its own outline item rather than the fixed names that line used to give, which were written for a goal-shortlisting checklist and did not fit a one-tool checklist. Word range unchanged at 700–1,000.
+
+36. **Vetting a Vendor: the checklist's outline.** Filed 2026-09-22, opening the `vetting-a-vendor` one-touch run, per item 29's BR ruling (1).
+
+Next free ruling letter: CF.
