@@ -62,3 +62,8 @@ because each page is already linked from the summary or the Related list.
 | 24 | index.mdx, "section-248.30) [VERIFY])" — the record already shows this URL confirmed (items 14 and 20), so `CLAUDE.md` "How to work" would clear it | rules-reviewer | not applied — the run prompt's checklist requires every external link to carry `[VERIFY]` and says a marker alone is not a packet item; review confirms and clears it in this PR. Pair: 19 | — |
 | 25 | index.mdx, "for summarizing client meetings, which is client-identifying information" — ties the tier to the errand (item 25's BG) | rules-reviewer | Applied: "the meeting notes it takes in are client-identifying information" | 1a4815c |
 | 26 | index.mdx, "is under the FTC Safeguards Rule and its state's requirements instead" — scope claim without a primary source (Hard rules 3) | rules-reviewer | Applied: Part 314 eCFR link on "FTC Safeguards Rule", marked [VERIFY] | 1a4815c |
+
+## Packet outcome
+
+- Packet item 1 (ledger finding 4) — owner reply: accept all — option (a) applied: one sentence on what the FTC Safeguards Rule asks of service-provider oversight, cited as plain text (16 CFR 314.4(f)) — 8d1c0d5
+- Packet item 2 (ledger findings 21 and 22) — owner reply: accept all — option (a) applied: "Your decision" says the guide sets no pass mark for the four answers, and "Watch the third column" reworded to match — 8d1c0d5
