@@ -545,4 +545,12 @@ CE also amends the checklist line in `CLAUDE.md` "Worksheet page (tools)" (Part 
 
 36. **Vetting a Vendor: the checklist's outline.** Filed 2026-09-22, opening the `vetting-a-vendor` one-touch run, per item 29's BR ruling (1).
 
-Next free ruling letter: CF.
+37. **Vetting a Vendor: prerequisites for the run.** Filed and ruled 2026-09-23, on the read-only discovery report against `24e5efd`, before the `vetting-a-vendor` one-touch run.
+
+   **CF (the checklist does not link itself).** Amends item 13's F for `content/tools/vetting-a-vendor/index.mdx` only. Owner ruling, 2026-09-23. F's requirement to link `/tools/vetting-a-vendor` wherever a vendor's terms matter does not reach the Vetting a Vendor page itself; every other part of F applies to that page unchanged. The previous state failed because the page discusses vendor terms throughout, so a rules read would flag the missing link and a one-touch run would apply a self-link by default under item 29's BR. Consequence: a rules read does not treat the absence of that link on this page as a finding, and the run adds no self-link.
+
+   **CG ("What to check" covers the step page's five).** Completes item 36's CE for the section "What to check". Owner ruling, 2026-09-23. "What to check" covers exactly the five things Vet and Choose Tools names, in that page's order: whether inputs are used to train the model, the retention period, whether the vendor will sign an agreement acting as the firm's service provider, whether subprocessors are disclosed, and what happens to data on cancellation. It adds no check and merges none. Who can approve a tool, and the re-check trigger, may appear only in "Your decision", as restatement under item 33's BX. The previous state failed because Vet and Choose Tools tells the reader the checklist walks through these five one at a time, and no written rule bound the checklist to that, so a run could add or merge a check and make the step page's sentence false with nothing positioned to catch it. Consequence: the run's rules read checks "What to check" against this list, and Vet and Choose Tools needs no edit.
+
+38. **Run prompt names one approved worksheet.** Filed 2026-09-23, from the same discovery report. Open. `docs/prompts/run-worksheet.md` stage a calls `content/tools/building-your-use-case-inventory/index.mdx` "the one approved worksheet"; `sorting-your-data` has since landed, so the phrase is stale. It names a specific file, so the exemplar a run uses is unambiguous and no run is blocked. Deferred to the housekeeping pass that closes the build, where the owner rules whether that line changes and to what.
+
+Next free ruling letter: CH.
