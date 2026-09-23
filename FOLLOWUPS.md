@@ -639,4 +639,8 @@ CE also amends the checklist line in `CLAUDE.md` "Worksheet page (tools)" (Part 
 
 61. **Possible light paraphrase of 17 CFR 248.30(a)(4)(iii) on the figures page.** `content/tools/this-years-figures/index.mdx`, "substantial risk to national security or public safety and tells the Commission in writing", tracks the rule's exception clause closely, the class hard rule 3 and item 20's Y reach. The reviewer could not fetch the eCFR text to compare, and the row passed item 14's verification as written; chat fetches and compares before ruling. Found by the rules-reviewer read in the Phase 5 filing pass (Step 3). Filed 2026-09-23, ruling-needed at close-out. No edit here.
 
-Next free ruling letter: CX.
+**Status (2026-09-23, Phase 5): closed — ruling CX.** Owner ruling, 2026-09-23. **CX (the figures page carries the disclaimer).** The Callout is restored on `content/tools/this-years-figures/index.mdx` exactly as it stood at `c31e3e1`, in the same position relative to the H1 and the Firm Function sections. The rule files are corrected: `CLAUDE.md` hard rule 4 and its "Page templates" bullet now name the landing pages and the figures reference page, and `.claude/agents/rules-reviewer.md` check 4 carries the same exception. The `6778b40` removal was applied in good faith under a rule that had diverged from the project instructions; that divergence, not the page, was the defect.
+
+62. **The disclaimer rule in CLAUDE.md omitted the figures reference page.** The project instructions put the standard disclaimer on every top-level landing page and on the figures reference page; `CLAUDE.md` hard rule 4 and its "Page templates" bullet named landing pages only. The Step 3 rules-reviewer read applied that rule, and commit `6778b40` removed the Callout from `/tools/this-years-figures` as an in-rules fix. The page had carried it since the scaffold commit (`9d4551e`, PR #1). Filed 2026-09-23.
+
+Next free ruling letter: CY.
