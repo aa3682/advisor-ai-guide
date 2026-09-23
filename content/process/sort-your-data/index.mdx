@@ -11,35 +11,36 @@ This is the third step in The Adoption Path. Before vetting a single tool, you d
 
 ## Why it matters
 
-Without a sorted view of the firm's own information, every tool decision becomes a one-off judgment call, made under time pressure. That is the same pattern [Decide What AI Is For](/process/decide-what-ai-is-for) and [Map the Rules That Apply](/process/map-the-rules-that-apply) exist to prevent for use cases and duties, and it applies just as much to data. Sort the data once, and every later question — is this use allowed, does this tool qualify, does a client's information need to be [de-identified](/glossary#de-identification) first — has an answer you can point to instead of a decision made fresh each time.
+Without a sorted view of the firm's own information, every tool decision becomes a one-off judgment call, made under time pressure. Sort the data once, and every later question — is this use allowed, does this tool qualify, does a client's information need to be [de-identified](/glossary#de-identification) first — has an answer you can point to instead of a decision made fresh each time.
 
 ## What actually happens
 
 ### Sort the firm's information into tiers
 
-Use four tiers — the guide's own plain-language framing, not a regulator's classification scheme. **Public** is information already published, with no client in it. **Internal** is the firm's own material — templates, procedures, internal drafts — with no client information in it either. **[Client-identifying](/glossary#client-identifying)** is anything that identifies a client or ties back to one: names, account numbers, holdings, dates of birth, contact details. One illustration: [Regulation S-P's safeguards rule](https://www.ecfr.gov/current/title-17/chapter-II/part-248/subpart-A/subject-group-ECFR83262a0bce5ffaa/section-248.30) calls this [nonpublic personal information](/glossary#nonpublic-personal-information) and applies to [Commission-registered advisers](/glossary#sec-registered-adviser); a [state-registered firm](/glossary#state-registered-adviser) is covered instead by the FTC Safeguards Rule, along with its state's requirements, which vary. **[Restricted](/glossary#restricted)** is client-identifying information the firm has promised, in writing or by rule, to handle a specific way: information received under another party's confidentiality terms, for example. Four tiers, no more; a fifth or sixth usually means two are kept separate that need not be.
+Use four tiers — the guide's own plain-language framing, not a regulator's classification scheme. **Public** is information already published, with no client in it. **Internal** is the firm's own material — templates, procedures, internal drafts — with no client information in it either. **[Client-identifying](/glossary#client-identifying)** is anything that identifies a client or ties back to one: names, account numbers, holdings, dates of birth, contact details. One illustration: [Regulation S-P's safeguards rule](https://www.ecfr.gov/current/title-17/chapter-II/part-248/subpart-A/subject-group-ECFR83262a0bce5ffaa/section-248.30) calls this [nonpublic personal information](/glossary#nonpublic-personal-information) and applies to [Commission-registered advisers](/glossary#sec-registered-adviser); a [state-registered firm](/glossary#state-registered-adviser) is covered instead by the FTC Safeguards Rule, along with its state's requirements, which vary. **[Restricted](/glossary#restricted)** is client-identifying information the firm has promised, in writing or by rule, to handle a specific way: information received under another party's confidentiality terms, for example. Four tiers, no more: the guide caps the scheme at four so that each piece of information lands in exactly one tier without debate.
 
 ### Sort tools by what they do with what you type
 
-Tools split into a few categories by what happens to what you type into them. A free, consumer version of a [general-purpose tool](/glossary#general-purpose-tool) often keeps inputs by default and may use them to improve the service unless that is turned off. A paid business tier of the same tool typically contracts not to train on inputs and gives the firm some control over retention. A tool used under a signed agreement, where the vendor acts as the firm's [service provider](/glossary#service-provider), carries whatever terms that agreement sets. An [advisor-specific platform](/glossary#advisor-specific-platform) has usually already made these commitments part of the product itself. None of this can be judged from a tool's reputation or marketing page — read its own terms-of-service and data-handling pages for what they actually say, the only reliable source. Any retention window or plan-level limit found there changes on the vendor's schedule — check it live with the [Vetting a Vendor checklist](/tools/vetting-a-vendor).
+Tools split into a few categories by what happens to what you type into them. A free, consumer version of a [general-purpose tool](/glossary#general-purpose-tool) often keeps inputs by default and may use them to improve the service unless that is turned off. A paid business tier of the same tool typically contracts not to train on inputs and gives the firm some control over retention. A tool used under a signed agreement, where the vendor acts as the firm's [service provider](/glossary#service-provider), carries whatever terms that agreement sets. An [advisor-specific platform](/glossary#advisor-specific-platform) has usually already made these commitments part of the product itself. None of this can be judged from a tool's reputation or marketing page; its own terms-of-service and data-handling pages are the only reliable source. Any retention window or plan-level limit found there changes on the vendor's schedule — check it live with the [Vetting a Vendor checklist](/tools/vetting-a-vendor).
 
 ### Build the matrix
 
-The output of this step is a one-page grid: the four data tiers down one side, the tool categories across the top, and a plain answer in each cell — yes, only after de-identifying, or no. The shape looks something like this, filled in with round hypothetical entries rather than your own firm's actual matrix:
+The output of this step is a one-page grid: the four data tiers down one side, the four tool categories across the top, and one of four answers in each cell: yes, no, no until de-identified, or yes on a stated condition. Some sample pairings:
 
 | Data tier | Tool category | Typical answer |
 |---|---|---|
-| Public | Any tool | Yes |
-| Internal, no client information | Consumer tool | Yes |
-| Client-identifying | Consumer tool | No — de-identify first |
-| Client-identifying | Signed-agreement or business-tier tool | Yes, if the agreement covers this use |
-| Restricted | Any general-purpose tool | No |
+| Public | Consumer tier | Yes |
+| Client-identifying | Consumer tier | No — de-identify first |
+| Client-identifying | Business tier | No — de-identify first |
+| Client-identifying | Signed agreement | Yes, where the agreement covers this use |
+| Restricted | Business tier | No |
+| Restricted | Signed agreement | Only if the promise behind the restriction allows it |
 
-The [Sorting Your Data worksheet](/tools/sorting-your-data) walks through building this grid step by step. Update it whenever a tool's terms change or a new one is added — a stale matrix is worse than none, since it still looks current.
+The [Sorting Your Data worksheet](/tools/sorting-your-data) has all sixteen pairings and walks through filling them in. Update it whenever a tool's terms change or a new one is added — a stale matrix is worse than none, since it still looks current.
 
 ### De-identify before you prompt
 
-Set the rule plainly: client-identifying information reaches a general-purpose tool only in de-identified form. Be honest about what de-identifying means — removing a name is not the same as removing the person. A combination of a client's age, town, employer, and approximate account size can identify someone almost as surely as a name would, especially in a small practice with a few clients who fit an unusual profile. De-identifying is a real safeguard, not a complete one; where identity genuinely cannot be separated from the question being asked, the answer is not de-identification, it is a tool already cleared for client-identifying information.
+Set the rule plainly: client-identifying information reaches a general-purpose tool only in de-identified form. Be honest about what de-identifying means — removing a name is not the same as removing the person. A combination of a client's age, town, employer, and approximate account size can identify someone almost as surely as a name would, especially in a small practice with a few clients who fit an unusual profile. The test for success: could someone who knows the practice pick the client out of what is left? If so, it is still client-identifying. De-identifying is a real safeguard, not a complete one; where identity genuinely cannot be separated from the question being asked, the answer is not de-identification, it is a tool already cleared for client-identifying information.
 
 ### Look past the prompt box
 
