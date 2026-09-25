@@ -11,7 +11,7 @@ Default scenario: Most pages assume a state-registered adviser with no staff bey
 1. Never reference any professional certification body, certification mark, licensing exam, official curriculum, or official topic list — anywhere: page copy, titles, slugs, frontmatter, alt text, README, comments, commit messages. No certification acronyms, no "certified" phrasing. Describe concepts in plain language instead.
 2. No AI model, platform, processor, or brand names anywhere in the guide — not in step names, area names, slugs, titles, descriptions, headings, metadata, or body prose. Nothing commercial is linked from the guide; no affiliate links.
 3. All content is original. No verbatim or lightly paraphrased text from textbooks, study guides, courses, or official publications. When a fact needs support, cite a public primary source (statute, regulation, agency publication, standards document, court decision, peer-reviewed paper) with a link.
-4. Content is educational, not individualized advice. The standard disclaimer lives on each section landing page only (introduction, process, domains, tools). Do not repeat it on individual pages.
+4. Content is educational, not individualized advice. The standard disclaimer lives on each section landing page (introduction, process, domains, tools) and on the figures reference page, /tools/this-years-figures, and nowhere else. Do not repeat it on individual pages.
 5. Do not invent statistics, thresholds, limits, or rates. If a number is year-specific, state the year and cite the source. If unsure, write "[VERIFY]" inline and list it in the report. On knowledge-area pages the figures rule in the area template takes precedence: a figure set by law, regulation, or an agency goes on /tools/this-years-figures, not on the page. Figures set by a platform — pricing, data-retention windows, context and usage limits — are printed nowhere in the guide; see the area template.
 6. No personal data, no real client examples. Worked examples use obviously fictional people.
 
@@ -75,9 +75,9 @@ Step page skeleton:
 5. "What actually happens" — 3–5 short H3 subsections describing the concrete work.
 6. "Questions to ask yourself"
 7. "Common mistakes"
-8. "Which knowledge areas apply" — links to 2–4 area pages, one line each on why it applies at this step.
+8. "Which Firm Functions apply" — links to 2–4 area pages, one line each on why it applies at this step.
 9. "At a larger firm" — a Callout, 3–6 sentences: what changes for the adviser at a larger firm — supervision, approvals, existing vendor stack.
-10. "Next step" — one link to the following step page. The last step links back to the first.
+10. "Next step" — one link to the following step page. The last step ends instead with "Back to the start", which links back to the first step.
 
 Area page skeleton:
 1. Frontmatter with `title` and `description`.
@@ -93,7 +93,7 @@ Conventions for both:
 - Measure with pnpm wordcount <path>. See Length below for the soft range.
 - Second person, plain English. No jargon without a one-line explanation.
 - Headings are plain nouns or short questions. H2 for the numbered sections above, H3 within them.
-- No disclaimer on individual pages; it lives on the landing pages only.
+- No disclaimer on individual pages; it lives on the landing pages and the figures reference page only.
 - Area pages never print yearly-changing figures — limits, thresholds, rates, deadlines. Where one is relevant, name the concept in plain language and link to /tools/this-years-figures (for example: 'up to the yearly limit — see this year's figures'). That page holds every figure set by law, regulation, or an agency, with its year and primary source, and is updated once a year. Platform-set figures — pricing, data-retention windows, context and usage limits — are held nowhere in the guide, because a vendor's public terms change on the vendor's schedule, not the guide's. Where one matters, name the concept, tell the reader to check the vendor's current terms, and link /tools/vetting-a-vendor; never print the number and never link the figures page for it. Adding platform rows back is an owner ruling, not a drafting choice. Every 'Go deeper' link must be fetched and confirmed live before the PR is opened; any link that cannot be confirmed is marked [VERIFY] in the report. Round hypothetical numbers in a worked example ('200 units a month for ten years') are fine and encouraged.
 - Links to the U.S. Code use the granuleid form: https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-titleNN-sectionNNNN&num=0&edition=prelim (substitute the title and section). The "title:NN section:NNN" form is not used.
 - Row schema on /tools/this-years-figures: one figure per row, columns Concept | What it governs | Value | Year | Source, grouped under one H2 per Firm Function with a stable id (`## Firm Function [#slug]`) in the site's order. A figure appears once, under the area it fits best. Every Value comes from a fetched primary source or reads VERIFY; never fill a Value from memory.
@@ -115,7 +115,7 @@ Worksheet page (tools):
 - Second person, plain English.
 - H2 sections in this order, headings only: "What this measures", "Before you start", first input section, second input section, "The result", "What the number does and does not tell you", "What to do with it", "At a larger firm" (H2, Callout beneath), then Related.
 - Input section names are worksheet-specific: name each for the two things the worksheet gathers.
-- Restatement (FOLLOWUPS item 33's BX): a worksheet may restate its companion step page's operative content (the definitions, categories, and conditions the reader needs to fill it in) so it works on a phone with the step page closed. It does not restate the step's reasoning; it links to the step for that. The step page is the source of truth: a PR that edits content one page restates edits the other to match in the same PR. Test: could the reader fill in this section with the step page closed? If yes without the passage, the passage becomes a link.
+- Restatement (FOLLOWUPS item 33's BX): a worksheet may restate its companion step page's operative content (the definitions, categories, and conditions the reader needs to fill it in) so it works on a phone with the step page closed. It does not restate the step's reasoning; it links to the step for that. The step page is the source of truth: a PR that edits content one page restates edits the other to match in the same PR. Test: could the reader fill in this section with the step page closed? If yes without the passage, the passage becomes a link. The same holds for a passage that restates any other page's operative content: the page that defines that content is the source of truth, and a PR that edits either edits the other to match (FOLLOWUPS item 39's CU).
 - Checklists use the same skeleton; a checklist's input-section names and any renamed skeleton heading come from the FOLLOWUPS item that rules its outline, binding every stage of the run exactly as item 31's BU requires (item 36's CE, which generalized this line from the fixed names it used to give).
 - Tables have three columns at most so they render on a phone without horizontal scrolling.
 - No regulated figures. Name the concept and link the matching section of /tools/this-years-figures.
@@ -140,7 +140,7 @@ Soft ranges, body prose only, measured with pnpm wordcount: step pages 800–1,1
 - A one-touch run (FOLLOWUPS item 29's BR) follows its run prompt, `docs/prompts/run-worksheet.md`: the run report replaces the "Report" section above, suggested follow-ups go under its "Beyond-spec calls", and the run opens a pull request and does not merge.
 
 ## FOLLOWUPS
-FOLLOWUPS.md at the repo root records anything deferred mid-build, one numbered item per entry. Append new items as they come up. When an item closes, append a status block above the original entry rather than deleting or rewriting it, and say so explicitly if the original entry's framing turns out to have been wrong. A status block that closes only part of an item — a lettered sub-item, or a single paragraph or ruling inside it — sits directly below the paragraph it closes instead.
+FOLLOWUPS.md at the repo root records anything deferred mid-build, one numbered item per entry. Append new items as they come up. When an item closes, append a status block above the original entry rather than deleting or rewriting it, and say so explicitly if the original entry's framing turns out to have been wrong. A status block that closes only part of an item — a lettered sub-item, or a single paragraph or ruling inside it — sits directly below the paragraph it closes instead. A lettered ruling that settles part of an open item without closing it sits indented directly below the entry, with no Status line.
 A ruling recorded in FOLLOWUPS.md is cited item-qualified — "item 20's V", not "ruling V" — because some letters name two different rulings.
 
 ## Glossary
@@ -159,7 +159,7 @@ Every term that any page links to /glossary. Rebuilt from the files by the consi
 - Brochure [#brochure] — linked from content/process/handle-client-facing-use/index.mdx, content/process/map-the-rules-that-apply/index.mdx
 - Broker-dealer [#broker-dealer] — linked from content/process/map-the-rules-that-apply/index.mdx
 - Client-identifying [#client-identifying] — linked from content/process/build-the-workflows/index.mdx, content/process/sort-your-data/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/tools/building-your-use-case-inventory/index.mdx, content/tools/sorting-your-data/index.mdx, content/tools/vetting-a-vendor/index.mdx, content/tools/writing-your-ai-policy/index.mdx
-- Compliance program [#compliance-program] — linked from content/domains/compliance-and-supervision/index.mdx, content/introduction/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/tools/building-your-use-case-inventory/index.mdx, content/tools/this-years-figures/index.mdx, content/tools/writing-your-ai-policy/index.mdx
+- Compliance program [#compliance-program] — linked from content/domains/compliance-and-supervision/index.mdx, content/introduction/index.mdx, content/process/map-the-rules-that-apply/index.mdx, content/process/write-the-ai-policy/index.mdx, content/tools/building-your-use-case-inventory/index.mdx, content/tools/this-years-figures/index.mdx, content/tools/writing-your-ai-policy/index.mdx
 - Concentration risk [#concentration-risk] — linked from content/domains/vendor-oversight/index.mdx
 - Data matrix [#data-matrix] — linked from content/domains/data-privacy-and-security/index.mdx, content/domains/vendor-oversight/index.mdx, content/process/build-the-workflows/index.mdx, content/process/review-and-keep-records/index.mdx, content/process/vet-and-choose-tools/index.mdx, content/process/write-the-ai-policy/index.mdx, content/tools/building-your-use-case-inventory/index.mdx, content/tools/sorting-your-data/index.mdx, content/tools/vetting-a-vendor/index.mdx, content/tools/writing-your-ai-policy/index.mdx
 - De-identification [#de-identification] — linked from content/domains/data-privacy-and-security/index.mdx, content/process/sort-your-data/index.mdx, content/tools/sorting-your-data/index.mdx, content/tools/vetting-a-vendor/index.mdx, content/tools/writing-your-ai-policy/index.mdx

@@ -15,6 +15,8 @@ file under `content/tools/<slug>/`, in filename order, as the reader below would
 - `docs/`, `.claude/`, and `.git/`
 - every path under `content/` outside `content/tools/<slug>/` — including the step page this worksheet is paired with, the glossary, and the other tools pages
 
+Note: the session harness loads `CLAUDE.md` into your context automatically. This read is cold to everything except that file.
+
 Do not open another worksheet's files.
 
 This is the point of the role. The prose was drafted by a session that had the outline,
