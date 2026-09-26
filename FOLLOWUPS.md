@@ -702,10 +702,14 @@ CE also amends the checklist line in `CLAUDE.md` "Worksheet page (tools)" (Part 
    - Site-wide: the yearly review of the figures is worded four ways (refreshed, reviewed, checked, updated); the About page carries four disclaimer sentences where CLAUDE.md says one.
    - this-years-figures: the notice-to-individuals row's scope line points a state-registered reader to the FTC Safeguards Rule, which gives no notice to individuals.
    - this-years-figures: the summary overstates which pages link to it; the older "Initial on-site period" row still says only "the retention period".
+   - this-years-figures: the Service-provider row's scope line names only "its state's rule" for a state-registered firm.
    - sort-your-data: the Records and Documentation line states record status flatly; "most", "usually" and "typically" claims are unsourced.
-   - sort-your-data / sorting-your-data: the worksheet's Callout carries an approval sentence the rewritten step-page Callout no longer has (BX sync).
+   - sort-your-data / sorting-your-data: the worksheet's Callout carries an approval sentence the step-page Callout does not have (BX sync). The filing first said "no longer has"; the step Callout never had one, and chat corrected the wording before merge.
+   - sorting-your-data and vetting-a-vendor: the Restricted definition drops "in writing or by rule".
    - glossary: 13 entries don't cross-link the Firm Function page covering them (item 19's AC); several SEC-rule entries don't say whom they reach; Substantiation may lightly paraphrase, and Testimonial may narrow, 17 CFR 275.206(4)-1; the summary echoes the disclaimer; hard rule 3 has no written carve-out for short attributed quotations.
    - glossary: entries that describe breach notice say "accessed" without "or used".
+   - glossary: "advisor-specific vendor products" differs from the canonical "advisor-specific platform" (item 15's AA).
    - compliance-and-supervision: "the statute" is unnamed and unscoped; "The obligation attaches to the firm" is unsourced; area-page H3s are declarative sentences, which item 51's CY does not reach; "quoted in full in the adopting release" was not re-confirmed in close-out.
+   - compliance-and-supervision: "Small firms overreach here specifically" is an unsourced frequency claim; "Every element … is about operating" may overstate the first element; "procedures, and a system for applying" may track §203(e)(6)(A); "The inventory" is the page's only reference to the use-case list.
 
 Next free ruling letter: DR.
