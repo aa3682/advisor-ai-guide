@@ -1,7 +1,7 @@
 # The Adoption Path — repo instructions
 
 ## What this is
-An open, public reference site on using AI inside a small independent investment advisory practice, built as a Nextra 4 docs site. Visual reference only: https://www.promptingguide.ai/ — match its look using the stock nextra-theme-docs; never copy its content or components.
+An open, public reference site on using AI inside a small independent investment advisory practice, built as a Nextra 4 docs site. Visual reference: https://diy-wealth-framework.vercel.app — the slate theme is ported from it; never copy its content.
 
 Audience: the adviser who already runs a solo or two-person registered investment adviser and wants to use AI in the firm without creating a compliance problem, first; the adviser at a larger firm who wants to understand what independent practitioners are doing with these tools and what the rules require, second. Write for that reader: someone who knows how an advisory firm runs but has not thought through AI in it.
 
@@ -14,6 +14,7 @@ Default scenario: Most pages assume a state-registered adviser with no staff bey
 4. Content is educational, not individualized advice. The standard disclaimer lives on each section landing page (introduction, process, domains, tools) and on the figures reference page, /tools/this-years-figures, and nowhere else. Do not repeat it on individual pages.
 5. Do not invent statistics, thresholds, limits, or rates. If a number is year-specific, state the year and cite the source. If unsure, write "[VERIFY]" inline and list it in the report. On knowledge-area pages the figures rule in the area template takes precedence: a figure set by law, regulation, or an agency goes on /tools/this-years-figures, not on the page. Figures set by a platform — pricing, data-retention windows, context and usage limits — are printed nowhere in the guide; see the area template.
 6. No personal data, no real client examples. Worked examples use obviously fictional people.
+7. Slate theme, dark only. The site uses the slate theme defined in app/globals.css, with its accent, page colour and forced dark mode set through documented Nextra props in app/layout.jsx. There is no light theme and no theme switch. Custom CSS is limited to that theme plus WCAG 2.2 AA fixes; each fix cites its SC number and measured ratio in a comment and is kept as small as possible. No custom components unless the owner asks.
 
 ## Attribution and license
 - The guide is published under a project name, not a personal name. The site names no personal name, employer, credentials, or licenses anywhere, on pages or in metadata. Its author is described only by: written by someone with more than fifteen years of hands-on experience inside wealth management and investment advisory, working from public primary sources.
@@ -55,7 +56,7 @@ Step and area names are final; do not rename. Slugs are lowercase-kebab-case and
 - Nextra 4, nextra-theme-docs, Next.js App Router, MDX in content/
 - pnpm only. Never use npm or yarn.
 - Keep the build warning-free.
-- Custom CSS limited to one accent color variable. No custom components unless the owner asks.
+- Custom CSS and custom components follow hard rule 7, including its WCAG 2.2 AA exception.
 
 ## Writing style
 - Plain English, short paragraphs, active voice. Define a term the first time it appears and link it to the glossary.
