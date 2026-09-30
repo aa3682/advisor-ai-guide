@@ -9,10 +9,12 @@ An open, public reference site on using AI inside a small independent investment
 ## Stack
 
 - [Nextra](https://nextra.site) 4 with `nextra-theme-docs`, restyled with a slate theme (dark only) in `app/globals.css`
+- A slate code-highlighting theme in `code-theme.mjs`, passed to Nextra in `next.config.mjs`
 - [Outfit](https://github.com/Outfitio/Outfit-Fonts), self-hosted from `fonts/` with `next/font/local`
 - Next.js App Router
 - MDX content in `content/`
 - [Pagefind](https://pagefind.app) search index generated at build time
+- [Playwright](https://playwright.dev) (dev only), for `pnpm theme-audit`
 - pnpm as the only package manager
 
 ## Content conventions
@@ -38,6 +40,8 @@ pnpm start
 ```
 
 `pnpm build` also generates the search index (Pagefind) into `public/_pagefind`.
+
+`pnpm theme-audit [url]` re-checks the theme in a running build (`pnpm start`, default http://localhost:3000): dark mode forced, no theme switch, no neutral greys, text contrast and focus rings, on every sidebar page at 1280px and 390px. Run it after a Nextra upgrade or any colour change. The first run on a new machine needs `pnpm exec playwright install chromium`.
 
 `pnpm wordcount <path>` counts the body prose of a content page, following the word-count rules in `CLAUDE.md`.
 
