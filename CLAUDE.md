@@ -9,7 +9,7 @@ Default scenario: Most pages assume a state-registered adviser with no staff bey
 
 ## Hard rules
 1. Never reference any professional certification body, certification mark, licensing exam, official curriculum, or official topic list — anywhere: page copy, titles, slugs, frontmatter, alt text, README, comments, commit messages. No certification acronyms, no "certified" phrasing. Describe concepts in plain language instead.
-2. No AI model, platform, processor, or brand names anywhere in the guide — not in step names, area names, slugs, titles, descriptions, headings, metadata, or body prose. Nothing commercial is linked from the guide; no affiliate links.
+2. No AI model, platform, processor, or brand names anywhere in the guide — not in step names, area names, slugs, titles, descriptions, headings, metadata, or body prose. Nothing commercial is linked from the guide; no affiliate links. The project's own name, AlignFlow, is not a brand name under this rule: it may appear in the navbar logo and as the title of the sidebar's Back to AlignFlow link, and that link may point at the AlignFlow hub's production address (FOLLOWUPS item 67's DR).
 3. All content is original. No verbatim or lightly paraphrased text from textbooks, study guides, courses, or official publications. When a fact needs support, cite a public primary source (statute, regulation, agency publication, standards document, court decision, peer-reviewed paper) with a link.
 4. Content is educational, not individualized advice. The standard disclaimer lives on each section landing page (introduction, process, domains, tools) and on the figures reference page, /tools/this-years-figures, and nowhere else. Do not repeat it on individual pages.
 5. Do not invent statistics, thresholds, limits, or rates. If a number is year-specific, state the year and cite the source. If unsure, write "[VERIFY]" inline and list it in the report. On knowledge-area pages the figures rule in the area template takes precedence: a figure set by law, regulation, or an agency goes on /tools/this-years-figures, not on the page. Figures set by a platform — pricing, data-retention windows, context and usage limits — are printed nowhere in the guide; see the area template.
@@ -29,6 +29,8 @@ Top-level sections, in this sidebar order:
 4. tools — calculators, checklists, worksheets
 5. glossary
 6. about
+
+After about, `content/_meta.js` ends with one external link, Back to AlignFlow, to the AlignFlow hub at https://alignflow-hub.vercel.app. It is a link, not a section: keep it last, and keep its title and address as they are.
 
 The Adoption Path steps (title | slug):
 1. Decide What AI Is For | decide-what-ai-is-for

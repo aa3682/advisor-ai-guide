@@ -712,4 +712,8 @@ CE also amends the checklist line in `CLAUDE.md` "Worksheet page (tools)" (Part 
    - compliance-and-supervision: "the statute" is unnamed and unscoped; "The obligation attaches to the firm" is unsourced; area-page H3s are declarative sentences, which item 51's CY does not reach; "quoted in full in the adopting release" was not re-confirmed in close-out.
    - compliance-and-supervision: "Small firms overreach here specifically" is an unsourced frequency claim; "Every element … is about operating" may overstate the first element; "procedures, and a system for applying" may track §203(e)(6)(A); "The inventory" is the page's only reference to the use-case list.
 
-Next free ruling letter: DR.
+**Status (2026-10-02): closed — ruling DR.** Owner ruling, 2026-10-02. **DR (the project's own name is not a brand name).** AlignFlow, the project the guide is published under, may appear in the navbar logo and as the title of the sidebar's Back to AlignFlow link, and that link may point at the AlignFlow hub's production address. Hard rule 2 carries this as its last sentence. The rule still bars every AI model, platform, processor, and vendor name; nothing else is exempted.
+
+67. **Hard rule 2 and the project's own name.** Read literally, hard rule 2's "brand names" reaches AlignFlow, the project this guide is published under, and the AlignFlow hub's address names its host. Filed 2026-10-02 for the AlignFlow branding rollout that started at guide-template PR #9.
+
+Next free ruling letter: DS.
