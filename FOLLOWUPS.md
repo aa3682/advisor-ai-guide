@@ -716,4 +716,8 @@ CE also amends the checklist line in `CLAUDE.md` "Worksheet page (tools)" (Part 
 
 67. **Hard rule 2 and the project's own name.** Read literally, hard rule 2's "brand names" reaches AlignFlow, the project this guide is published under, and the AlignFlow hub's address names its host. Filed 2026-10-02 for the AlignFlow branding rollout that started at guide-template PR #9.
 
-Next free ruling letter: DS.
+**Status (2026-10-08): closed — ruling DS.** Owner ruling, 2026-10-08. **DS (the project's own checker may be linked as a worked example).** The advisor content compliance checker is the project's own work, free, and MIT-licensed (license added at `9831ead` in that repo), so linking it is not linking something commercial. It may be linked once, from body prose on `content/domains/client-communication-and-marketing/index.mdx`, as a worked example of a firm using an AI-built first-pass review. The link text names no platform; the address names its host, as item 67's DR allows for the hub's address. It never goes in "Go deeper", which stays primary sources only under hard rule 3. Hard rule 2 carries this as a sentence after DR's. Every other model, platform, processor, and vendor name stays barred.
+
+68. **Linking the project's own compliance checker.** Hard rule 2 bars linking anything commercial and DR exempts only the hub link, so a link to the project's open-source marketing-content checker needed a ruling. Filed 2026-10-08.
+
+Next free ruling letter: DT.
