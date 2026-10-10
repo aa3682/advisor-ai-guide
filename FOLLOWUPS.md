@@ -243,6 +243,8 @@ Status (V/W PR): closed. data-privacy-and-security:16 now states that Regulation
    - `data-privacy-and-security:57`: do this rename first if the consistency pass is slow to start.
    - Watch item: SEC-registered adviser wording would be wrong if the guide ever cites Section 206 antifraud, which reaches all advisers.
 
+   **Sub-status (item 19, carry `client-communication-and-marketing:46`) (2026-10-10): closed — ruling DT.** Rework, no §206. The section said a chatbot reply is "communication with the public" and rested on firm responsibility for the words; the rule's first prong turns on neither. Reworked lines 34, 36 and 50 to the advertisement test in 17 CFR 275.206(4)-1(e)(1)(i): "Any direct or indirect communication an investment adviser makes to more than one person, or to one or more persons if the communication includes hypothetical performance, that offers the investment adviser's investment advisory services with regard to securities to prospective clients". The page states it as one test, not the whole definition; (e)(1)(ii) (compensated testimonials and endorsements) is not reached. Sourcing from IA-5653 (2020): bulk or algorithm-based messages nominally addressed to one person are widely disseminated and subject to the rule (p. 29); duplicated performance inserts in otherwise customized communications must be treated as advertisements (pp. 29–30); the live-oral exclusion does not extend to chat (p. 40). The responsibility sentence is cut; the performance example now rests on the duplicated-insert passage. "Or a chatbot reply" dropped from line 50 because line 36 carries the point. Item 19's other carry (`:10`) remains unruled. Page count stays inside the 900–1,200 area range.
+
    **Ruling AS pre-check result (glossary batch 2, 2026-09-17).** Both variant lines still carry the pre-AA spelling on `origin/main` at `d0a523a`, so under AS neither page was touched by the batch 2 PR and both go to the consistency pass: `content/process/vet-and-choose-tools/index.mdx:24` reads "whether sub-processors are disclosed" where ruling AA's canonical form is "subprocessor"; `content/process/decide-what-ai-is-for/index.mdx:53` reads "Assuming an advisor-specific product settles this question" where AA's canonical form is "advisor-specific platform". Noted for the pass rather than assumed: the second line is making a point about vendors rather than naming the product category, so whether AA's canonical form governs that sentence at all is a judgment for the pass, not a mechanical rename.
 
    **Carried to the linking pass:**
@@ -720,4 +722,4 @@ CE also amends the checklist line in `CLAUDE.md` "Worksheet page (tools)" (Part 
 
 68. **Linking the project's own compliance checker.** Hard rule 2 bars linking anything commercial and DR exempts only the hub link, so a link to the project's open-source marketing-content checker needed a ruling. Filed 2026-10-08.
 
-Next free ruling letter: DT.
+Next free ruling letter: DU.
